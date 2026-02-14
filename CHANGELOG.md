@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.0.3] - 2026-02-14
+
+### Added
+- SigLIP 2 ViT-B/16 model wrapper (Google, 2025 multilingual encoder)
+- Jina-CLIP v2 model wrapper (Jina AI, 2024 89-language multimodal embeddings)
+- Model count: 3 → 5 (CLIP, Chinese-CLIP, SigLIP 2, Jina-CLIP v2, mBERT+ResNet-50)
+
+### Results (5-model complete run)
+- CLIP ViT-B/32: EN T2I R@10=66.7%, CLC mean=0.229
+- Chinese-CLIP ViT-B/16: CC T2I R@10=77.8% (best monolingual), CLC mean=0.524
+- SigLIP 2 ViT-B/16: MC I2T R@10=66.7%, CLC mean=0.292
+- Jina-CLIP v2: CC→MC R@10=100.0% (best cross-lingual), CLC mean=0.355
+- mBERT+ResNet-50: ~55% across all (random baseline), CLC mean=0.084
+
 ## [2.0.2] - 2026-02-14
 
 ### Fixed

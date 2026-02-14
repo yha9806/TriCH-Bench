@@ -401,6 +401,8 @@ def _short_model_name(name: str) -> str:
     mapping = {
         "clip": "CLIP ViT-B/32",
         "chinese_clip": "Chinese-CLIP ViT-B/16",
+        "siglip2": "SigLIP 2 ViT-B/16",
+        "jina_clip": "Jina-CLIP v2",
         "mbert_resnet": "mBERT + ResNet-50",
     }
     return mapping.get(name, name)

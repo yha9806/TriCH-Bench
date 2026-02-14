@@ -3,8 +3,8 @@
 
 torch>=2.0.0
 torchvision>=0.15.0
-transformers>=4.35.0
-cn_clip                      # Chinese-CLIP
+transformers>=4.45.0
+einops>=0.7.0                # Jina-CLIP v2 dependency
 Pillow>=10.0.0
 numpy>=1.24.0
 scipy>=1.10.0

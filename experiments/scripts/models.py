@@ -1,7 +1,8 @@
 """
 TriCH-Bench Model Wrappers
 ===========================
-Unified interface for CLIP, Chinese-CLIP, and mBERT+ResNet-50 models.
+Unified interface for vision-language retrieval models:
+  CLIP, Chinese-CLIP, SigLIP 2, Jina-CLIP v2, mBERT+ResNet-50.
 
 Author: Yu, Haorui
 Date: 2026-02-14
@@ -116,6 +117,67 @@ class ChineseCLIPModel(BaseModel):
 
 
 # ============================================================
+# SigLIP 2 (Google, 2025)
+# ============================================================
+
+class SigLIP2Model(BaseModel):
+    """Google SigLIP 2 ViT-B/16 multilingual wrapper."""
+
+    def __init__(self, model_id: str = "google/siglip2-base-patch16-224", device: str = "cuda"):
+        super().__init__(device)
+        from transformers import AutoModel, AutoProcessor
+
+        logger.info(f"Loading SigLIP 2 model: {model_id}")
+        self.model = AutoModel.from_pretrained(model_id).to(self.device).eval()
+        self.processor = AutoProcessor.from_pretrained(model_id)
+        logger.info("SigLIP 2 model loaded.")
+
+    @torch.no_grad()
+    def encode_image(self, image_path: str) -> np.ndarray:
+        image = Image.open(image_path).convert("RGB")
+        inputs = self.processor(images=image, return_tensors="pt").to(self.device)
+        emb = self.model.get_image_features(**inputs)
+        emb = emb / emb.norm(dim=-1, keepdim=True)
+        return emb.cpu().numpy().squeeze()
+
+    @torch.no_grad()
+    def encode_text(self, text: str) -> np.ndarray:
+        inputs = self.processor(text=[text], return_tensors="pt", truncation=True, max_length=64).to(self.device)
+        emb = self.model.get_text_features(**inputs)
+        emb = emb / emb.norm(dim=-1, keepdim=True)
+        return emb.cpu().numpy().squeeze()
+
+
+# ============================================================
+# Jina-CLIP v2 (Jina AI, 2024)
+# ============================================================
+
+class JinaCLIPModel(BaseModel):
+    """Jina-CLIP v2 multilingual multimodal wrapper."""
+
+    def __init__(self, model_id: str = "jinaai/jina-clip-v2", device: str = "cuda"):
+        super().__init__(device)
+        from transformers import AutoModel
+
+        logger.info(f"Loading Jina-CLIP v2 model: {model_id}")
+        self.model = AutoModel.from_pretrained(model_id, trust_remote_code=True).to(self.device).eval()
+        logger.info("Jina-CLIP v2 model loaded.")
+
+    @torch.no_grad()
+    def encode_image(self, image_path: str) -> np.ndarray:
+        image = Image.open(image_path).convert("RGB")
+        emb = self.model.encode_image([image], truncate_dim=512)
+        emb = emb / (np.linalg.norm(emb, axis=-1, keepdims=True) + 1e-8)
+        return emb.squeeze()
+
+    @torch.no_grad()
+    def encode_text(self, text: str) -> np.ndarray:
+        emb = self.model.encode_text([text], truncate_dim=512)
+        emb = emb / (np.linalg.norm(emb, axis=-1, keepdims=True) + 1e-8)
+        return emb.squeeze()
+
+
+# ============================================================
 # mBERT + ResNet-50 (Projection Baseline)
 # ============================================================
 
@@ -201,6 +263,10 @@ def load_model(model_key: str, config: dict, device: str = "cuda") -> BaseModel:
         return CLIPModel(model_id=model_cfg["model_id"], device=device)
     elif model_type == "chinese_clip":
         return ChineseCLIPModel(model_id=model_cfg["model_id"], device=device)
+    elif model_type == "siglip2":
+        return SigLIP2Model(model_id=model_cfg["model_id"], device=device)
+    elif model_type == "jina_clip":
+        return JinaCLIPModel(model_id=model_cfg["model_id"], device=device)
     elif model_type == "mbert_resnet":
         return MBERTResNetModel(
             text_model_id=model_cfg["text_model_id"],

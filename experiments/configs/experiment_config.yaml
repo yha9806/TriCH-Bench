@@ -22,6 +22,18 @@ models:
     type: "chinese_clip"
     description: "Chinese-specialized CLIP with ViT-B/16 backbone"
 
+  siglip2:
+    name: "SigLIP 2 ViT-B/16"
+    model_id: "google/siglip2-base-patch16-224"
+    type: "siglip2"
+    description: "Google multilingual vision-language encoder (2025)"
+
+  jina_clip:
+    name: "Jina-CLIP v2"
+    model_id: "jinaai/jina-clip-v2"
+    type: "jina_clip"
+    description: "89-language multimodal embeddings, EVA02-L14 + XLM-RoBERTa (2024)"
+
   mbert_resnet:
     name: "mBERT + ResNet-50"
     text_model_id: "google-bert/bert-base-multilingual-cased"

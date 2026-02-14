@@ -66,7 +66,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--models",
         nargs="+",
-        default=["clip", "chinese_clip", "mbert_resnet"],
+        default=["clip", "chinese_clip", "siglip2", "jina_clip", "mbert_resnet"],
         help="Model keys to evaluate",
     )
     parser.add_argument(
