@@ -1,0 +1,59 @@
+# TriCH-Bench Experiment Configuration
+# Version: 1.0.0
+# Date: 2026-02-14
+
+# === Data Paths ===
+data:
+  gold_samples: "data/samples/hai_xian_18_migrated.json"
+  bronze_drafts: "data/samples/text_type_expansion_drafts.json"
+  image_dir: "images/hai_xian_18"
+
+# === Models ===
+models:
+  clip:
+    name: "CLIP ViT-B/32"
+    model_id: "openai/clip-vit-base-patch32"
+    type: "clip"
+    description: "English-centric contrastive model, 400M web image-text pairs"
+
+  chinese_clip:
+    name: "Chinese-CLIP ViT-B/16"
+    model_id: "OFA-Sys/chinese-clip-vit-base-patch16"
+    type: "chinese_clip"
+    description: "Chinese-specialized CLIP with ViT-B/16 backbone"
+
+  mbert_resnet:
+    name: "mBERT + ResNet-50"
+    text_model_id: "google-bert/bert-base-multilingual-cased"
+    vision_model_id: "microsoft/resnet-50"
+    type: "mbert_resnet"
+    projection_dim: 512
+    description: "Multilingual text encoder + ImageNet vision backbone"
+
+# === Evaluation Settings ===
+evaluation:
+  seed: 42
+  recall_k: [1, 5, 10]
+  languages: ["classical_zh", "modern_zh", "en"]
+  language_labels:
+    classical_zh: "CC"
+    modern_zh: "MC"
+    en: "EN"
+
+  # Cross-lingual pairs for Task B
+  cross_lingual_pairs:
+    - ["classical_zh", "modern_zh"]   # CC→MC
+    - ["modern_zh", "classical_zh"]   # MC→CC
+    - ["classical_zh", "en"]          # CC→EN
+    - ["en", "classical_zh"]          # EN→CC
+    - ["modern_zh", "en"]             # MC→EN
+    - ["en", "modern_zh"]             # EN→MC
+
+  # Difficulty tiers
+  tiers: ["L1-Easy", "L2-Medium", "L3-Hard"]
+
+# === Output ===
+output:
+  results_dir: "experiments/outputs"
+  latex_dir: "experiments/outputs/latex"
+  log_file: "experiments/outputs/experiment_log.txt"

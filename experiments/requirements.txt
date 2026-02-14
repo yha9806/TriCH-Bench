@@ -1,0 +1,12 @@
+# TriCH-Bench Experiment Dependencies
+# Install: pip install -r experiments/requirements.txt
+
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.35.0
+cn_clip                      # Chinese-CLIP
+Pillow>=10.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+pyyaml>=6.0
+tqdm>=4.65.0

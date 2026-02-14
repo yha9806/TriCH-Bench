@@ -1,0 +1,6 @@
+# Ignore experiment outputs (generated, not tracked)
+# Results should be committed explicitly after verification
+*.json
+*.tex
+*.txt
+!.gitkeep
