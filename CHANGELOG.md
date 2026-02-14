@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.0.2] - 2026-02-14
+
+### Fixed
+- Chinese-CLIP: switched from `cn_clip` library (HTTP 403) to HuggingFace `ChineseCLIPModel`
+- Tier evaluation: queries now retrieve against full 18-item candidate pool (was sub-matrix → trivially 100%)
+- `compute_recall_at_k` now accepts optional `gt_indices` for non-diagonal ground truth
+
+### Results (first complete run)
+- CLIP ViT-B/32: EN T2I R@10=66.7% (best), CLC mean=0.229
+- Chinese-CLIP ViT-B/16: CC T2I R@10=77.8% (best overall), CLC mean=0.524
+- mBERT+ResNet-50: ~55% across all (near-random baseline), CLC mean=0.084
+
 ## [2.0.1] - 2026-02-14
 
 ### Added

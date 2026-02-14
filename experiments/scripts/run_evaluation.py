@@ -260,13 +260,14 @@ def main() -> None:
             n_tier = len(tier_indices)
 
             # Compute mean recall across all languages and directions for this tier
+            # Use tier queries against FULL candidate pool (all 18 items)
             tier_recalls = {k: [] for k in k_values}
             for lang in languages:
                 for direction in ["i2t", "t2i"]:
                     sim = sim_cache[model_key][lang][direction]
-                    # Extract sub-matrix for tier samples
-                    sub_sim = sim[np.ix_(tier_indices, tier_indices)]
-                    tier_recall = compute_recall_at_k(sub_sim, k_values)
+                    # Take tier rows, keep all columns as candidates
+                    sub_sim = sim[tier_indices, :]
+                    tier_recall = compute_recall_at_k(sub_sim, k_values, gt_indices=tier_indices)
                     for k in k_values:
                         tier_recalls[k].append(tier_recall[k])
 

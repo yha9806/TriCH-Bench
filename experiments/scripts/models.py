@@ -63,7 +63,7 @@ class CLIPModel(BaseModel):
         from transformers import CLIPModel as HFCLIPModel, CLIPProcessor
 
         logger.info(f"Loading CLIP model: {model_id}")
-        self.model = HFCLIPModel.from_pretrained(model_id).to(self.device).eval()
+        self.model = HFCLIPModel.from_pretrained(model_id, use_safetensors=True).to(self.device).eval()
         self.processor = CLIPProcessor.from_pretrained(model_id)
         logger.info("CLIP model loaded.")
 
@@ -88,32 +88,29 @@ class CLIPModel(BaseModel):
 # ============================================================
 
 class ChineseCLIPModel(BaseModel):
-    """Chinese-CLIP ViT-B/16 wrapper using cn_clip library."""
+    """Chinese-CLIP ViT-B/16 wrapper using HuggingFace transformers."""
 
-    def __init__(self, device: str = "cuda"):
+    def __init__(self, model_id: str = "OFA-Sys/chinese-clip-vit-base-patch16", device: str = "cuda"):
         super().__init__(device)
-        import cn_clip.clip as clip
-        from cn_clip.clip import load_from_name
+        from transformers import ChineseCLIPModel as HFChineseCLIPModel, ChineseCLIPProcessor
 
-        logger.info("Loading Chinese-CLIP ViT-B/16...")
-        self.model, self.preprocess = load_from_name(
-            "ViT-B-16", device=self.device, download_root="~/.cache/cn_clip"
-        )
-        self.tokenize = clip.tokenize
-        self.model.eval()
+        logger.info(f"Loading Chinese-CLIP model: {model_id}")
+        self.model = HFChineseCLIPModel.from_pretrained(model_id, use_safetensors=True).to(self.device).eval()
+        self.processor = ChineseCLIPProcessor.from_pretrained(model_id)
         logger.info("Chinese-CLIP model loaded.")
 
     @torch.no_grad()
     def encode_image(self, image_path: str) -> np.ndarray:
-        image = self.preprocess(Image.open(image_path).convert("RGB")).unsqueeze(0).to(self.device)
-        emb = self.model.encode_image(image)
+        image = Image.open(image_path).convert("RGB")
+        inputs = self.processor(images=image, return_tensors="pt").to(self.device)
+        emb = self.model.get_image_features(**inputs)
         emb = emb / emb.norm(dim=-1, keepdim=True)
         return emb.cpu().numpy().squeeze()
 
     @torch.no_grad()
     def encode_text(self, text: str) -> np.ndarray:
-        tokens = self.tokenize([text]).to(self.device)
-        emb = self.model.encode_text(tokens)
+        inputs = self.processor(text=[text], return_tensors="pt", truncation=True, max_length=52).to(self.device)
+        emb = self.model.get_text_features(**inputs)
         emb = emb / emb.norm(dim=-1, keepdim=True)
         return emb.cpu().numpy().squeeze()
 
@@ -151,11 +148,11 @@ class MBERTResNetModel(BaseModel):
 
         logger.info(f"Loading mBERT: {text_model_id}")
         self.tokenizer = AutoTokenizer.from_pretrained(text_model_id)
-        self.text_model = AutoModel.from_pretrained(text_model_id).to(self.device).eval()
+        self.text_model = AutoModel.from_pretrained(text_model_id, use_safetensors=True).to(self.device).eval()
 
         logger.info(f"Loading ResNet-50: {vision_model_id}")
         self.feature_extractor = AutoFeatureExtractor.from_pretrained(vision_model_id)
-        self.vision_model = AutoModel.from_pretrained(vision_model_id).to(self.device).eval()
+        self.vision_model = AutoModel.from_pretrained(vision_model_id, use_safetensors=True).to(self.device).eval()
 
         # Fixed random projection (deterministic via seed)
         torch.manual_seed(42)
@@ -203,7 +200,7 @@ def load_model(model_key: str, config: dict, device: str = "cuda") -> BaseModel:
     if model_type == "clip":
         return CLIPModel(model_id=model_cfg["model_id"], device=device)
     elif model_type == "chinese_clip":
-        return ChineseCLIPModel(device=device)
+        return ChineseCLIPModel(model_id=model_cfg["model_id"], device=device)
     elif model_type == "mbert_resnet":
         return MBERTResNetModel(
             text_model_id=model_cfg["text_model_id"],

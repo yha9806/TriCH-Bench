@@ -60,29 +60,31 @@ def group_by_tier(samples: list[dict]) -> dict[str, list[dict]]:
 def compute_recall_at_k(
     similarity_matrix: np.ndarray,
     k_values: list[int],
+    gt_indices: list[int] | None = None,
 ) -> dict[int, float]:
     """
     Compute Recall@K from a similarity matrix.
 
     Args:
-        similarity_matrix: (N, N) matrix where [i, j] = similarity
+        similarity_matrix: (N, M) matrix where [i, j] = similarity
                            between query i and candidate j.
-                           Ground truth: diagonal (i == j).
         k_values: list of K values, e.g. [1, 5, 10].
+        gt_indices: ground truth column index for each query row.
+                    If None, uses diagonal (i.e., gt for query i is col i).
 
     Returns:
         Dict mapping K -> Recall@K as percentage.
     """
     n = similarity_matrix.shape[0]
     # Rank candidates for each query (descending similarity)
-    ranks = np.argsort(-similarity_matrix, axis=1)  # (N, N)
+    ranks = np.argsort(-similarity_matrix, axis=1)  # (N, M)
 
     results = {}
     for k in k_values:
         hits = 0
         for i in range(n):
-            # Ground truth index is i (diagonal)
-            if i in ranks[i, :k]:
+            gt = gt_indices[i] if gt_indices is not None else i
+            if gt in ranks[i, :k]:
                 hits += 1
         results[k] = (hits / n) * 100.0
     return results
