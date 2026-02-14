@@ -1,0 +1,308 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://trich-bench.org/schema/v2/trich_bench_schema.json",
+  "title": "TriCH-Bench v2 Sample Schema",
+  "description": "Schema for Tri-lingual Cultural Heritage Benchmark v2 dataset samples, designed for ACM JOCCH Visual Heritage special issue. Each sample represents a tri-lingual (Classical Chinese, Modern Chinese, English) cultural heritage text entry with rich metadata for cross-lingual alignment evaluation.",
+  "type": "object",
+  "properties": {
+    "dataset_info": {
+      "type": "object",
+      "description": "Metadata about the dataset itself.",
+      "properties": {
+        "name": { "type": "string", "const": "TriCH-Bench v2" },
+        "version": { "type": "string" },
+        "description": { "type": "string" },
+        "creation_date": { "type": "string", "format": "date" },
+        "total_samples": { "type": "integer", "minimum": 0 },
+        "languages": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 3,
+          "uniqueItems": true
+        },
+        "license": { "type": "string" },
+        "citation": { "type": "string" }
+      },
+      "required": ["name", "version", "creation_date", "total_samples", "languages"]
+    },
+    "samples": {
+      "type": "array",
+      "description": "Array of individual benchmark samples.",
+      "items": { "$ref": "#/$defs/sample" }
+    }
+  },
+  "required": ["dataset_info", "samples"],
+  "$defs": {
+    "sample": {
+      "type": "object",
+      "description": "A single TriCH-Bench v2 sample entry.",
+      "properties": {
+        "sample_id": {
+          "type": "string",
+          "pattern": "^TCH-[0-9]{3}-(orig|interp|cat|edu)$",
+          "description": "Unique sample identifier. Format: TCH-{NNN}-{text_type_abbr} where text_type_abbr is one of orig, interp, cat, edu."
+        },
+        "work_id": {
+          "type": "string",
+          "description": "Identifier for the source work, e.g. HX-01 for hai_xian technique #1."
+        },
+        "work_name": {
+          "$ref": "#/$defs/trilingual_name",
+          "description": "Tri-lingual name of the cultural heritage work or technique."
+        },
+        "source_collection": {
+          "type": "string",
+          "description": "Identifier of the source collection this sample belongs to, e.g. 'hai_xian_18'."
+        },
+        "source_provenance": {
+          "type": "object",
+          "description": "Provenance information about the source text.",
+          "properties": {
+            "original_text": {
+              "type": "string",
+              "description": "Citation or title of the original source text."
+            },
+            "institution": {
+              "type": "string",
+              "description": "Institution or repository holding the source."
+            },
+            "digitization_method": {
+              "type": "string",
+              "description": "Method used to digitize the source (e.g. manual transcription, OCR, scholarly edition)."
+            },
+            "copyright_status": {
+              "type": "string",
+              "enum": ["public_domain", "cc_by", "cc_by_sa", "cc_by_nc", "cc_by_nc_sa", "fair_use", "restricted", "unknown"],
+              "description": "Copyright status of the source material."
+            }
+          },
+          "required": ["original_text", "copyright_status"]
+        },
+        "category": {
+          "type": "object",
+          "description": "Categorization of the cultural heritage content.",
+          "properties": {
+            "domain": {
+              "type": "string",
+              "enum": ["painting_technique", "painting_work", "art_concept"],
+              "description": "Primary domain of the content."
+            },
+            "subcategory": {
+              "type": "string",
+              "description": "More specific category within the domain, e.g. 'line_drawing_technique', 'ink_wash', 'figure_painting'."
+            },
+            "subject_tags": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Tags describing the subject matter."
+            },
+            "technique_tags": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Tags describing technical aspects."
+            }
+          },
+          "required": ["domain", "subcategory"]
+        },
+        "text_type": {
+          "type": "string",
+          "enum": ["original", "interpretation", "catalogue", "educational"],
+          "description": "Type of text: original (classical source), interpretation (modern scholarly rewrite), catalogue (museum-style description), educational (teaching-oriented explanation)."
+        },
+        "difficulty_tier": {
+          "type": "string",
+          "enum": ["L1-Easy", "L2-Medium", "L3-Hard"],
+          "description": "Difficulty tier for cross-lingual alignment. L1-Easy: straightforward technical descriptions. L2-Medium: contains cultural metaphors or implicit knowledge. L3-Hard: dense allusions, philosophical concepts, or highly culture-specific terms."
+        },
+        "text": {
+          "$ref": "#/$defs/trilingual_text",
+          "description": "The tri-lingual text content of this sample."
+        },
+        "cultural_concepts": {
+          "type": "array",
+          "description": "Cultural concepts present in the text that may pose challenges for cross-lingual alignment.",
+          "items": { "$ref": "#/$defs/cultural_concept" }
+        },
+        "alignment_metadata": {
+          "type": "object",
+          "description": "Metadata about the cross-lingual alignment process and quality.",
+          "properties": {
+            "classical_to_modern_method": {
+              "type": "string",
+              "enum": ["expert_translation", "llm_assisted", "parallel_corpus", "hybrid"],
+              "description": "Method used for Classical Chinese to Modern Chinese alignment."
+            },
+            "modern_to_en_method": {
+              "type": "string",
+              "enum": ["expert_translation", "llm_assisted", "parallel_corpus", "hybrid"],
+              "description": "Method used for Modern Chinese to English alignment."
+            },
+            "semantic_drift_risk": {
+              "type": "string",
+              "enum": ["low", "medium", "high"],
+              "description": "Overall risk of semantic drift across the translation chain."
+            },
+            "drift_categories": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "term_missing",
+                  "allusion_loss",
+                  "aesthetic_flattening",
+                  "concept_substitution",
+                  "register_mismatch",
+                  "over_explanation"
+                ]
+              },
+              "description": "Specific types of semantic drift identified or anticipated."
+            }
+          },
+          "required": ["classical_to_modern_method", "modern_to_en_method", "semantic_drift_risk"]
+        },
+        "quality_tier": {
+          "type": "string",
+          "enum": ["gold", "silver", "bronze"],
+          "description": "Quality tier of this sample. Gold: expert-reviewed, multi-annotator agreement. Silver: single expert review. Bronze: automated or unreviewed."
+        },
+        "expert_review": {
+          "type": "object",
+          "description": "Expert review status and details.",
+          "properties": {
+            "reviewed": {
+              "type": "boolean",
+              "description": "Whether this sample has been reviewed by experts."
+            },
+            "reviewer_count": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Number of expert reviewers."
+            },
+            "agreement_score": {
+              "type": ["number", "null"],
+              "minimum": 0,
+              "maximum": 1,
+              "description": "Inter-annotator agreement score (0-1). Null if not yet reviewed."
+            },
+            "review_date": {
+              "type": ["string", "null"],
+              "format": "date",
+              "description": "Date of the most recent review."
+            },
+            "conflict_resolution": {
+              "type": ["string", "null"],
+              "enum": ["majority_vote", "discussion", "senior_expert", null],
+              "description": "Method used to resolve disagreements among reviewers."
+            }
+          },
+          "required": ["reviewed", "reviewer_count"]
+        },
+        "image_ref": {
+          "type": "object",
+          "description": "Reference to associated image resources.",
+          "properties": {
+            "path": {
+              "type": ["string", "null"],
+              "description": "Relative file path to the associated image."
+            },
+            "iiif_manifest": {
+              "type": ["string", "null"],
+              "format": "uri",
+              "description": "URI to the IIIF manifest for this image, if available."
+            },
+            "cidoc_crm_mapping": {
+              "type": ["string", "null"],
+              "description": "Reference to CIDOC-CRM mapping file or URI, if available."
+            }
+          }
+        },
+        "legacy_metadata": {
+          "type": "object",
+          "description": "Preserved metadata from the original dataset for traceability.",
+          "properties": {
+            "original_id": { "type": "string" },
+            "semantic_similarity": {
+              "type": "object",
+              "properties": {
+                "classical_to_modern": { "type": "number" },
+                "modern_to_english": { "type": "number" },
+                "classical_to_english": { "type": "number" }
+              }
+            },
+            "word_count": {
+              "type": "object",
+              "properties": {
+                "classical_chinese": { "type": "integer" },
+                "modern_chinese": { "type": "integer" },
+                "english": { "type": "integer" }
+              }
+            }
+          }
+        }
+      },
+      "required": [
+        "sample_id",
+        "work_id",
+        "work_name",
+        "source_collection",
+        "category",
+        "text_type",
+        "difficulty_tier",
+        "text",
+        "cultural_concepts",
+        "alignment_metadata",
+        "quality_tier",
+        "expert_review",
+        "image_ref"
+      ]
+    },
+    "trilingual_name": {
+      "type": "object",
+      "description": "A tri-lingual name object.",
+      "properties": {
+        "classical_zh": { "type": "string", "description": "Classical Chinese name." },
+        "modern_zh": { "type": "string", "description": "Modern Chinese name." },
+        "en": { "type": "string", "description": "English name." }
+      },
+      "required": ["classical_zh", "modern_zh", "en"]
+    },
+    "trilingual_text": {
+      "type": "object",
+      "description": "A tri-lingual text content object.",
+      "properties": {
+        "classical_zh": { "type": "string", "description": "Classical Chinese text." },
+        "modern_zh": { "type": "string", "description": "Modern Chinese text." },
+        "en": { "type": "string", "description": "English text." }
+      },
+      "required": ["classical_zh", "modern_zh", "en"]
+    },
+    "cultural_concept": {
+      "type": "object",
+      "description": "A cultural concept that may challenge cross-lingual alignment.",
+      "properties": {
+        "term_zh": {
+          "type": "string",
+          "description": "The concept term in Chinese."
+        },
+        "term_en": {
+          "type": "string",
+          "description": "The concept term in English (may be a transliteration or approximate translation)."
+        },
+        "has_direct_translation": {
+          "type": "boolean",
+          "description": "Whether the concept has a widely accepted direct English translation."
+        },
+        "concept_type": {
+          "type": "string",
+          "enum": ["allusion", "aesthetic_philosophy", "technique_term", "historical_reference"],
+          "description": "Type of cultural concept."
+        },
+        "explanation_needed": {
+          "type": "boolean",
+          "description": "Whether additional explanation is needed for non-Chinese readers to understand this concept."
+        }
+      },
+      "required": ["term_zh", "term_en", "has_direct_translation", "concept_type", "explanation_needed"]
+    }
+  }
+}

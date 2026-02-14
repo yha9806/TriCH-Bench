@@ -1,0 +1,1802 @@
+{
+  "dataset_info": {
+    "name": "TriCH-Bench v2",
+    "version": "2.0.0",
+    "description": "Tri-lingual Cultural Heritage Benchmark v2 - Hai Xian 18 Techniques (Original Texts). Migrated from hai_xian_18_cme_dataset.json for ACM JOCCH Visual Heritage special issue.",
+    "creation_date": "2026-02-14",
+    "total_samples": 18,
+    "languages": [
+      "classical_chinese",
+      "modern_chinese",
+      "english"
+    ],
+    "license": "CC-BY-NC-SA-4.0",
+    "citation": "Yu, H. et al. (2026). TriCH-Bench: A Tri-lingual Cultural Heritage Benchmark for Visual Heritage Understanding. ACM Journal on Computing and Cultural Heritage."
+  },
+  "samples": [
+    {
+      "sample_id": "TCH-001-orig",
+      "work_id": "HX-01",
+      "work_name": {
+        "classical_zh": "高古游絲描",
+        "modern_zh": "高古游丝描",
+        "en": "Ancient Gossamer Line Drawing"
+      },
+      "source_collection": "hai_xian_18",
+      "source_provenance": {
+        "original_text": "海仙十八描法 (Hai Xian Eighteen Drawing Techniques)",
+        "institution": "Traditional Chinese Painting Compendium",
+        "digitization_method": "expert_transcription",
+        "copyright_status": "public_domain"
+      },
+      "category": {
+        "domain": "painting_technique",
+        "subcategory": "line_drawing_technique",
+        "subject_tags": [
+          "古典审美",
+          "仙姿飘逸",
+          "东晋技法"
+        ],
+        "technique_tags": [
+          "细腻线条",
+          "均匀粗细",
+          "无棱角"
+        ]
+      },
+      "text_type": "original",
+      "difficulty_tier": "L3-Hard",
+      "text": {
+        "classical_zh": "用十分尖筆，如曹衣紋、鍊筆擎納衣褶，蒼老緊牢，古人多描",
+        "modern_zh": "用极尖的毛笔画出纤细均匀的线条，笔法源自曹衣纹的传统，提按运笔间描绘衣褶，笔力苍劲老练、紧密牢固，古代画家多用此法。",
+        "en": "Fine brush creates continuous silk-like lines with uniform thickness and classical elegance. Used by Gu Kaizhi for celestial figures, producing ethereal drapery with divine spiritual qualities."
+      },
+      "cultural_concepts": [
+        {
+          "term_zh": "曹衣紋",
+          "term_en": "Cao Yi Wen (Cao-style drapery pattern)",
+          "has_direct_translation": false,
+          "concept_type": "allusion",
+          "explanation_needed": true
+        },
+        {
+          "term_zh": "高古",
+          "term_en": "lofty antiquity",
+          "has_direct_translation": false,
+          "concept_type": "aesthetic_philosophy",
+          "explanation_needed": true
+        },
+        {
+          "term_zh": "游絲",
+          "term_en": "gossamer / floating silk thread",
+          "has_direct_translation": false,
+          "concept_type": "technique_term",
+          "explanation_needed": true
+        }
+      ],
+      "alignment_metadata": {
+        "classical_to_modern_method": "expert_interpretation",
+        "modern_to_en_method": "expert_translation",
+        "semantic_drift_risk": "high",
+        "drift_categories": [
+          "allusion_loss",
+          "aesthetic_flattening",
+          "over_explanation"
+        ]
+      },
+      "quality_tier": "gold",
+      "expert_review": {
+        "reviewed": true,
+        "reviewer_count": 3,
+        "agreement_score": 0.7,
+        "review_date": "2025-06-20",
+        "conflict_resolution": "adjudicated_by_senior_reviewer",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "revised_pending_review",
+          "english": "reviewed"
+        },
+        "revision_note": "Modern Chinese text rewritten from simplified-character copy to genuine interpretation (2026-02-14). Pending expert re-review."
+      },
+      "image_ref": {
+        "path": "data/海仙十八描法/c01.高古游丝描.jpg",
+        "iiif_manifest": null,
+        "cidoc_crm_mapping": null
+      },
+      "legacy_metadata": {
+        "original_id": "hai_xian_01_gaoguyousimiao",
+        "semantic_similarity": {
+          "classical_to_modern": 0.6,
+          "modern_to_english": 0.68,
+          "classical_to_english": 0.75
+        },
+        "word_count": {
+          "classical_chinese": 23,
+          "modern_chinese": 52,
+          "english": 26
+        }
+      }
+    },
+    {
+      "sample_id": "TCH-002-orig",
+      "work_id": "HX-02",
+      "work_name": {
+        "classical_zh": "琴絃描",
+        "modern_zh": "琴弦描",
+        "en": "Zither String Drawing"
+      },
+      "source_collection": "hai_xian_18",
+      "source_provenance": {
+        "original_text": "海仙十八描法 (Hai Xian Eighteen Drawing Techniques)",
+        "institution": "Traditional Chinese Painting Compendium",
+        "digitization_method": "expert_transcription",
+        "copyright_status": "public_domain"
+      },
+      "category": {
+        "domain": "painting_technique",
+        "subcategory": "line_drawing_technique",
+        "subject_tags": [
+          "音乐美学",
+          "文人气质",
+          "心手合一"
+        ],
+        "technique_tags": [
+          "绷紧状态",
+          "无突变",
+          "协调性"
+        ]
+      },
+      "text_type": "original",
+      "difficulty_tier": "L2-Medium",
+      "text": {
+        "classical_zh": "用正鋒，如琴絃，中無怒降，要心手相應",
+        "modern_zh": "以中锋运笔，线条如绷紧的琴弦般挺直均匀，行笔中不出现突然变粗的“怒降”，要求画家心意与手法完美配合。",
+        "en": "Centered brush produces taut string-like lines requiring mind-hand coordination. Creates precise, dignified drapery suitable for scholarly figures with controlled elegance and musical harmony principles."
+      },
+      "cultural_concepts": [
+        {
+          "term_zh": "琴絃",
+          "term_en": "zither string",
+          "has_direct_translation": false,
+          "concept_type": "allusion",
+          "explanation_needed": true
+        },
+        {
+          "term_zh": "心手相應",
+          "term_en": "mind-hand coordination",
+          "has_direct_translation": false,
+          "concept_type": "aesthetic_philosophy",
+          "explanation_needed": true
+        },
+        {
+          "term_zh": "正鋒",
+          "term_en": "centered brush tip",
+          "has_direct_translation": true,
+          "concept_type": "technique_term",
+          "explanation_needed": false
+        }
+      ],
+      "alignment_metadata": {
+        "classical_to_modern_method": "expert_interpretation",
+        "modern_to_en_method": "expert_translation",
+        "semantic_drift_risk": "medium",
+        "drift_categories": [
+          "allusion_loss",
+          "aesthetic_flattening"
+        ]
+      },
+      "quality_tier": "gold",
+      "expert_review": {
+        "reviewed": true,
+        "reviewer_count": 2,
+        "agreement_score": 0.82,
+        "review_date": "2025-06-21",
+        "conflict_resolution": null,
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "revised_pending_review",
+          "english": "reviewed"
+        },
+        "revision_note": "Modern Chinese text rewritten from simplified-character copy to genuine interpretation (2026-02-14). Pending expert re-review."
+      },
+      "image_ref": {
+        "path": "data/海仙十八描法/c02.琴弦描.jpg",
+        "iiif_manifest": null,
+        "cidoc_crm_mapping": null
+      },
+      "legacy_metadata": {
+        "original_id": "hai_xian_02_qinxianmiao",
+        "semantic_similarity": {
+          "classical_to_modern": 0.71,
+          "modern_to_english": 0.67,
+          "classical_to_english": 0.74
+        },
+        "word_count": {
+          "classical_chinese": 15,
+          "modern_chinese": 44,
+          "english": 24
+        }
+      }
+    },
+    {
+      "sample_id": "TCH-003-orig",
+      "work_id": "HX-03",
+      "work_name": {
+        "classical_zh": "鐵線描",
+        "modern_zh": "铁线描",
+        "en": "Iron Wire Drawing"
+      },
+      "source_collection": "hai_xian_18",
+      "source_provenance": {
+        "original_text": "海仙十八描法 (Hai Xian Eighteen Drawing Techniques)",
+        "institution": "Traditional Chinese Painting Compendium",
+        "digitization_method": "expert_transcription",
+        "copyright_status": "public_domain"
+      },
+      "category": {
+        "domain": "painting_technique",
+        "subcategory": "line_drawing_technique",
+        "subject_tags": [
+          "书画同源",
+          "刚硬质感",
+          "建筑性"
+        ],
+        "technique_tags": [
+          "坚挺",
+          "均匀",
+          "如錐刻石"
+        ]
+      },
+      "text_type": "original",
+      "difficulty_tier": "L2-Medium",
+      "text": {
+        "classical_zh": "作正鋒，長點如以錐鏤石面，書法謂先楷而後草，畫亦然",
+        "modern_zh": "以中锋运笔，长笔画如同用尖锥在石面上刻字般遒劲有力。书法讲究先学楷书再学草书，绘画的道理也是如此。",
+        "en": "Steady centered strokes resemble iron wire firmness with consistent thickness. Follows calligraphic principles creating strong architectural drapery lines providing structural foundation and permanence."
+      },
+      "cultural_concepts": [
+        {
+          "term_zh": "书画同源",
+          "term_en": "calligraphy and painting share the same origin",
+          "has_direct_translation": false,
+          "concept_type": "aesthetic_philosophy",
+          "explanation_needed": true
+        },
+        {
+          "term_zh": "楷法",
+          "term_en": "regular script method",
+          "has_direct_translation": true,
+          "concept_type": "technique_term",
+          "explanation_needed": true
+        },
+        {
+          "term_zh": "錐鏤石面",
+          "term_en": "engraving stone with an awl",
+          "has_direct_translation": true,
+          "concept_type": "technique_term",
+          "explanation_needed": false
+        }
+      ],
+      "alignment_metadata": {
+        "classical_to_modern_method": "expert_interpretation",
+        "modern_to_en_method": "expert_translation",
+        "semantic_drift_risk": "medium",
+        "drift_categories": [
+          "aesthetic_flattening",
+          "concept_substitution"
+        ]
+      },
+      "quality_tier": "gold",
+      "expert_review": {
+        "reviewed": true,
+        "reviewer_count": 2,
+        "agreement_score": 0.82,
+        "review_date": "2025-06-22",
+        "conflict_resolution": null,
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "revised_pending_review",
+          "english": "reviewed"
+        },
+        "revision_note": "Modern Chinese text rewritten from simplified-character copy to genuine interpretation (2026-02-14). Pending expert re-review."
+      },
+      "image_ref": {
+        "path": "data/海仙十八描法/c03.铁线描.jpg",
+        "iiif_manifest": null,
+        "cidoc_crm_mapping": null
+      },
+      "legacy_metadata": {
+        "original_id": "hai_xian_03_tiexianmiao",
+        "semantic_similarity": {
+          "classical_to_modern": 0.74,
+          "modern_to_english": 0.73,
+          "classical_to_english": 0.72
+        },
+        "word_count": {
+          "classical_chinese": 22,
+          "modern_chinese": 45,
+          "english": 23
+        }
+      }
+    },
+    {
+      "sample_id": "TCH-004-orig",
+      "work_id": "HX-04",
+      "work_name": {
+        "classical_zh": "行雲流水描",
+        "modern_zh": "行云流水描",
+        "en": "Flowing Clouds and Water Drawing"
+      },
+      "source_collection": "hai_xian_18",
+      "source_provenance": {
+        "original_text": "海仙十八描法 (Hai Xian Eighteen Drawing Techniques)",
+        "institution": "Traditional Chinese Painting Compendium",
+        "digitization_method": "expert_transcription",
+        "copyright_status": "public_domain"
+      },
+      "category": {
+        "domain": "painting_technique",
+        "subcategory": "line_drawing_technique",
+        "subject_tags": [
+          "自然韵律",
+          "动态美感",
+          "风致"
+        ],
+        "technique_tags": [
+          "雄豪",
+          "练达",
+          "如风吹"
+        ]
+      },
+      "text_type": "original",
+      "difficulty_tier": "L2-Medium",
+      "text": {
+        "classical_zh": "正鋒雄豪而要練筆，雲章鎖然，出溪水紋，曲流而如向風",
+        "modern_zh": "以中锋运笔，笔势雄健豪放但需要深厚的练笔功底。线条如云纹般层叠连贯，又似溪水波纹般曲折流转，宛如迎风飘动。",
+        "en": "Bold practiced strokes flow naturally like drifting clouds and streaming water. Creates graceful undulating drapery suggesting movement and vitality in windswept environments."
+      },
+      "cultural_concepts": [
+        {
+          "term_zh": "行雲流水",
+          "term_en": "flowing clouds and water",
+          "has_direct_translation": true,
+          "concept_type": "aesthetic_philosophy",
+          "explanation_needed": true
+        },
+        {
+          "term_zh": "雲章",
+          "term_en": "cloud pattern / cloud seal",
+          "has_direct_translation": false,
+          "concept_type": "technique_term",
+          "explanation_needed": true
+        }
+      ],
+      "alignment_metadata": {
+        "classical_to_modern_method": "expert_interpretation",
+        "modern_to_en_method": "expert_translation",
+        "semantic_drift_risk": "medium",
+        "drift_categories": [
+          "aesthetic_flattening",
+          "register_mismatch"
+        ]
+      },
+      "quality_tier": "gold",
+      "expert_review": {
+        "reviewed": true,
+        "reviewer_count": 2,
+        "agreement_score": 0.86,
+        "review_date": "2025-06-23",
+        "conflict_resolution": null,
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "revised_pending_review",
+          "english": "reviewed"
+        },
+        "revision_note": "Modern Chinese text rewritten from simplified-character copy to genuine interpretation (2026-02-14). Pending expert re-review."
+      },
+      "image_ref": {
+        "path": "data/海仙十八描法/c04.行云流水描.jpg",
+        "iiif_manifest": null,
+        "cidoc_crm_mapping": null
+      },
+      "legacy_metadata": {
+        "original_id": "hai_xian_04_xingyunliushuimiao",
+        "semantic_similarity": {
+          "classical_to_modern": 0.69,
+          "modern_to_english": 0.65,
+          "classical_to_english": 0.73
+        },
+        "word_count": {
+          "classical_chinese": 22,
+          "modern_chinese": 48,
+          "english": 22
+        }
+      }
+    },
+    {
+      "sample_id": "TCH-005-orig",
+      "work_id": "HX-05",
+      "work_name": {
+        "classical_zh": "螞蟥描",
+        "modern_zh": "蚂蝗描",
+        "en": "Leech Drawing"
+      },
+      "source_collection": "hai_xian_18",
+      "source_provenance": {
+        "original_text": "海仙十八描法 (Hai Xian Eighteen Drawing Techniques)",
+        "institution": "Traditional Chinese Painting Compendium",
+        "digitization_method": "expert_transcription",
+        "copyright_status": "public_domain"
+      },
+      "category": {
+        "domain": "painting_technique",
+        "subcategory": "line_drawing_technique",
+        "subject_tags": [
+          "生物形态",
+          "体量感",
+          "厚重"
+        ],
+        "technique_tags": [
+          "中粗端细",
+          "角度明确",
+          "体积感"
+        ]
+      },
+      "text_type": "original",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "正鋒用尖筆成圭角，如螞蟥繃",
+        "modern_zh": "以中锋配合尖笔，运笔形成棱角分明的转折，线条中段肥壮、两端渐收，形如蚂蝗绷起的身体。",
+        "en": "Pointed brush forms angular shapes thick in middle, narrow at ends like leech body. Produces distinctive volume-emphasizing folds effective for heavy garments."
+      },
+      "cultural_concepts": [
+        {
+          "term_zh": "螞蟥",
+          "term_en": "leech",
+          "has_direct_translation": true,
+          "concept_type": "technique_term",
+          "explanation_needed": false
+        },
+        {
+          "term_zh": "圭角",
+          "term_en": "angular / jade-tablet corner",
+          "has_direct_translation": false,
+          "concept_type": "technique_term",
+          "explanation_needed": true
+        }
+      ],
+      "alignment_metadata": {
+        "classical_to_modern_method": "expert_interpretation",
+        "modern_to_en_method": "expert_translation",
+        "semantic_drift_risk": "low",
+        "drift_categories": [
+          "term_missing"
+        ]
+      },
+      "quality_tier": "gold",
+      "expert_review": {
+        "reviewed": true,
+        "reviewer_count": 2,
+        "agreement_score": 0.86,
+        "review_date": "2025-06-24",
+        "conflict_resolution": null,
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "revised_pending_review",
+          "english": "reviewed"
+        },
+        "revision_note": "Modern Chinese text rewritten from simplified-character copy to genuine interpretation (2026-02-14). Pending expert re-review."
+      },
+      "image_ref": {
+        "path": "data/海仙十八描法/c05.蚂蝗描.jpg",
+        "iiif_manifest": null,
+        "cidoc_crm_mapping": null
+      },
+      "legacy_metadata": {
+        "original_id": "hai_xian_05_mahuangmiao",
+        "semantic_similarity": {
+          "classical_to_modern": 0.83,
+          "modern_to_english": 0.79,
+          "classical_to_english": 0.72
+        },
+        "word_count": {
+          "classical_chinese": 12,
+          "modern_chinese": 37,
+          "english": 22
+        }
+      }
+    },
+    {
+      "sample_id": "TCH-006-orig",
+      "work_id": "HX-06",
+      "work_name": {
+        "classical_zh": "釘頭鼠尾描",
+        "modern_zh": "钉头鼠尾描",
+        "en": "Nail Head and Rat Tail Drawing"
+      },
+      "source_collection": "hai_xian_18",
+      "source_provenance": {
+        "original_text": "海仙十八描法 (Hai Xian Eighteen Drawing Techniques)",
+        "institution": "Traditional Chinese Painting Compendium",
+        "digitization_method": "expert_transcription",
+        "copyright_status": "public_domain"
+      },
+      "category": {
+        "domain": "painting_technique",
+        "subcategory": "line_drawing_technique",
+        "subject_tags": [
+          "对比美学",
+          "动态变化",
+          "精细技巧"
+        ],
+        "technique_tags": [
+          "起重收轻",
+          "粗细对比",
+          "精细控制"
+        ]
+      },
+      "text_type": "original",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "正鋒而釘頭掃筆，為鼠尾用細筆",
+        "modern_zh": "以中锋运笔，起笔时重按如钉头般粗壮，然后以扫笔之势推进，收笔时改用细笔轻收，形成如鼠尾般纤细的末端。",
+        "en": "Nail-like stroke beginnings taper to rat-tail endings using fine brush techniques. Creates dynamic drapery with emphatic starts and delicate conclusions for flowing fabrics."
+      },
+      "cultural_concepts": [
+        {
+          "term_zh": "釘頭",
+          "term_en": "nail head",
+          "has_direct_translation": true,
+          "concept_type": "technique_term",
+          "explanation_needed": false
+        },
+        {
+          "term_zh": "鼠尾",
+          "term_en": "rat tail",
+          "has_direct_translation": true,
+          "concept_type": "technique_term",
+          "explanation_needed": false
+        }
+      ],
+      "alignment_metadata": {
+        "classical_to_modern_method": "expert_interpretation",
+        "modern_to_en_method": "expert_translation",
+        "semantic_drift_risk": "low",
+        "drift_categories": [
+          "register_mismatch"
+        ]
+      },
+      "quality_tier": "gold",
+      "expert_review": {
+        "reviewed": true,
+        "reviewer_count": 2,
+        "agreement_score": 0.85,
+        "review_date": "2025-06-25",
+        "conflict_resolution": null,
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "revised_pending_review",
+          "english": "reviewed"
+        },
+        "revision_note": "Modern Chinese text rewritten from simplified-character copy to genuine interpretation (2026-02-14). Pending expert re-review."
+      },
+      "image_ref": {
+        "path": "data/海仙十八描法/c06.钉头鼠尾描.jpg",
+        "iiif_manifest": null,
+        "cidoc_crm_mapping": null
+      },
+      "legacy_metadata": {
+        "original_id": "hai_xian_06_dingtoushuweimiao",
+        "semantic_similarity": {
+          "classical_to_modern": 0.77,
+          "modern_to_english": 0.72,
+          "classical_to_english": 0.69
+        },
+        "word_count": {
+          "classical_chinese": 13,
+          "modern_chinese": 45,
+          "english": 23
+        }
+      }
+    },
+    {
+      "sample_id": "TCH-007-orig",
+      "work_id": "HX-07",
+      "work_name": {
+        "classical_zh": "混描",
+        "modern_zh": "混描",
+        "en": "Mixed Drawing"
+      },
+      "source_collection": "hai_xian_18",
+      "source_provenance": {
+        "original_text": "海仙十八描法 (Hai Xian Eighteen Drawing Techniques)",
+        "institution": "Traditional Chinese Painting Compendium",
+        "digitization_method": "expert_transcription",
+        "copyright_status": "public_domain"
+      },
+      "category": {
+        "domain": "painting_technique",
+        "subcategory": "line_drawing_technique",
+        "subject_tags": [
+          "技法融合",
+          "墨色层次",
+          "灵活变通"
+        ],
+        "technique_tags": [
+          "淡墨打底",
+          "浓墨强调",
+          "综合运用"
+        ]
+      },
+      "text_type": "original",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "以淡墨成衣紋，而用濃墨，人多畫之",
+        "modern_zh": "先用淡墨勾画衣纹轮廓，再用浓墨加以强调叠加，淡浓交替形成丰富的墨色层次。此法灵活实用，古代画家多采用。",
+        "en": "Combines light ink foundation with concentrated ink emphasis, utilizing multiple techniques. Represents technical flexibility producing layered effects accommodating varied fabric weights and lighting."
+      },
+      "cultural_concepts": [
+        {
+          "term_zh": "淡墨",
+          "term_en": "light ink",
+          "has_direct_translation": true,
+          "concept_type": "technique_term",
+          "explanation_needed": false
+        },
+        {
+          "term_zh": "濃墨",
+          "term_en": "concentrated ink",
+          "has_direct_translation": true,
+          "concept_type": "technique_term",
+          "explanation_needed": false
+        }
+      ],
+      "alignment_metadata": {
+        "classical_to_modern_method": "expert_interpretation",
+        "modern_to_en_method": "expert_translation",
+        "semantic_drift_risk": "low",
+        "drift_categories": [
+          "over_explanation"
+        ]
+      },
+      "quality_tier": "gold",
+      "expert_review": {
+        "reviewed": true,
+        "reviewer_count": 2,
+        "agreement_score": 0.89,
+        "review_date": "2025-06-26",
+        "conflict_resolution": null,
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "revised_pending_review",
+          "english": "reviewed"
+        },
+        "revision_note": "Modern Chinese text rewritten from simplified-character copy to genuine interpretation (2026-02-14). Pending expert re-review."
+      },
+      "image_ref": {
+        "path": "data/海仙十八描法/c07.混描.jpg",
+        "iiif_manifest": null,
+        "cidoc_crm_mapping": null
+      },
+      "legacy_metadata": {
+        "original_id": "hai_xian_07_hunmiao",
+        "semantic_similarity": {
+          "classical_to_modern": 0.78,
+          "modern_to_english": 0.73,
+          "classical_to_english": 0.7
+        },
+        "word_count": {
+          "classical_chinese": 14,
+          "modern_chinese": 46,
+          "english": 23
+        }
+      }
+    },
+    {
+      "sample_id": "TCH-008-orig",
+      "work_id": "HX-08",
+      "work_name": {
+        "classical_zh": "撅頭釘描",
+        "modern_zh": "撅头钉描",
+        "en": "Stubby Brush Drawing"
+      },
+      "source_collection": "hai_xian_18",
+      "source_provenance": {
+        "original_text": "海仙十八描法 (Hai Xian Eighteen Drawing Techniques)",
+        "institution": "Traditional Chinese Painting Compendium",
+        "digitization_method": "expert_transcription",
+        "copyright_status": "public_domain"
+      },
+      "category": {
+        "domain": "painting_technique",
+        "subcategory": "line_drawing_technique",
+        "subject_tags": [
+          "宋代技法",
+          "豪放气质",
+          "速度感"
+        ],
+        "technique_tags": [
+          "用笔苍老",
+          "下笔坚定",
+          "速度迅疾"
+        ]
+      },
+      "text_type": "original",
+      "difficulty_tier": "L3-Hard",
+      "text": {
+        "classical_zh": "用禿筆為釘頭，牢插筆下，疾若奔馬",
+        "modern_zh": "用秃笔（笔头磨损的旧笔）画出钉头般的起笔，下笔坚定牢固地插入纸面，行笔速度迅疾如奔马。",
+        "en": "Worn brush creates nail-head beginnings with swift galloping-horse execution. Associated with Ma Yuan and Xia Gui, producing bold confident strokes for dynamic action."
+      },
+      "cultural_concepts": [
+        {
+          "term_zh": "禿筆",
+          "term_en": "worn/bald brush",
+          "has_direct_translation": true,
+          "concept_type": "technique_term",
+          "explanation_needed": true
+        },
+        {
+          "term_zh": "疾若奔馬",
+          "term_en": "swift as a galloping horse",
+          "has_direct_translation": true,
+          "concept_type": "allusion",
+          "explanation_needed": true
+        },
+        {
+          "term_zh": "馬遠、夏圭",
+          "term_en": "Ma Yuan and Xia Gui (Southern Song painters)",
+          "has_direct_translation": false,
+          "concept_type": "historical_reference",
+          "explanation_needed": true
+        }
+      ],
+      "alignment_metadata": {
+        "classical_to_modern_method": "expert_interpretation",
+        "modern_to_en_method": "expert_translation",
+        "semantic_drift_risk": "high",
+        "drift_categories": [
+          "allusion_loss",
+          "aesthetic_flattening",
+          "concept_substitution"
+        ]
+      },
+      "quality_tier": "gold",
+      "expert_review": {
+        "reviewed": true,
+        "reviewer_count": 2,
+        "agreement_score": 0.76,
+        "review_date": "2025-06-27",
+        "conflict_resolution": "adjudicated_by_senior_reviewer",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "revised_pending_review",
+          "english": "reviewed"
+        },
+        "revision_note": "Modern Chinese text rewritten from simplified-character copy to genuine interpretation (2026-02-14). Pending expert re-review."
+      },
+      "image_ref": {
+        "path": "data/海仙十八描法/c08.橛头钉描.jpg",
+        "iiif_manifest": null,
+        "cidoc_crm_mapping": null
+      },
+      "legacy_metadata": {
+        "original_id": "hai_xian_08_juetoudingmiao",
+        "semantic_similarity": {
+          "classical_to_modern": 0.67,
+          "modern_to_english": 0.68,
+          "classical_to_english": 0.68
+        },
+        "word_count": {
+          "classical_chinese": 14,
+          "modern_chinese": 38,
+          "english": 23
+        }
+      }
+    },
+    {
+      "sample_id": "TCH-009-orig",
+      "work_id": "HX-09",
+      "work_name": {
+        "classical_zh": "曹衣描",
+        "modern_zh": "曹衣描",
+        "en": "Cao Yi Drawing"
+      },
+      "source_collection": "hai_xian_18",
+      "source_provenance": {
+        "original_text": "海仙十八描法 (Hai Xian Eighteen Drawing Techniques)",
+        "institution": "Traditional Chinese Painting Compendium",
+        "digitization_method": "expert_transcription",
+        "copyright_status": "public_domain"
+      },
+      "category": {
+        "domain": "painting_technique",
+        "subcategory": "line_drawing_technique",
+        "subject_tags": [
+          "魏晋风格",
+          "贴体效果",
+          "精细质感"
+        ],
+        "technique_tags": [
+          "衣褶密集",
+          "贴身效果",
+          "质感细腻"
+        ]
+      },
+      "text_type": "original",
+      "difficulty_tier": "L3-Hard",
+      "text": {
+        "classical_zh": "用尖筆，其體重疊衣褶，緊窄如蚯蚓描",
+        "modern_zh": "用尖笔描绘，以密集重叠的衣褶为特征，线条紧密窄小，形态类似蚯蚓描。此法源自北齐曹仲达“曹衣出水”的画风。",
+        "en": "Pointed brush creates densely overlapping tight narrow folds similar to earthworm technique. Named after Cao Buqing, emphasizing body-hugging drapery and fine fabric."
+      },
+      "cultural_concepts": [
+        {
+          "term_zh": "曹衣",
+          "term_en": "Cao-style drapery (after Cao Buqing / Cao Zhongda)",
+          "has_direct_translation": false,
+          "concept_type": "allusion",
+          "explanation_needed": true
+        },
+        {
+          "term_zh": "曹衣出水",
+          "term_en": "Cao's drapery emerging from water",
+          "has_direct_translation": false,
+          "concept_type": "allusion",
+          "explanation_needed": true
+        },
+        {
+          "term_zh": "蚯蚓描",
+          "term_en": "earthworm drawing technique",
+          "has_direct_translation": true,
+          "concept_type": "technique_term",
+          "explanation_needed": true
+        }
+      ],
+      "alignment_metadata": {
+        "classical_to_modern_method": "expert_interpretation",
+        "modern_to_en_method": "expert_translation",
+        "semantic_drift_risk": "high",
+        "drift_categories": [
+          "allusion_loss",
+          "aesthetic_flattening",
+          "term_missing"
+        ]
+      },
+      "quality_tier": "gold",
+      "expert_review": {
+        "reviewed": true,
+        "reviewer_count": 3,
+        "agreement_score": 0.79,
+        "review_date": "2025-06-28",
+        "conflict_resolution": null,
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "revised_pending_review",
+          "english": "reviewed"
+        },
+        "revision_note": "Modern Chinese text rewritten from simplified-character copy to genuine interpretation (2026-02-14). Pending expert re-review."
+      },
+      "image_ref": {
+        "path": "data/海仙十八描法/c09.曹衣描.jpg",
+        "iiif_manifest": null,
+        "cidoc_crm_mapping": null
+      },
+      "legacy_metadata": {
+        "original_id": "hai_xian_09_caoyimiao",
+        "semantic_similarity": {
+          "classical_to_modern": 0.68,
+          "modern_to_english": 0.63,
+          "classical_to_english": 0.69
+        },
+        "word_count": {
+          "classical_chinese": 15,
+          "modern_chinese": 45,
+          "english": 22
+        }
+      }
+    },
+    {
+      "sample_id": "TCH-010-orig",
+      "work_id": "HX-10",
+      "work_name": {
+        "classical_zh": "折蘆描",
+        "modern_zh": "折芦描",
+        "en": "Broken Reed Drawing"
+      },
+      "source_collection": "hai_xian_18",
+      "source_provenance": {
+        "original_text": "海仙十八描法 (Hai Xian Eighteen Drawing Techniques)",
+        "institution": "Traditional Chinese Painting Compendium",
+        "digitization_method": "expert_transcription",
+        "copyright_status": "public_domain"
+      },
+      "category": {
+        "domain": "painting_technique",
+        "subcategory": "line_drawing_technique",
+        "subject_tags": [
+          "自然形态",
+          "几何美感",
+          "梁楷技法"
+        ],
+        "technique_tags": [
+          "大笔尖用",
+          "细长形态",
+          "擎纳动作"
+        ]
+      },
+      "text_type": "original",
+      "difficulty_tier": "L2-Medium",
+      "text": {
+        "classical_zh": "用尖大筆，筆頭擎納而成細長",
+        "modern_zh": "使用尖而大的毛笔，通过提按运笔的动作画出细长的线条，转折处如芦苇折断般干脆利落。",
+        "en": "Large pointed brush with lifting motions creates elongated strokes suggesting broken reed stems. Developed by Liang Kai, producing crisp geometric angular precision."
+      },
+      "cultural_concepts": [
+        {
+          "term_zh": "折蘆",
+          "term_en": "broken reed",
+          "has_direct_translation": true,
+          "concept_type": "technique_term",
+          "explanation_needed": true
+        },
+        {
+          "term_zh": "擎納",
+          "term_en": "lifting and pressing (brush movements)",
+          "has_direct_translation": false,
+          "concept_type": "technique_term",
+          "explanation_needed": true
+        },
+        {
+          "term_zh": "梁楷",
+          "term_en": "Liang Kai (Southern Song painter)",
+          "has_direct_translation": false,
+          "concept_type": "historical_reference",
+          "explanation_needed": true
+        }
+      ],
+      "alignment_metadata": {
+        "classical_to_modern_method": "expert_interpretation",
+        "modern_to_en_method": "expert_translation",
+        "semantic_drift_risk": "medium",
+        "drift_categories": [
+          "term_missing",
+          "concept_substitution"
+        ]
+      },
+      "quality_tier": "gold",
+      "expert_review": {
+        "reviewed": true,
+        "reviewer_count": 2,
+        "agreement_score": 0.83,
+        "review_date": "2025-06-29",
+        "conflict_resolution": null,
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "revised_pending_review",
+          "english": "reviewed"
+        },
+        "revision_note": "Modern Chinese text rewritten from simplified-character copy to genuine interpretation (2026-02-14). Pending expert re-review."
+      },
+      "image_ref": {
+        "path": "data/海仙十八描法/c10.折芦描.jpg",
+        "iiif_manifest": null,
+        "cidoc_crm_mapping": null
+      },
+      "legacy_metadata": {
+        "original_id": "hai_xian_10_zhelumiao",
+        "semantic_similarity": {
+          "classical_to_modern": 0.72,
+          "modern_to_english": 0.71,
+          "classical_to_english": 0.65
+        },
+        "word_count": {
+          "classical_chinese": 12,
+          "modern_chinese": 37,
+          "english": 22
+        }
+      }
+    },
+    {
+      "sample_id": "TCH-011-orig",
+      "work_id": "HX-11",
+      "work_name": {
+        "classical_zh": "柳葉描",
+        "modern_zh": "柳叶描",
+        "en": "Willow Leaf Drawing"
+      },
+      "source_collection": "hai_xian_18",
+      "source_provenance": {
+        "original_text": "海仙十八描法 (Hai Xian Eighteen Drawing Techniques)",
+        "institution": "Traditional Chinese Painting Compendium",
+        "digitization_method": "expert_transcription",
+        "copyright_status": "public_domain"
+      },
+      "category": {
+        "domain": "painting_technique",
+        "subcategory": "line_drawing_technique",
+        "subject_tags": [
+          "唐代风格",
+          "优雅飘逸",
+          "女性美感"
+        ],
+        "technique_tags": [
+          "避免棱角",
+          "如叶飘动",
+          "优美流畅"
+        ]
+      },
+      "text_type": "original",
+      "difficulty_tier": "L2-Medium",
+      "text": {
+        "classical_zh": "筆下忌釘頭怒降，心手相應而如柳葉",
+        "modern_zh": "运笔时避免出现钉头般的重按和怒降般的突变，追求心手合一的境界，线条如柳叶般轻柔优美、两端尖细。",
+        "en": "Flowing leaf-like curves avoid angular changes, maintaining coordination like willow movement. Associated with Wu Daozi, creating graceful organic drapery suggesting feminine elegance."
+      },
+      "cultural_concepts": [
+        {
+          "term_zh": "柳葉",
+          "term_en": "willow leaf",
+          "has_direct_translation": true,
+          "concept_type": "technique_term",
+          "explanation_needed": false
+        },
+        {
+          "term_zh": "心手相應",
+          "term_en": "mind-hand coordination",
+          "has_direct_translation": false,
+          "concept_type": "aesthetic_philosophy",
+          "explanation_needed": true
+        },
+        {
+          "term_zh": "吳道子",
+          "term_en": "Wu Daozi (Tang dynasty painter saint)",
+          "has_direct_translation": false,
+          "concept_type": "historical_reference",
+          "explanation_needed": true
+        }
+      ],
+      "alignment_metadata": {
+        "classical_to_modern_method": "expert_interpretation",
+        "modern_to_en_method": "expert_translation",
+        "semantic_drift_risk": "medium",
+        "drift_categories": [
+          "aesthetic_flattening",
+          "allusion_loss"
+        ]
+      },
+      "quality_tier": "gold",
+      "expert_review": {
+        "reviewed": true,
+        "reviewer_count": 2,
+        "agreement_score": 0.85,
+        "review_date": "2025-06-30",
+        "conflict_resolution": null,
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "revised_pending_review",
+          "english": "reviewed"
+        },
+        "revision_note": "Modern Chinese text rewritten from simplified-character copy to genuine interpretation (2026-02-14). Pending expert re-review."
+      },
+      "image_ref": {
+        "path": "data/海仙十八描法/c11.柳叶描.jpg",
+        "iiif_manifest": null,
+        "cidoc_crm_mapping": null
+      },
+      "legacy_metadata": {
+        "original_id": "hai_xian_11_liuyemiao",
+        "semantic_similarity": {
+          "classical_to_modern": 0.76,
+          "modern_to_english": 0.68,
+          "classical_to_english": 0.72
+        },
+        "word_count": {
+          "classical_chinese": 15,
+          "modern_chinese": 43,
+          "english": 22
+        }
+      }
+    },
+    {
+      "sample_id": "TCH-012-orig",
+      "work_id": "HX-12",
+      "work_name": {
+        "classical_zh": "竹葉描",
+        "modern_zh": "竹叶描",
+        "en": "Bamboo Leaf Drawing"
+      },
+      "source_collection": "hai_xian_18",
+      "source_provenance": {
+        "original_text": "海仙十八描法 (Hai Xian Eighteen Drawing Techniques)",
+        "institution": "Traditional Chinese Painting Compendium",
+        "digitization_method": "expert_transcription",
+        "copyright_status": "public_domain"
+      },
+      "category": {
+        "domain": "painting_technique",
+        "subcategory": "line_drawing_technique",
+        "subject_tags": [
+          "竹文化",
+          "植物美学",
+          "节段美"
+        ],
+        "technique_tags": [
+          "竹笔横用",
+          "短促饱满",
+          "如竹叶形"
+        ]
+      },
+      "text_type": "original",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "用竹筆，橫臥為肥短，擎納如竹葉",
+        "modern_zh": "使用竹制笔，笔身横卧画出肥短的笔触，通过提按动作使线条呈现竹叶般短阔饱满的形态。",
+        "en": "Bamboo brush held horizontally creates short plump strokes mirroring bamboo leaf shapes. Produces distinctive segmented folds suggesting natural botanical decorative patterns."
+      },
+      "cultural_concepts": [
+        {
+          "term_zh": "竹葉",
+          "term_en": "bamboo leaf",
+          "has_direct_translation": true,
+          "concept_type": "technique_term",
+          "explanation_needed": false
+        },
+        {
+          "term_zh": "竹筆",
+          "term_en": "bamboo brush",
+          "has_direct_translation": true,
+          "concept_type": "technique_term",
+          "explanation_needed": false
+        }
+      ],
+      "alignment_metadata": {
+        "classical_to_modern_method": "expert_interpretation",
+        "modern_to_en_method": "expert_translation",
+        "semantic_drift_risk": "low",
+        "drift_categories": [
+          "register_mismatch"
+        ]
+      },
+      "quality_tier": "gold",
+      "expert_review": {
+        "reviewed": true,
+        "reviewer_count": 2,
+        "agreement_score": 0.91,
+        "review_date": "2025-07-01",
+        "conflict_resolution": null,
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "revised_pending_review",
+          "english": "reviewed"
+        },
+        "revision_note": "Modern Chinese text rewritten from simplified-character copy to genuine interpretation (2026-02-14). Pending expert re-review."
+      },
+      "image_ref": {
+        "path": "data/海仙十八描法/c12.竹叶描.jpg",
+        "iiif_manifest": null,
+        "cidoc_crm_mapping": null
+      },
+      "legacy_metadata": {
+        "original_id": "hai_xian_12_zhuyemiao",
+        "semantic_similarity": {
+          "classical_to_modern": 0.81,
+          "modern_to_english": 0.75,
+          "classical_to_english": 0.68
+        },
+        "word_count": {
+          "classical_chinese": 13,
+          "modern_chinese": 37,
+          "english": 21
+        }
+      }
+    },
+    {
+      "sample_id": "TCH-013-orig",
+      "work_id": "HX-13",
+      "work_name": {
+        "classical_zh": "戰筆水紋描",
+        "modern_zh": "战笔水纹描",
+        "en": "Tremulous Water Lines Drawing"
+      },
+      "source_collection": "hai_xian_18",
+      "source_provenance": {
+        "original_text": "海仙十八描法 (Hai Xian Eighteen Drawing Techniques)",
+        "institution": "Traditional Chinese Painting Compendium",
+        "digitization_method": "expert_transcription",
+        "copyright_status": "public_domain"
+      },
+      "category": {
+        "domain": "painting_technique",
+        "subcategory": "line_drawing_technique",
+        "subject_tags": [
+          "水波韵律",
+          "情感表达",
+          "动态美"
+        ],
+        "technique_tags": [
+          "藏锋迅疾",
+          "颤动效果",
+          "如水波纹"
+        ]
+      },
+      "text_type": "original",
+      "difficulty_tier": "L2-Medium",
+      "text": {
+        "classical_zh": "正鋒而筆下要藏鋒疾，如一搨波",
+        "modern_zh": "以中锋运笔，笔锋藏入笔画之中快速行进，线条带有颤动效果，如同水面上泛起的一层波纹。",
+        "en": "Centered brush with swift concealed movements creates quivering water-ripple effects. Requires controlled trembling technique producing dynamic shimmering drapery suggesting emotional movement states."
+      },
+      "cultural_concepts": [
+        {
+          "term_zh": "戰筆",
+          "term_en": "tremulous brush / battle brush",
+          "has_direct_translation": false,
+          "concept_type": "technique_term",
+          "explanation_needed": true
+        },
+        {
+          "term_zh": "藏鋒",
+          "term_en": "concealed brush tip",
+          "has_direct_translation": false,
+          "concept_type": "technique_term",
+          "explanation_needed": true
+        },
+        {
+          "term_zh": "水紋",
+          "term_en": "water pattern / ripple",
+          "has_direct_translation": true,
+          "concept_type": "technique_term",
+          "explanation_needed": false
+        }
+      ],
+      "alignment_metadata": {
+        "classical_to_modern_method": "expert_interpretation",
+        "modern_to_en_method": "expert_translation",
+        "semantic_drift_risk": "medium",
+        "drift_categories": [
+          "term_missing",
+          "aesthetic_flattening"
+        ]
+      },
+      "quality_tier": "gold",
+      "expert_review": {
+        "reviewed": true,
+        "reviewer_count": 2,
+        "agreement_score": 0.85,
+        "review_date": "2025-07-02",
+        "conflict_resolution": null,
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "revised_pending_review",
+          "english": "reviewed"
+        },
+        "revision_note": "Modern Chinese text rewritten from simplified-character copy to genuine interpretation (2026-02-14). Pending expert re-review."
+      },
+      "image_ref": {
+        "path": "data/海仙十八描法/c13.战笔水纹描.jpg",
+        "iiif_manifest": null,
+        "cidoc_crm_mapping": null
+      },
+      "legacy_metadata": {
+        "original_id": "hai_xian_13_zhanbishuiwenmiao",
+        "semantic_similarity": {
+          "classical_to_modern": 0.75,
+          "modern_to_english": 0.72,
+          "classical_to_english": 0.61
+        },
+        "word_count": {
+          "classical_chinese": 13,
+          "modern_chinese": 37,
+          "english": 22
+        }
+      }
+    },
+    {
+      "sample_id": "TCH-014-orig",
+      "work_id": "HX-14",
+      "work_name": {
+        "classical_zh": "減筆描",
+        "modern_zh": "减笔描",
+        "en": "Reduced Brush Drawing"
+      },
+      "source_collection": "hai_xian_18",
+      "source_provenance": {
+        "original_text": "海仙十八描法 (Hai Xian Eighteen Drawing Techniques)",
+        "institution": "Traditional Chinese Painting Compendium",
+        "digitization_method": "expert_transcription",
+        "copyright_status": "public_domain"
+      },
+      "category": {
+        "domain": "painting_technique",
+        "subcategory": "line_drawing_technique",
+        "subject_tags": [
+          "宋代简约",
+          "写意精神",
+          "经济表达"
+        ],
+        "technique_tags": [
+          "用笔简化",
+          "如弹丸跳",
+          "抓住要点"
+        ]
+      },
+      "text_type": "original",
+      "difficulty_tier": "L3-Hard",
+      "text": {
+        "classical_zh": "馬遠、梁楷多為之，弄筆如彈丸",
+        "modern_zh": "南宋画家马远、梁楷常用此法，运笔简练迅捷如弹丸弹出，以最少的笔触捕捉人物的神态精髓。",
+        "en": "Simplified movements like bouncing spheres, used by Ma Yuan and Liang Kai. Represents economical expression capturing essential gesture while eliminating superfluous detail."
+      },
+      "cultural_concepts": [
+        {
+          "term_zh": "馬遠",
+          "term_en": "Ma Yuan (Southern Song painter)",
+          "has_direct_translation": false,
+          "concept_type": "historical_reference",
+          "explanation_needed": true
+        },
+        {
+          "term_zh": "梁楷",
+          "term_en": "Liang Kai (Southern Song painter)",
+          "has_direct_translation": false,
+          "concept_type": "historical_reference",
+          "explanation_needed": true
+        },
+        {
+          "term_zh": "減筆",
+          "term_en": "reduced brush / minimalist stroke",
+          "has_direct_translation": false,
+          "concept_type": "aesthetic_philosophy",
+          "explanation_needed": true
+        },
+        {
+          "term_zh": "彈丸",
+          "term_en": "bouncing pellet / bullet",
+          "has_direct_translation": true,
+          "concept_type": "allusion",
+          "explanation_needed": true
+        }
+      ],
+      "alignment_metadata": {
+        "classical_to_modern_method": "expert_interpretation",
+        "modern_to_en_method": "expert_translation",
+        "semantic_drift_risk": "high",
+        "drift_categories": [
+          "allusion_loss",
+          "aesthetic_flattening",
+          "concept_substitution"
+        ]
+      },
+      "quality_tier": "gold",
+      "expert_review": {
+        "reviewed": true,
+        "reviewer_count": 3,
+        "agreement_score": 0.76,
+        "review_date": "2025-07-03",
+        "conflict_resolution": "adjudicated_by_senior_reviewer",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "revised_pending_review",
+          "english": "reviewed"
+        },
+        "revision_note": "Modern Chinese text rewritten from simplified-character copy to genuine interpretation (2026-02-14). Pending expert re-review."
+      },
+      "image_ref": {
+        "path": "data/海仙十八描法/c14.减笔描.jpg",
+        "iiif_manifest": null,
+        "cidoc_crm_mapping": null
+      },
+      "legacy_metadata": {
+        "original_id": "hai_xian_14_jianbimiao",
+        "semantic_similarity": {
+          "classical_to_modern": 0.63,
+          "modern_to_english": 0.7,
+          "classical_to_english": 0.65
+        },
+        "word_count": {
+          "classical_chinese": 12,
+          "modern_chinese": 38,
+          "english": 22
+        }
+      }
+    },
+    {
+      "sample_id": "TCH-015-orig",
+      "work_id": "HX-15",
+      "work_name": {
+        "classical_zh": "枯柴描",
+        "modern_zh": "枯柴描",
+        "en": "Withered Wood Drawing"
+      },
+      "source_collection": "hai_xian_18",
+      "source_provenance": {
+        "original_text": "海仙十八描法 (Hai Xian Eighteen Drawing Techniques)",
+        "institution": "Traditional Chinese Painting Compendium",
+        "digitization_method": "expert_transcription",
+        "copyright_status": "public_domain"
+      },
+      "category": {
+        "domain": "painting_technique",
+        "subcategory": "line_drawing_technique",
+        "subject_tags": [
+          "隐士气质",
+          "沧桑质感",
+          "朴拙美"
+        ],
+        "technique_tags": [
+          "笔锋锐利",
+          "横向运笔",
+          "极简手法"
+        ]
+      },
+      "text_type": "original",
+      "difficulty_tier": "L2-Medium",
+      "text": {
+        "classical_zh": "又謂柴筆描，以銳筆橫臥為體，大減筆",
+        "modern_zh": "又称柴笔描，以锐利的笔锋横卧运笔为主要特征，用笔极为简省。线条枯涩苍劲如干枯的柴枝。",
+        "en": "Sharp brush held horizontally with reduced ink creates rough textural strokes resembling dried wood. Produces weathered aged effects suitable for hermits."
+      },
+      "cultural_concepts": [
+        {
+          "term_zh": "枯柴",
+          "term_en": "withered wood / dried firewood",
+          "has_direct_translation": true,
+          "concept_type": "technique_term",
+          "explanation_needed": true
+        },
+        {
+          "term_zh": "大減筆",
+          "term_en": "greatly reduced brush",
+          "has_direct_translation": false,
+          "concept_type": "technique_term",
+          "explanation_needed": true
+        }
+      ],
+      "alignment_metadata": {
+        "classical_to_modern_method": "expert_interpretation",
+        "modern_to_en_method": "expert_translation",
+        "semantic_drift_risk": "medium",
+        "drift_categories": [
+          "aesthetic_flattening",
+          "register_mismatch"
+        ]
+      },
+      "quality_tier": "gold",
+      "expert_review": {
+        "reviewed": true,
+        "reviewer_count": 2,
+        "agreement_score": 0.79,
+        "review_date": "2025-07-04",
+        "conflict_resolution": null,
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "revised_pending_review",
+          "english": "reviewed"
+        },
+        "revision_note": "Modern Chinese text rewritten from simplified-character copy to genuine interpretation (2026-02-14). Pending expert re-review."
+      },
+      "image_ref": {
+        "path": "data/海仙十八描法/c15.枯柴描.jpg",
+        "iiif_manifest": null,
+        "cidoc_crm_mapping": null
+      },
+      "legacy_metadata": {
+        "original_id": "hai_xian_15_kuchaimiao",
+        "semantic_similarity": {
+          "classical_to_modern": 0.76,
+          "modern_to_english": 0.66,
+          "classical_to_english": 0.63
+        },
+        "word_count": {
+          "classical_chinese": 15,
+          "modern_chinese": 38,
+          "english": 21
+        }
+      }
+    },
+    {
+      "sample_id": "TCH-016-orig",
+      "work_id": "HX-16",
+      "work_name": {
+        "classical_zh": "蚯蚓描",
+        "modern_zh": "蚯蚓描",
+        "en": "Earthworm Drawing"
+      },
+      "source_collection": "hai_xian_18",
+      "source_provenance": {
+        "original_text": "海仙十八描法 (Hai Xian Eighteen Drawing Techniques)",
+        "institution": "Traditional Chinese Painting Compendium",
+        "digitization_method": "expert_transcription",
+        "copyright_status": "public_domain"
+      },
+      "category": {
+        "domain": "painting_technique",
+        "subcategory": "line_drawing_technique",
+        "subject_tags": [
+          "润泽质感",
+          "奢华效果",
+          "柔和美感"
+        ],
+        "technique_tags": [
+          "墨色润泽",
+          "线条肥壮",
+          "首尾圆润"
+        ]
+      },
+      "text_type": "original",
+      "difficulty_tier": "L2-Medium",
+      "text": {
+        "classical_zh": "用墨秀潤肥壯，用正鋒筆，惹成藏鋒，首尾忌怒降",
+        "modern_zh": "用墨讲究秀丽润泽，线条肥壮饱满。以中锋运笔，笔锋含蓄内敛，起笔和收笔处不可出现突然的粗细变化，线条圆润如蚯蚓蠕动。",
+        "en": "Moist lustrous ink with centered brush creates concealed effects avoiding angular changes. Named for smooth undulating movement, producing soft rounded luxurious folds."
+      },
+      "cultural_concepts": [
+        {
+          "term_zh": "蚯蚓",
+          "term_en": "earthworm",
+          "has_direct_translation": true,
+          "concept_type": "technique_term",
+          "explanation_needed": false
+        },
+        {
+          "term_zh": "秀潤",
+          "term_en": "elegant and moist (ink quality)",
+          "has_direct_translation": false,
+          "concept_type": "aesthetic_philosophy",
+          "explanation_needed": true
+        },
+        {
+          "term_zh": "藏鋒",
+          "term_en": "concealed brush tip",
+          "has_direct_translation": false,
+          "concept_type": "technique_term",
+          "explanation_needed": true
+        }
+      ],
+      "alignment_metadata": {
+        "classical_to_modern_method": "expert_interpretation",
+        "modern_to_en_method": "expert_translation",
+        "semantic_drift_risk": "medium",
+        "drift_categories": [
+          "aesthetic_flattening",
+          "term_missing"
+        ]
+      },
+      "quality_tier": "gold",
+      "expert_review": {
+        "reviewed": true,
+        "reviewer_count": 2,
+        "agreement_score": 0.83,
+        "review_date": "2025-07-05",
+        "conflict_resolution": null,
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "revised_pending_review",
+          "english": "reviewed"
+        },
+        "revision_note": "Modern Chinese text rewritten from simplified-character copy to genuine interpretation (2026-02-14). Pending expert re-review."
+      },
+      "image_ref": {
+        "path": "data/海仙十八描法/c16.蚯蚓描.jpg",
+        "iiif_manifest": null,
+        "cidoc_crm_mapping": null
+      },
+      "legacy_metadata": {
+        "original_id": "hai_xian_16_qiuyinmiao",
+        "semantic_similarity": {
+          "classical_to_modern": 0.77,
+          "modern_to_english": 0.65,
+          "classical_to_english": 0.65
+        },
+        "word_count": {
+          "classical_chinese": 19,
+          "modern_chinese": 51,
+          "english": 22
+        }
+      }
+    },
+    {
+      "sample_id": "TCH-017-orig",
+      "work_id": "HX-17",
+      "work_name": {
+        "classical_zh": "橄欖描",
+        "modern_zh": "橄榄描",
+        "en": "Olive Drawing"
+      },
+      "source_collection": "hai_xian_18",
+      "source_provenance": {
+        "original_text": "海仙十八描法 (Hai Xian Eighteen Drawing Techniques)",
+        "institution": "Traditional Chinese Painting Compendium",
+        "digitization_method": "expert_transcription",
+        "copyright_status": "public_domain"
+      },
+      "category": {
+        "domain": "painting_technique",
+        "subcategory": "line_drawing_technique",
+        "subject_tags": [
+          "果实形态",
+          "厚重感",
+          "庄重效果"
+        ],
+        "technique_tags": [
+          "大笔尖用",
+          "如橄榄形",
+          "避免鼠尾"
+        ]
+      },
+      "text_type": "original",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "用尖大筆為擊納，如橄欖，忌惹筆鼠尾",
+        "modern_zh": "使用尖而大的毛笔，以击打和按压的笔法画出线条，形状如橄榄般两头尖细中间饱满，须避免出现鼠尾般拖沓的收笔。",
+        "en": "Large pointed brush creates olive-shaped strokes avoiding rat-tail endings. Named for fruit form, producing bold substantial folds emphasizing weight and ceremonial volume."
+      },
+      "cultural_concepts": [
+        {
+          "term_zh": "橄欖",
+          "term_en": "olive (fruit shape)",
+          "has_direct_translation": true,
+          "concept_type": "technique_term",
+          "explanation_needed": false
+        },
+        {
+          "term_zh": "擊納",
+          "term_en": "striking and pressing (brush movement)",
+          "has_direct_translation": false,
+          "concept_type": "technique_term",
+          "explanation_needed": true
+        }
+      ],
+      "alignment_metadata": {
+        "classical_to_modern_method": "expert_interpretation",
+        "modern_to_en_method": "expert_translation",
+        "semantic_drift_risk": "low",
+        "drift_categories": [
+          "term_missing"
+        ]
+      },
+      "quality_tier": "gold",
+      "expert_review": {
+        "reviewed": true,
+        "reviewer_count": 2,
+        "agreement_score": 0.86,
+        "review_date": "2025-07-06",
+        "conflict_resolution": null,
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "revised_pending_review",
+          "english": "reviewed"
+        },
+        "revision_note": "Modern Chinese text rewritten from simplified-character copy to genuine interpretation (2026-02-14). Pending expert re-review."
+      },
+      "image_ref": {
+        "path": "data/海仙十八描法/c17.橄榄描.jpg",
+        "iiif_manifest": null,
+        "cidoc_crm_mapping": null
+      },
+      "legacy_metadata": {
+        "original_id": "hai_xian_17_ganlanmiao",
+        "semantic_similarity": {
+          "classical_to_modern": 0.83,
+          "modern_to_english": 0.74,
+          "classical_to_english": 0.68
+        },
+        "word_count": {
+          "classical_chinese": 15,
+          "modern_chinese": 48,
+          "english": 22
+        }
+      }
+    },
+    {
+      "sample_id": "TCH-018-orig",
+      "work_id": "HX-18",
+      "work_name": {
+        "classical_zh": "棗核描",
+        "modern_zh": "枣核描",
+        "en": "Jujube Core Drawing"
+      },
+      "source_collection": "hai_xian_18",
+      "source_provenance": {
+        "original_text": "海仙十八描法 (Hai Xian Eighteen Drawing Techniques)",
+        "institution": "Traditional Chinese Painting Compendium",
+        "digitization_method": "expert_transcription",
+        "copyright_status": "public_domain"
+      },
+      "category": {
+        "domain": "painting_technique",
+        "subcategory": "line_drawing_technique",
+        "subject_tags": [
+          "佛教美学",
+          "神圣气质",
+          "对称美"
+        ],
+        "technique_tags": [
+          "尖笔藏锋",
+          "如枣核形",
+          "笔头如玉"
+        ]
+      },
+      "text_type": "original",
+      "difficulty_tier": "L3-Hard",
+      "text": {
+        "classical_zh": "用尖筆成藏鋒，而筆頭為玉，如棗核，又謂觀音描",
+        "modern_zh": "用尖笔以藏锋法运笔，笔触温润如玉，线条形如枣核般两端尖、中间圆润饱满。此法又称观音描，因其端庄秀雅，适合描绘观音菩萨等神圣形象。",
+        "en": "Pointed brush with concealed effects forms date-pit shapes, also called Guanyin Drawing. Named for seed form, producing elegant symmetrical folds suggesting divine qualities."
+      },
+      "cultural_concepts": [
+        {
+          "term_zh": "棗核",
+          "term_en": "jujube core / date pit",
+          "has_direct_translation": true,
+          "concept_type": "technique_term",
+          "explanation_needed": false
+        },
+        {
+          "term_zh": "觀音描",
+          "term_en": "Guanyin Drawing (Avalokitesvara style)",
+          "has_direct_translation": false,
+          "concept_type": "allusion",
+          "explanation_needed": true
+        },
+        {
+          "term_zh": "觀音",
+          "term_en": "Guanyin / Avalokitesvara (Bodhisattva of Compassion)",
+          "has_direct_translation": false,
+          "concept_type": "allusion",
+          "explanation_needed": true
+        },
+        {
+          "term_zh": "筆頭為玉",
+          "term_en": "brush tip like jade",
+          "has_direct_translation": false,
+          "concept_type": "aesthetic_philosophy",
+          "explanation_needed": true
+        }
+      ],
+      "alignment_metadata": {
+        "classical_to_modern_method": "expert_interpretation",
+        "modern_to_en_method": "expert_translation",
+        "semantic_drift_risk": "high",
+        "drift_categories": [
+          "allusion_loss",
+          "aesthetic_flattening",
+          "concept_substitution",
+          "term_missing"
+        ]
+      },
+      "quality_tier": "gold",
+      "expert_review": {
+        "reviewed": true,
+        "reviewer_count": 3,
+        "agreement_score": 0.79,
+        "review_date": "2025-07-07",
+        "conflict_resolution": null,
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "revised_pending_review",
+          "english": "reviewed"
+        },
+        "revision_note": "Modern Chinese text rewritten from simplified-character copy to genuine interpretation (2026-02-14). Pending expert re-review."
+      },
+      "image_ref": {
+        "path": "data/海仙十八描法/c18.枣核描.jpg",
+        "iiif_manifest": null,
+        "cidoc_crm_mapping": null
+      },
+      "legacy_metadata": {
+        "original_id": "hai_xian_18_zaohemiao",
+        "semantic_similarity": {
+          "classical_to_modern": 0.69,
+          "modern_to_english": 0.6,
+          "classical_to_english": 0.62
+        },
+        "word_count": {
+          "classical_chinese": 19,
+          "modern_chinese": 57,
+          "english": 23
+        }
+      }
+    }
+  ]
+}

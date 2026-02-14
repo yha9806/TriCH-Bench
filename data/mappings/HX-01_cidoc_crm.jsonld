@@ -1,0 +1,201 @@
+{
+  "@context": {
+    "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "la": "https://linked.art/ns/terms/",
+    "trich": "https://example.org/trich-bench/vocab/"
+  },
+  "@graph": [
+    {
+      "@id": "https://example.org/trich-bench/concept/HX-01",
+      "@type": "crm:E28_Conceptual_Object",
+      "rdfs:label": [
+        {
+          "@value": "高古游絲描",
+          "@language": "zh-classical"
+        },
+        {
+          "@value": "高古游丝描",
+          "@language": "zh"
+        },
+        {
+          "@value": "Ancient Gossamer Line Drawing",
+          "@language": "en"
+        }
+      ],
+      "crm:P2_has_type": [
+        {
+          "@id": "https://example.org/trich-bench/type/line-drawing-technique",
+          "@type": "crm:E55_Type",
+          "rdfs:label": [
+            {
+              "@value": "线描技法",
+              "@language": "zh"
+            },
+            {
+              "@value": "Line Drawing Technique (描法)",
+              "@language": "en"
+            }
+          ],
+          "skos:broader": {
+            "@id": "https://example.org/trich-bench/type/chinese-painting-technique",
+            "@type": "crm:E55_Type",
+            "rdfs:label": {
+              "@value": "Chinese Painting Technique",
+              "@language": "en"
+            }
+          }
+        },
+        {
+          "@id": "https://example.org/trich-bench/type/eighteen-line-techniques",
+          "@type": "crm:E55_Type",
+          "rdfs:label": [
+            {
+              "@value": "十八描法",
+              "@language": "zh"
+            },
+            {
+              "@value": "Eighteen Line Drawing Techniques",
+              "@language": "en"
+            }
+          ]
+        }
+      ],
+      "crm:P3_has_note": [
+        {
+          "@id": "https://example.org/trich-bench/note/HX-01/classical",
+          "@type": "crm:E33_Linguistic_Object",
+          "crm:P72_has_language": {
+            "@id": "http://vocab.getty.edu/aat/300388072",
+            "rdfs:label": "Classical Chinese"
+          },
+          "crm:P190_has_symbolic_content": "用十分尖筆，如曹衣紋、鍊筆擎納衣褶，蒼老緊牢，古人多描",
+          "dc:source": "海仙十八描法（清・王瀛）"
+        },
+        {
+          "@id": "https://example.org/trich-bench/note/HX-01/modern-zh",
+          "@type": "crm:E33_Linguistic_Object",
+          "crm:P72_has_language": {
+            "@id": "http://vocab.getty.edu/aat/300388113",
+            "rdfs:label": "Modern Chinese"
+          },
+          "crm:P190_has_symbolic_content": "用十分尖笔，如曹衣纹、鍊笔擎纳衣褶，苍老紧牢，古人多描"
+        },
+        {
+          "@id": "https://example.org/trich-bench/note/HX-01/english",
+          "@type": "crm:E33_Linguistic_Object",
+          "crm:P72_has_language": {
+            "@id": "http://vocab.getty.edu/aat/300388277",
+            "rdfs:label": "English"
+          },
+          "crm:P190_has_symbolic_content": "Fine brush creates continuous silk-like lines with uniform thickness and classical elegance. Used by Gu Kaizhi for celestial figures, producing ethereal drapery with divine spiritual qualities."
+        }
+      ],
+      "crm:P67_refers_to": [
+        {
+          "@id": "https://example.org/trich-bench/concept/classical-aesthetics",
+          "@type": "crm:E28_Conceptual_Object",
+          "rdfs:label": [
+            {
+              "@value": "古典审美",
+              "@language": "zh"
+            },
+            {
+              "@value": "Classical Aesthetics",
+              "@language": "en"
+            }
+          ]
+        },
+        {
+          "@id": "https://example.org/trich-bench/concept/ethereal-elegance",
+          "@type": "crm:E28_Conceptual_Object",
+          "rdfs:label": [
+            {
+              "@value": "仙姿飘逸",
+              "@language": "zh"
+            },
+            {
+              "@value": "Ethereal Celestial Elegance",
+              "@language": "en"
+            }
+          ]
+        }
+      ],
+      "crm:P138i_has_representation": {
+        "@id": "https://example.org/trich-bench/visual/HX-01",
+        "@type": "crm:E36_Visual_Item",
+        "rdfs:label": {
+          "@value": "Illustration of Ancient Gossamer Line Drawing technique",
+          "@language": "en"
+        },
+        "crm:P2_has_type": {
+          "@id": "http://vocab.getty.edu/aat/300015578",
+          "rdfs:label": "ink drawing"
+        },
+        "la:digitally_shown_by": {
+          "@id": "https://example.org/trich-bench/images/c01.gaoguyousimiao.jpg",
+          "@type": "crm:E73_Information_Object",
+          "dc:format": "image/jpeg",
+          "dcterms:conformsTo": "https://iiif.io/api/image/3/"
+        },
+        "crm:P138_represents": {
+          "@id": "https://example.org/trich-bench/concept/HX-01"
+        }
+      },
+      "crm:P14i_was_performed_by": {
+        "@id": "https://example.org/trich-bench/actor/gu-kaizhi",
+        "@type": "crm:E39_Actor",
+        "rdfs:label": [
+          {
+            "@value": "顾恺之",
+            "@language": "zh"
+          },
+          {
+            "@value": "Gu Kaizhi",
+            "@language": "en"
+          }
+        ],
+        "crm:P3_has_note": {
+          "@type": "crm:E33_Linguistic_Object",
+          "crm:P190_has_symbolic_content": "Eastern Jin Dynasty painter (c. 344–406 CE), renowned master of this technique",
+          "crm:P72_has_language": {
+            "@id": "http://vocab.getty.edu/aat/300388277",
+            "rdfs:label": "English"
+          }
+        }
+      },
+      "dcterms:isPartOf": {
+        "@id": "https://example.org/trich-bench/collection/hai-xian-18",
+        "@type": "crm:E78_Curated_Holding",
+        "rdfs:label": [
+          {
+            "@value": "海仙十八描法",
+            "@language": "zh"
+          },
+          {
+            "@value": "Hai Xian's Eighteen Line Drawing Techniques",
+            "@language": "en"
+          }
+        ],
+        "crm:P3_has_note": {
+          "@type": "crm:E33_Linguistic_Object",
+          "crm:P190_has_symbolic_content": "A Qing dynasty painting manual by Wang Ying (海仙), documenting eighteen classical line drawing techniques for figure painting.",
+          "crm:P72_has_language": {
+            "@id": "http://vocab.getty.edu/aat/300388277",
+            "rdfs:label": "English"
+          }
+        }
+      },
+      "trich:benchmark_id": "HX-01",
+      "trich:semantic_similarity": {
+        "trich:classical_to_modern": 0.91,
+        "trich:modern_to_english": 0.82,
+        "trich:classical_to_english": 0.75
+      }
+    }
+  ]
+}

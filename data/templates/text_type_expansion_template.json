@@ -1,0 +1,878 @@
+{
+  "dataset_info": {
+    "name": "TriCH-Bench v2",
+    "version": "2.0.0-template",
+    "description": "Text type expansion templates for Hai Xian 18 Techniques. Each original technique (HX-01 to HX-18) is expanded into 3 additional text types: interpretation, catalogue, and educational. Text fields contain placeholders to be filled by domain experts or LLM-assisted generation.",
+    "creation_date": "2026-02-14",
+    "total_samples": 54,
+    "languages": ["classical_chinese", "modern_chinese", "english"],
+    "template_status": "placeholder",
+    "note": "All text fields marked with [TO BE FILLED] require expert authoring. Other metadata fields are pre-populated based on the original samples."
+  },
+  "expansion_samples": [
+    {
+      "sample_id": "TCH-001-interp",
+      "work_id": "HX-01",
+      "work_name": { "classical_zh": "高古游絲描", "modern_zh": "高古游丝描", "en": "Ancient Gossamer Line Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "interpretation",
+      "difficulty_tier": "L2-Medium",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 基于原典的学术性转述，保留文言风格但加注释]",
+        "modern_zh": "[TO BE FILLED - 现代解释性转述，面向受过教育的一般读者]",
+        "en": "[TO BE FILLED - Scholarly English interpretation with contextual notes]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c01.高古游丝描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-001-cat",
+      "work_id": "HX-01",
+      "work_name": { "classical_zh": "高古游絲描", "modern_zh": "高古游丝描", "en": "Ancient Gossamer Line Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "catalogue",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 博物馆图录式古文描述]",
+        "modern_zh": "[TO BE FILLED - 博物馆图录式现代中文描述，结构化、客观]",
+        "en": "[TO BE FILLED - Museum catalogue entry in formal English]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c01.高古游丝描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-001-edu",
+      "work_id": "HX-01",
+      "work_name": { "classical_zh": "高古游絲描", "modern_zh": "高古游丝描", "en": "Ancient Gossamer Line Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "educational",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 教学用文言简化版，附生字注音]",
+        "modern_zh": "[TO BE FILLED - 面向初学者的教学性现代中文解说]",
+        "en": "[TO BE FILLED - Educational English explanation for students and beginners]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c01.高古游丝描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-002-interp",
+      "work_id": "HX-02",
+      "work_name": { "classical_zh": "琴絃描", "modern_zh": "琴弦描", "en": "Zither String Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "interpretation",
+      "difficulty_tier": "L2-Medium",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 基于原典的学术性转述，保留文言风格但加注释]",
+        "modern_zh": "[TO BE FILLED - 现代解释性转述，面向受过教育的一般读者]",
+        "en": "[TO BE FILLED - Scholarly English interpretation with contextual notes]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c02.琴弦描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-002-cat",
+      "work_id": "HX-02",
+      "work_name": { "classical_zh": "琴絃描", "modern_zh": "琴弦描", "en": "Zither String Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "catalogue",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 博物馆图录式古文描述]",
+        "modern_zh": "[TO BE FILLED - 博物馆图录式现代中文描述，结构化、客观]",
+        "en": "[TO BE FILLED - Museum catalogue entry in formal English]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c02.琴弦描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-002-edu",
+      "work_id": "HX-02",
+      "work_name": { "classical_zh": "琴絃描", "modern_zh": "琴弦描", "en": "Zither String Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "educational",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 教学用文言简化版，附生字注音]",
+        "modern_zh": "[TO BE FILLED - 面向初学者的教学性现代中文解说]",
+        "en": "[TO BE FILLED - Educational English explanation for students and beginners]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c02.琴弦描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-003-interp",
+      "work_id": "HX-03",
+      "work_name": { "classical_zh": "鐵線描", "modern_zh": "铁线描", "en": "Iron Wire Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "interpretation",
+      "difficulty_tier": "L2-Medium",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 基于原典的学术性转述，保留文言风格但加注释]",
+        "modern_zh": "[TO BE FILLED - 现代解释性转述，面向受过教育的一般读者]",
+        "en": "[TO BE FILLED - Scholarly English interpretation with contextual notes]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c03.铁线描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-003-cat",
+      "work_id": "HX-03",
+      "work_name": { "classical_zh": "鐵線描", "modern_zh": "铁线描", "en": "Iron Wire Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "catalogue",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 博物馆图录式古文描述]",
+        "modern_zh": "[TO BE FILLED - 博物馆图录式现代中文描述，结构化、客观]",
+        "en": "[TO BE FILLED - Museum catalogue entry in formal English]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c03.铁线描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-003-edu",
+      "work_id": "HX-03",
+      "work_name": { "classical_zh": "鐵線描", "modern_zh": "铁线描", "en": "Iron Wire Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "educational",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 教学用文言简化版，附生字注音]",
+        "modern_zh": "[TO BE FILLED - 面向初学者的教学性现代中文解说]",
+        "en": "[TO BE FILLED - Educational English explanation for students and beginners]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c03.铁线描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-004-interp",
+      "work_id": "HX-04",
+      "work_name": { "classical_zh": "行雲流水描", "modern_zh": "行云流水描", "en": "Flowing Clouds and Water Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "interpretation",
+      "difficulty_tier": "L2-Medium",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 基于原典的学术性转述，保留文言风格但加注释]",
+        "modern_zh": "[TO BE FILLED - 现代解释性转述，面向受过教育的一般读者]",
+        "en": "[TO BE FILLED - Scholarly English interpretation with contextual notes]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c04.行云流水描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-004-cat",
+      "work_id": "HX-04",
+      "work_name": { "classical_zh": "行雲流水描", "modern_zh": "行云流水描", "en": "Flowing Clouds and Water Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "catalogue",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 博物馆图录式古文描述]",
+        "modern_zh": "[TO BE FILLED - 博物馆图录式现代中文描述，结构化、客观]",
+        "en": "[TO BE FILLED - Museum catalogue entry in formal English]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c04.行云流水描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-004-edu",
+      "work_id": "HX-04",
+      "work_name": { "classical_zh": "行雲流水描", "modern_zh": "行云流水描", "en": "Flowing Clouds and Water Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "educational",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 教学用文言简化版，附生字注音]",
+        "modern_zh": "[TO BE FILLED - 面向初学者的教学性现代中文解说]",
+        "en": "[TO BE FILLED - Educational English explanation for students and beginners]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c04.行云流水描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-005-interp",
+      "work_id": "HX-05",
+      "work_name": { "classical_zh": "螞蟥描", "modern_zh": "蚂蝗描", "en": "Leech Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "interpretation",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 基于原典的学术性转述，保留文言风格但加注释]",
+        "modern_zh": "[TO BE FILLED - 现代解释性转述，面向受过教育的一般读者]",
+        "en": "[TO BE FILLED - Scholarly English interpretation with contextual notes]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c05.蚂蝗描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-005-cat",
+      "work_id": "HX-05",
+      "work_name": { "classical_zh": "螞蟥描", "modern_zh": "蚂蝗描", "en": "Leech Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "catalogue",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 博物馆图录式古文描述]",
+        "modern_zh": "[TO BE FILLED - 博物馆图录式现代中文描述，结构化、客观]",
+        "en": "[TO BE FILLED - Museum catalogue entry in formal English]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c05.蚂蝗描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-005-edu",
+      "work_id": "HX-05",
+      "work_name": { "classical_zh": "螞蟥描", "modern_zh": "蚂蝗描", "en": "Leech Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "educational",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 教学用文言简化版，附生字注音]",
+        "modern_zh": "[TO BE FILLED - 面向初学者的教学性现代中文解说]",
+        "en": "[TO BE FILLED - Educational English explanation for students and beginners]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c05.蚂蝗描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-006-interp",
+      "work_id": "HX-06",
+      "work_name": { "classical_zh": "釘頭鼠尾描", "modern_zh": "钉头鼠尾描", "en": "Nail Head and Rat Tail Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "interpretation",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 基于原典的学术性转述，保留文言风格但加注释]",
+        "modern_zh": "[TO BE FILLED - 现代解释性转述，面向受过教育的一般读者]",
+        "en": "[TO BE FILLED - Scholarly English interpretation with contextual notes]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c06.钉头鼠尾描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-006-cat",
+      "work_id": "HX-06",
+      "work_name": { "classical_zh": "釘頭鼠尾描", "modern_zh": "钉头鼠尾描", "en": "Nail Head and Rat Tail Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "catalogue",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 博物馆图录式古文描述]",
+        "modern_zh": "[TO BE FILLED - 博物馆图录式现代中文描述，结构化、客观]",
+        "en": "[TO BE FILLED - Museum catalogue entry in formal English]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c06.钉头鼠尾描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-006-edu",
+      "work_id": "HX-06",
+      "work_name": { "classical_zh": "釘頭鼠尾描", "modern_zh": "钉头鼠尾描", "en": "Nail Head and Rat Tail Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "educational",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 教学用文言简化版，附生字注音]",
+        "modern_zh": "[TO BE FILLED - 面向初学者的教学性现代中文解说]",
+        "en": "[TO BE FILLED - Educational English explanation for students and beginners]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c06.钉头鼠尾描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-007-interp",
+      "work_id": "HX-07",
+      "work_name": { "classical_zh": "混描", "modern_zh": "混描", "en": "Mixed Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "interpretation",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 基于原典的学术性转述，保留文言风格但加注释]",
+        "modern_zh": "[TO BE FILLED - 现代解释性转述，面向受过教育的一般读者]",
+        "en": "[TO BE FILLED - Scholarly English interpretation with contextual notes]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c07.混描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-007-cat",
+      "work_id": "HX-07",
+      "work_name": { "classical_zh": "混描", "modern_zh": "混描", "en": "Mixed Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "catalogue",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 博物馆图录式古文描述]",
+        "modern_zh": "[TO BE FILLED - 博物馆图录式现代中文描述，结构化、客观]",
+        "en": "[TO BE FILLED - Museum catalogue entry in formal English]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c07.混描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-007-edu",
+      "work_id": "HX-07",
+      "work_name": { "classical_zh": "混描", "modern_zh": "混描", "en": "Mixed Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "educational",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 教学用文言简化版，附生字注音]",
+        "modern_zh": "[TO BE FILLED - 面向初学者的教学性现代中文解说]",
+        "en": "[TO BE FILLED - Educational English explanation for students and beginners]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c07.混描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-008-interp",
+      "work_id": "HX-08",
+      "work_name": { "classical_zh": "撅頭釘描", "modern_zh": "撅头钉描", "en": "Stubby Brush Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "interpretation",
+      "difficulty_tier": "L2-Medium",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 基于原典的学术性转述，保留文言风格但加注释]",
+        "modern_zh": "[TO BE FILLED - 现代解释性转述，面向受过教育的一般读者]",
+        "en": "[TO BE FILLED - Scholarly English interpretation with contextual notes]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c08.橛头钉描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-008-cat",
+      "work_id": "HX-08",
+      "work_name": { "classical_zh": "撅頭釘描", "modern_zh": "撅头钉描", "en": "Stubby Brush Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "catalogue",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 博物馆图录式古文描述]",
+        "modern_zh": "[TO BE FILLED - 博物馆图录式现代中文描述，结构化、客观]",
+        "en": "[TO BE FILLED - Museum catalogue entry in formal English]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c08.橛头钉描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-008-edu",
+      "work_id": "HX-08",
+      "work_name": { "classical_zh": "撅頭釘描", "modern_zh": "撅头钉描", "en": "Stubby Brush Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "educational",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 教学用文言简化版，附生字注音]",
+        "modern_zh": "[TO BE FILLED - 面向初学者的教学性现代中文解说]",
+        "en": "[TO BE FILLED - Educational English explanation for students and beginners]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c08.橛头钉描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-009-interp",
+      "work_id": "HX-09",
+      "work_name": { "classical_zh": "曹衣描", "modern_zh": "曹衣描", "en": "Cao Yi Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "interpretation",
+      "difficulty_tier": "L2-Medium",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 基于原典的学术性转述，保留文言风格但加注释]",
+        "modern_zh": "[TO BE FILLED - 现代解释性转述，面向受过教育的一般读者]",
+        "en": "[TO BE FILLED - Scholarly English interpretation with contextual notes]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c09.曹衣描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-009-cat",
+      "work_id": "HX-09",
+      "work_name": { "classical_zh": "曹衣描", "modern_zh": "曹衣描", "en": "Cao Yi Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "catalogue",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 博物馆图录式古文描述]",
+        "modern_zh": "[TO BE FILLED - 博物馆图录式现代中文描述，结构化、客观]",
+        "en": "[TO BE FILLED - Museum catalogue entry in formal English]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c09.曹衣描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-009-edu",
+      "work_id": "HX-09",
+      "work_name": { "classical_zh": "曹衣描", "modern_zh": "曹衣描", "en": "Cao Yi Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "educational",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 教学用文言简化版，附生字注音]",
+        "modern_zh": "[TO BE FILLED - 面向初学者的教学性现代中文解说]",
+        "en": "[TO BE FILLED - Educational English explanation for students and beginners]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c09.曹衣描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-010-interp",
+      "work_id": "HX-10",
+      "work_name": { "classical_zh": "折蘆描", "modern_zh": "折芦描", "en": "Broken Reed Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "interpretation",
+      "difficulty_tier": "L2-Medium",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 基于原典的学术性转述，保留文言风格但加注释]",
+        "modern_zh": "[TO BE FILLED - 现代解释性转述，面向受过教育的一般读者]",
+        "en": "[TO BE FILLED - Scholarly English interpretation with contextual notes]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c10.折芦描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-010-cat",
+      "work_id": "HX-10",
+      "work_name": { "classical_zh": "折蘆描", "modern_zh": "折芦描", "en": "Broken Reed Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "catalogue",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 博物馆图录式古文描述]",
+        "modern_zh": "[TO BE FILLED - 博物馆图录式现代中文描述，结构化、客观]",
+        "en": "[TO BE FILLED - Museum catalogue entry in formal English]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c10.折芦描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-010-edu",
+      "work_id": "HX-10",
+      "work_name": { "classical_zh": "折蘆描", "modern_zh": "折芦描", "en": "Broken Reed Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "educational",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 教学用文言简化版，附生字注音]",
+        "modern_zh": "[TO BE FILLED - 面向初学者的教学性现代中文解说]",
+        "en": "[TO BE FILLED - Educational English explanation for students and beginners]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c10.折芦描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-011-interp",
+      "work_id": "HX-11",
+      "work_name": { "classical_zh": "柳葉描", "modern_zh": "柳叶描", "en": "Willow Leaf Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "interpretation",
+      "difficulty_tier": "L2-Medium",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 基于原典的学术性转述，保留文言风格但加注释]",
+        "modern_zh": "[TO BE FILLED - 现代解释性转述，面向受过教育的一般读者]",
+        "en": "[TO BE FILLED - Scholarly English interpretation with contextual notes]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c11.柳叶描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-011-cat",
+      "work_id": "HX-11",
+      "work_name": { "classical_zh": "柳葉描", "modern_zh": "柳叶描", "en": "Willow Leaf Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "catalogue",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 博物馆图录式古文描述]",
+        "modern_zh": "[TO BE FILLED - 博物馆图录式现代中文描述，结构化、客观]",
+        "en": "[TO BE FILLED - Museum catalogue entry in formal English]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c11.柳叶描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-011-edu",
+      "work_id": "HX-11",
+      "work_name": { "classical_zh": "柳葉描", "modern_zh": "柳叶描", "en": "Willow Leaf Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "educational",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 教学用文言简化版，附生字注音]",
+        "modern_zh": "[TO BE FILLED - 面向初学者的教学性现代中文解说]",
+        "en": "[TO BE FILLED - Educational English explanation for students and beginners]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c11.柳叶描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-012-interp",
+      "work_id": "HX-12",
+      "work_name": { "classical_zh": "竹葉描", "modern_zh": "竹叶描", "en": "Bamboo Leaf Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "interpretation",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 基于原典的学术性转述，保留文言风格但加注释]",
+        "modern_zh": "[TO BE FILLED - 现代解释性转述，面向受过教育的一般读者]",
+        "en": "[TO BE FILLED - Scholarly English interpretation with contextual notes]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c12.竹叶描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-012-cat",
+      "work_id": "HX-12",
+      "work_name": { "classical_zh": "竹葉描", "modern_zh": "竹叶描", "en": "Bamboo Leaf Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "catalogue",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 博物馆图录式古文描述]",
+        "modern_zh": "[TO BE FILLED - 博物馆图录式现代中文描述，结构化、客观]",
+        "en": "[TO BE FILLED - Museum catalogue entry in formal English]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c12.竹叶描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-012-edu",
+      "work_id": "HX-12",
+      "work_name": { "classical_zh": "竹葉描", "modern_zh": "竹叶描", "en": "Bamboo Leaf Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "educational",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 教学用文言简化版，附生字注音]",
+        "modern_zh": "[TO BE FILLED - 面向初学者的教学性现代中文解说]",
+        "en": "[TO BE FILLED - Educational English explanation for students and beginners]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c12.竹叶描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-013-interp",
+      "work_id": "HX-13",
+      "work_name": { "classical_zh": "戰筆水紋描", "modern_zh": "战笔水纹描", "en": "Tremulous Water Lines Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "interpretation",
+      "difficulty_tier": "L2-Medium",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 基于原典的学术性转述，保留文言风格但加注释]",
+        "modern_zh": "[TO BE FILLED - 现代解释性转述，面向受过教育的一般读者]",
+        "en": "[TO BE FILLED - Scholarly English interpretation with contextual notes]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c13.战笔水纹描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-013-cat",
+      "work_id": "HX-13",
+      "work_name": { "classical_zh": "戰筆水紋描", "modern_zh": "战笔水纹描", "en": "Tremulous Water Lines Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "catalogue",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 博物馆图录式古文描述]",
+        "modern_zh": "[TO BE FILLED - 博物馆图录式现代中文描述，结构化、客观]",
+        "en": "[TO BE FILLED - Museum catalogue entry in formal English]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c13.战笔水纹描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-013-edu",
+      "work_id": "HX-13",
+      "work_name": { "classical_zh": "戰筆水紋描", "modern_zh": "战笔水纹描", "en": "Tremulous Water Lines Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "educational",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 教学用文言简化版，附生字注音]",
+        "modern_zh": "[TO BE FILLED - 面向初学者的教学性现代中文解说]",
+        "en": "[TO BE FILLED - Educational English explanation for students and beginners]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c13.战笔水纹描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-014-interp",
+      "work_id": "HX-14",
+      "work_name": { "classical_zh": "減筆描", "modern_zh": "减笔描", "en": "Reduced Brush Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "interpretation",
+      "difficulty_tier": "L2-Medium",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 基于原典的学术性转述，保留文言风格但加注释]",
+        "modern_zh": "[TO BE FILLED - 现代解释性转述，面向受过教育的一般读者]",
+        "en": "[TO BE FILLED - Scholarly English interpretation with contextual notes]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c14.减笔描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-014-cat",
+      "work_id": "HX-14",
+      "work_name": { "classical_zh": "減筆描", "modern_zh": "减笔描", "en": "Reduced Brush Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "catalogue",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 博物馆图录式古文描述]",
+        "modern_zh": "[TO BE FILLED - 博物馆图录式现代中文描述，结构化、客观]",
+        "en": "[TO BE FILLED - Museum catalogue entry in formal English]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c14.减笔描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-014-edu",
+      "work_id": "HX-14",
+      "work_name": { "classical_zh": "減筆描", "modern_zh": "减笔描", "en": "Reduced Brush Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "educational",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 教学用文言简化版，附生字注音]",
+        "modern_zh": "[TO BE FILLED - 面向初学者的教学性现代中文解说]",
+        "en": "[TO BE FILLED - Educational English explanation for students and beginners]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c14.减笔描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-015-interp",
+      "work_id": "HX-15",
+      "work_name": { "classical_zh": "枯柴描", "modern_zh": "枯柴描", "en": "Withered Wood Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "interpretation",
+      "difficulty_tier": "L2-Medium",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 基于原典的学术性转述，保留文言风格但加注释]",
+        "modern_zh": "[TO BE FILLED - 现代解释性转述，面向受过教育的一般读者]",
+        "en": "[TO BE FILLED - Scholarly English interpretation with contextual notes]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c15.枯柴描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-015-cat",
+      "work_id": "HX-15",
+      "work_name": { "classical_zh": "枯柴描", "modern_zh": "枯柴描", "en": "Withered Wood Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "catalogue",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 博物馆图录式古文描述]",
+        "modern_zh": "[TO BE FILLED - 博物馆图录式现代中文描述，结构化、客观]",
+        "en": "[TO BE FILLED - Museum catalogue entry in formal English]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c15.枯柴描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-015-edu",
+      "work_id": "HX-15",
+      "work_name": { "classical_zh": "枯柴描", "modern_zh": "枯柴描", "en": "Withered Wood Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "educational",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 教学用文言简化版，附生字注音]",
+        "modern_zh": "[TO BE FILLED - 面向初学者的教学性现代中文解说]",
+        "en": "[TO BE FILLED - Educational English explanation for students and beginners]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c15.枯柴描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-016-interp",
+      "work_id": "HX-16",
+      "work_name": { "classical_zh": "蚯蚓描", "modern_zh": "蚯蚓描", "en": "Earthworm Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "interpretation",
+      "difficulty_tier": "L2-Medium",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 基于原典的学术性转述，保留文言风格但加注释]",
+        "modern_zh": "[TO BE FILLED - 现代解释性转述，面向受过教育的一般读者]",
+        "en": "[TO BE FILLED - Scholarly English interpretation with contextual notes]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c16.蚯蚓描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-016-cat",
+      "work_id": "HX-16",
+      "work_name": { "classical_zh": "蚯蚓描", "modern_zh": "蚯蚓描", "en": "Earthworm Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "catalogue",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 博物馆图录式古文描述]",
+        "modern_zh": "[TO BE FILLED - 博物馆图录式现代中文描述，结构化、客观]",
+        "en": "[TO BE FILLED - Museum catalogue entry in formal English]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c16.蚯蚓描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-016-edu",
+      "work_id": "HX-16",
+      "work_name": { "classical_zh": "蚯蚓描", "modern_zh": "蚯蚓描", "en": "Earthworm Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "educational",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 教学用文言简化版，附生字注音]",
+        "modern_zh": "[TO BE FILLED - 面向初学者的教学性现代中文解说]",
+        "en": "[TO BE FILLED - Educational English explanation for students and beginners]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c16.蚯蚓描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-017-interp",
+      "work_id": "HX-17",
+      "work_name": { "classical_zh": "橄欖描", "modern_zh": "橄榄描", "en": "Olive Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "interpretation",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 基于原典的学术性转述，保留文言风格但加注释]",
+        "modern_zh": "[TO BE FILLED - 现代解释性转述，面向受过教育的一般读者]",
+        "en": "[TO BE FILLED - Scholarly English interpretation with contextual notes]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c17.橄榄描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-017-cat",
+      "work_id": "HX-17",
+      "work_name": { "classical_zh": "橄欖描", "modern_zh": "橄榄描", "en": "Olive Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "catalogue",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 博物馆图录式古文描述]",
+        "modern_zh": "[TO BE FILLED - 博物馆图录式现代中文描述，结构化、客观]",
+        "en": "[TO BE FILLED - Museum catalogue entry in formal English]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c17.橄榄描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-017-edu",
+      "work_id": "HX-17",
+      "work_name": { "classical_zh": "橄欖描", "modern_zh": "橄榄描", "en": "Olive Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "educational",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 教学用文言简化版，附生字注音]",
+        "modern_zh": "[TO BE FILLED - 面向初学者的教学性现代中文解说]",
+        "en": "[TO BE FILLED - Educational English explanation for students and beginners]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c17.橄榄描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-018-interp",
+      "work_id": "HX-18",
+      "work_name": { "classical_zh": "棗核描", "modern_zh": "枣核描", "en": "Jujube Core Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "interpretation",
+      "difficulty_tier": "L2-Medium",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 基于原典的学术性转述，保留文言风格但加注释]",
+        "modern_zh": "[TO BE FILLED - 现代解释性转述，面向受过教育的一般读者]",
+        "en": "[TO BE FILLED - Scholarly English interpretation with contextual notes]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c18.枣核描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-018-cat",
+      "work_id": "HX-18",
+      "work_name": { "classical_zh": "棗核描", "modern_zh": "枣核描", "en": "Jujube Core Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "catalogue",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 博物馆图录式古文描述]",
+        "modern_zh": "[TO BE FILLED - 博物馆图录式现代中文描述，结构化、客观]",
+        "en": "[TO BE FILLED - Museum catalogue entry in formal English]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c18.枣核描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    },
+    {
+      "sample_id": "TCH-018-edu",
+      "work_id": "HX-18",
+      "work_name": { "classical_zh": "棗核描", "modern_zh": "枣核描", "en": "Jujube Core Drawing" },
+      "source_collection": "hai_xian_18",
+      "text_type": "educational",
+      "difficulty_tier": "L1-Easy",
+      "text": {
+        "classical_zh": "[TO BE FILLED - 教学用文言简化版，附生字注音]",
+        "modern_zh": "[TO BE FILLED - 面向初学者的教学性现代中文解说]",
+        "en": "[TO BE FILLED - Educational English explanation for students and beginners]"
+      },
+      "quality_tier": "bronze",
+      "expert_review": { "reviewed": false, "reviewer_count": 0, "agreement_score": null, "review_date": null, "conflict_resolution": null },
+      "image_ref": { "path": "data/海仙十八描法/c18.枣核描.jpg", "iiif_manifest": null, "cidoc_crm_mapping": null }
+    }
+  ]
+}

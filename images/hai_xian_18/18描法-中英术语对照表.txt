@@ -1,0 +1,73 @@
+18种描法中英术语对照表
+Eighteen Drawing Techniques Terminology Reference
+
+=== 核心18种描法对照 ===
+
+C01 高古游丝描 → Ancient Gossamer Line Drawing / High Antiquity Silk Line Drawing
+C02 琴弦描 → Zither String Drawing / Qin String Drawing  
+C03 铁线描 → Iron Wire Drawing / Iron Line Drawing
+C04 行云流水描 → Flowing Clouds and Water Drawing
+C05 蚂蝗描 → Leech Drawing / Leech Line Drawing
+C06 钉头鼠尾描 → Nail Head and Rat Tail Drawing
+C07 混描 → Mixed Drawing / Hybrid Drawing
+C08 撅头钉描 → Stubby Brush Drawing / Blunt Head Nail Drawing
+C09 曹衣描 → Cao Yi Drawing / Cao Style Drawing
+C10 折芦描 → Broken Reed Drawing / Folded Reed Drawing
+C11 柳叶描 → Willow Leaf Drawing
+C12 竹叶描 → Bamboo Leaf Drawing
+C13 战笔水纹描 → Tremulous Water Lines Drawing / Quivering Brush Water Ripple Drawing
+C14 减笔描 → Reduced Brush Drawing / Simplified Brush Drawing
+C15 枯柴描 → Withered Wood Drawing / Dry Brush Drawing
+C16 蚯蚓描 → Earthworm Drawing
+C17 橄榄描 → Olive Drawing / Olive Pit Drawing
+C18 枣核描 → Jujube Core Drawing / Date Pit Drawing
+
+=== 专业术语对照 ===
+
+正锋 → Center brush / Centered tip
+侧锋 → Side brush / Slanted brush
+尖笔 → Sharp brush / Pointed brush
+秃笔 → Blunt brush / Worn brush
+藏锋 → Concealed tip / Hidden brush tip
+怒降 → Sharp angle / Abrupt change
+心手相应 → Mind-hand coordination
+苍老紧牢 → Ancient and firm
+重叠衣褶 → Overlapping drapery folds
+擎纳 → Lifting and receiving
+首尾 → Beginning and end
+惹成 → Naturally formed
+击纳 → Striking and receiving
+
+=== 文化概念对照 ===
+
+衣纹 → Drapery lines / Clothing folds
+描法 → Drawing technique / Line method
+笔法 → Brush technique / Brushwork
+气韵 → Spirit resonance / Vital rhythm
+意境 → Artistic conception / Artistic mood
+古法 → Ancient method / Classical technique
+神韵 → Divine charm / Spiritual essence
+法度 → Rules and standards / Artistic principles
+书画同源 → Calligraphy and painting share the same origin
+吴带当风，曹衣出水 → Wu's robes dance in the wind, Cao's garments emerge from water
+
+=== 艺术家名称对照 ===
+
+顾恺之 → Gu Kaizhi
+吴道子 → Wu Daozi  
+曹仲达 → Cao Zhongda
+马远 → Ma Yuan
+梁楷 → Liang Kai
+张旭 → Zhang Xu
+
+=== 历史朝代对照 ===
+
+三代 → Three Dynasties (Xia, Shang, Zhou)
+汉 → Han Dynasty
+唐 → Tang Dynasty
+北齐 → Northern Qi
+宋 → Song Dynasty
+清 → Qing Dynasty
+
+目标：符合ICADL2025论文CME-Align框架要求
+更新日期：2025-06-25
