@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{Cross-Lingual Consistency (CLC) scores (Spearman $\rho$). Higher values indicate more consistent rankings across languages.}
+\label{tab:clc}
+\small
+\begin{tabular}{l ccc c}
+\toprule
+\textbf{Model} & \textbf{CC--MC} & \textbf{CC--EN} & \textbf{MC--EN} & \textbf{Mean} \\
+\midrule
+CLIP ViT-B/32 & 0.274 & 0.007 & 0.192 & 0.158 \\
+Chinese-CLIP ViT-B/16 & 0.600 & 0.243 & 0.497 & 0.447 \\
+SigLIP 2 ViT-B/16 & 0.293 & 0.200 & 0.328 & 0.274 \\
+Jina-CLIP v2 & 0.556 & 0.228 & 0.388 & 0.391 \\
+mBERT + ResNet-50 & 0.258 & 0.215 & -0.100 & 0.124 \\
+\bottomrule
+\end{tabular}
+\end{table}

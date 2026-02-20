@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\caption{Task~A: Monolingual retrieval results (Recall@K, \%). I2T = image-to-text; T2I = text-to-image. \textbf{Bold} = best per column.}
+\label{tab:task_a}
+\small
+\begin{tabular}{l ccc ccc ccc ccc ccc ccc }
+\toprule
+\textbf{Model} & \multicolumn{6}{c}{\textbf{CC}} & \multicolumn{6}{c}{\textbf{MC}} & \multicolumn{6}{c}{\textbf{EN}} \\
+\cmidrule(lr){2-7} \cmidrule(lr){8-13} \cmidrule(lr){14-19}
+ & \multicolumn{3}{c}{I2T} & \multicolumn{3}{c}{T2I} & \multicolumn{3}{c}{I2T} & \multicolumn{3}{c}{T2I} & \multicolumn{3}{c}{I2T} & \multicolumn{3}{c}{T2I} \\
+ & @1 & @5 & @10 & @1 & @5 & @10 & @1 & @5 & @10 & @1 & @5 & @10 & @1 & @5 & @10 & @1 & @5 & @10 \\
+\midrule
+CLIP ViT-B/32 & 6.8 & 27.3 & 47.7 & 5.6 & 27.8 & 55.6 & 4.5 & 27.3 & 45.5 & 11.1 & 27.8 & 44.4 & 11.4 & 38.6 & 61.4 & 5.6 & 27.8 & 44.4 \\
+Chinese-CLIP ViT-B/16 & 13.6 & 43.2 & 63.6 & 11.1 & 22.2 & 33.3 & 13.6 & 43.2 & 65.9 & 11.1 & 22.2 & 33.3 & 18.2 & 36.4 & 65.9 & 5.6 & 38.9 & 44.4 \\
+SigLIP 2 ViT-B/16 & 4.5 & 27.3 & 52.3 & 5.6 & 16.7 & 27.8 & 6.8 & 22.7 & 59.1 & 5.6 & 11.1 & 27.8 & 6.8 & 29.5 & 56.8 & 5.6 & 16.7 & 33.3 \\
+Jina-CLIP v2 & 11.4 & 29.5 & 54.5 & 11.1 & 27.8 & 72.2 & 9.1 & 34.1 & 68.2 & 5.6 & 33.3 & 66.7 & 9.1 & 34.1 & 61.4 & 0.0 & 16.7 & 44.4 \\
+mBERT + ResNet-50 & 4.5 & 31.8 & 56.8 & 0.0 & 16.7 & 44.4 & 4.5 & 31.8 & 65.9 & 5.6 & 27.8 & 38.9 & 15.9 & 36.4 & 59.1 & 5.6 & 27.8 & 33.3 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering
+\caption{Task~B: Cross-lingual retrieval results (Recall@K, \%). Query language $\rightarrow$ retrieval language. \textbf{Bold} = best per column.}
+\label{tab:task_b}
+\small
+\begin{tabular}{l ccc ccc ccc ccc ccc ccc }
+\toprule
+\textbf{Model} & \multicolumn{3}{c}{CC→MC} & \multicolumn{3}{c}{MC→CC} & \multicolumn{3}{c}{CC→EN} & \multicolumn{3}{c}{EN→CC} & \multicolumn{3}{c}{MC→EN} & \multicolumn{3}{c}{EN→MC} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7} \cmidrule(lr){8-10} \cmidrule(lr){11-13} \cmidrule(lr){14-16} \cmidrule(lr){17-19} 
+ & @1 & @5 & @10 & @1 & @5 & @10 & @1 & @5 & @10 & @1 & @5 & @10 & @1 & @5 & @10 & @1 & @5 & @10 \\
+\midrule
+CLIP ViT-B/32 & 5.6 & 38.9 & 61.1 & 22.2 & 38.9 & 66.7 & 11.1 & 27.8 & 66.7 & 5.6 & 27.8 & 61.1 & 5.6 & 27.8 & 50.0 & 0.0 & 16.7 & 50.0 \\
+Chinese-CLIP ViT-B/16 & 38.9 & 88.9 & 94.4 & 55.6 & 77.8 & 94.4 & 16.7 & 38.9 & 72.2 & 16.7 & 55.6 & 83.3 & 22.2 & 44.4 & 72.2 & 11.1 & 38.9 & 66.7 \\
+SigLIP 2 ViT-B/16 & 16.7 & 44.4 & 55.6 & 16.7 & 38.9 & 66.7 & 5.6 & 33.3 & 61.1 & 5.6 & 38.9 & 66.7 & 0.0 & 44.4 & 72.2 & 0.0 & 33.3 & 66.7 \\
+Jina-CLIP v2 & 88.9 & 100.0 & 100.0 & 88.9 & 100.0 & 100.0 & 33.3 & 72.2 & 100.0 & 50.0 & 61.1 & 88.9 & 44.4 & 83.3 & 94.4 & 50.0 & 88.9 & 94.4 \\
+mBERT + ResNet-50 & 11.1 & 55.6 & 61.1 & 22.2 & 50.0 & 77.8 & 5.6 & 33.3 & 55.6 & 5.6 & 50.0 & 72.2 & 11.1 & 33.3 & 66.7 & 11.1 & 44.4 & 55.6 \\
+\bottomrule
+\end{tabular}
+\end{table*}

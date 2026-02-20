@@ -1,0 +1,270 @@
+2026-02-20 14:44:15,862 [INFO] ============================================================
+2026-02-20 14:44:15,862 [INFO] TriCH-Bench Evaluation Started: 2026-02-20T14:44:15.862445
+2026-02-20 14:44:15,862 [INFO] Models: ['clip', 'chinese_clip', 'siglip2', 'jina_clip', 'mbert_resnet']
+2026-02-20 14:44:15,862 [INFO] Device: cuda
+2026-02-20 14:44:15,862 [INFO] Config: experiments/configs/experiment_config.yaml
+2026-02-20 14:44:15,862 [INFO] ============================================================
+2026-02-20 14:44:15,863 [INFO] Loaded 18 gold-tier samples from data/samples/hai_xian_18_migrated.json
+2026-02-20 14:44:15,866 [ERROR] Missing image for TCH-008-orig: Image not found: images/hai_xian_18/c08.橛头钉描.jpg
+2026-02-20 14:45:00,936 [INFO] ============================================================
+2026-02-20 14:45:00,936 [INFO] TriCH-Bench Evaluation Started: 2026-02-20T14:45:00.936864
+2026-02-20 14:45:00,936 [INFO] Models: ['clip', 'chinese_clip', 'siglip2', 'jina_clip', 'mbert_resnet']
+2026-02-20 14:45:00,936 [INFO] Device: cuda
+2026-02-20 14:45:00,937 [INFO] Config: experiments/configs/experiment_config.yaml
+2026-02-20 14:45:00,937 [INFO] ============================================================
+2026-02-20 14:45:00,937 [INFO] Loaded 18 gold-tier samples from data/samples/hai_xian_18_migrated.json
+2026-02-20 14:45:00,938 [INFO] Original images: 18 found.
+2026-02-20 14:45:00,938 [INFO] Loaded pool index: 55 images (44 technique + 11 distractors)
+2026-02-20 14:45:00,938 [INFO] Expanded pool: 55 images ready.
+2026-02-20 14:45:00,938 [INFO] T2I: 18 queries → 55 candidates
+2026-02-20 14:45:00,938 [INFO] I2T: 44 image queries → 18 text candidates
+2026-02-20 14:45:00,938 [INFO] 
+========================================
+2026-02-20 14:45:00,938 [INFO] Evaluating model: clip
+2026-02-20 14:45:00,938 [INFO] ========================================
+2026-02-20 14:45:01,087 [INFO] Using device: cuda
+2026-02-20 14:45:32,390 [INFO] Loading CLIP model: openai/clip-vit-base-patch32
+2026-02-20 14:45:41,991 [INFO] CLIP model loaded.
+2026-02-20 14:45:41,994 [INFO] Encoding images...
+2026-02-20 14:46:59,049 [INFO] ============================================================
+2026-02-20 14:46:59,049 [INFO] TriCH-Bench Evaluation Started: 2026-02-20T14:46:59.049315
+2026-02-20 14:46:59,049 [INFO] Models: ['clip', 'chinese_clip', 'siglip2', 'jina_clip', 'mbert_resnet']
+2026-02-20 14:46:59,049 [INFO] Device: cuda
+2026-02-20 14:46:59,049 [INFO] Config: experiments/configs/experiment_config.yaml
+2026-02-20 14:46:59,049 [INFO] ============================================================
+2026-02-20 14:46:59,050 [INFO] Loaded 18 gold-tier samples from data/samples/hai_xian_18_migrated.json
+2026-02-20 14:46:59,050 [INFO] Original images: 18 found.
+2026-02-20 14:46:59,050 [INFO] Loaded pool index: 55 images (44 technique + 11 distractors)
+2026-02-20 14:46:59,051 [INFO] Expanded pool: 55 images ready.
+2026-02-20 14:46:59,051 [INFO] T2I: 18 queries → 55 candidates
+2026-02-20 14:46:59,051 [INFO] I2T: 44 image queries → 18 text candidates
+2026-02-20 14:46:59,051 [INFO] 
+========================================
+2026-02-20 14:46:59,051 [INFO] Evaluating model: clip
+2026-02-20 14:46:59,051 [INFO] ========================================
+2026-02-20 14:46:59,116 [INFO] Using device: cuda
+2026-02-20 14:47:08,944 [INFO] Loading CLIP model: openai/clip-vit-base-patch32
+2026-02-20 14:47:13,320 [INFO] CLIP model loaded.
+2026-02-20 14:47:13,320 [INFO] Encoding images...
+2026-02-20 14:47:29,146 [INFO] Image embeddings shape: (55, 512)
+2026-02-20 14:47:29,147 [INFO] Encoding texts [CC]...
+2026-02-20 14:47:29,455 [INFO] Text embeddings [CC] shape: (18, 512)
+2026-02-20 14:47:29,455 [INFO] Encoding texts [MC]...
+2026-02-20 14:47:29,683 [INFO] Text embeddings [MC] shape: (18, 512)
+2026-02-20 14:47:29,683 [INFO] Encoding texts [EN]...
+2026-02-20 14:47:29,900 [INFO] Text embeddings [EN] shape: (18, 512)
+2026-02-20 14:47:29,900 [INFO] 
+--- Task A: Monolingual Retrieval ---
+2026-02-20 14:47:29,913 [INFO]   [CC] I2T R@1/5/10: 6.8 / 27.3 / 47.7
+2026-02-20 14:47:29,913 [INFO]   [CC] T2I R@1/5/10: 5.6 / 27.8 / 55.6
+2026-02-20 14:47:29,913 [INFO]   [MC] I2T R@1/5/10: 4.5 / 27.3 / 45.5
+2026-02-20 14:47:29,913 [INFO]   [MC] T2I R@1/5/10: 11.1 / 27.8 / 44.4
+2026-02-20 14:47:29,914 [INFO]   [EN] I2T R@1/5/10: 11.4 / 38.6 / 61.4
+2026-02-20 14:47:29,914 [INFO]   [EN] T2I R@1/5/10: 5.6 / 27.8 / 44.4
+2026-02-20 14:47:29,914 [INFO] 
+--- Task B: Cross-lingual Retrieval ---
+2026-02-20 14:47:29,914 [INFO]   [CC→MC] R@1/5/10: 5.6 / 38.9 / 61.1
+2026-02-20 14:47:29,914 [INFO]   [MC→CC] R@1/5/10: 22.2 / 38.9 / 66.7
+2026-02-20 14:47:29,915 [INFO]   [CC→EN] R@1/5/10: 11.1 / 27.8 / 66.7
+2026-02-20 14:47:29,915 [INFO]   [EN→CC] R@1/5/10: 5.6 / 27.8 / 61.1
+2026-02-20 14:47:29,915 [INFO]   [MC→EN] R@1/5/10: 5.6 / 27.8 / 50.0
+2026-02-20 14:47:29,915 [INFO]   [EN→MC] R@1/5/10: 0.0 / 16.7 / 50.0
+2026-02-20 14:47:29,915 [INFO] 
+--- CLC Analysis ---
+2026-02-20 14:47:29,954 [INFO]   CLC [CC--MC]: 0.274
+2026-02-20 14:47:29,979 [INFO]   CLC [CC--EN]: 0.007
+2026-02-20 14:47:30,008 [INFO]   CLC [MC--EN]: 0.192
+2026-02-20 14:47:30,008 [INFO] 
+--- Tier-Stratified Evaluation ---
+2026-02-20 14:47:30,009 [INFO]   [L1-Easy] Mean R@10: 53.3%
+2026-02-20 14:47:30,009 [INFO]   [L2-Medium] Mean R@10: 50.0%
+2026-02-20 14:47:30,009 [INFO]   [L3-Hard] Mean R@10: 40.0%
+2026-02-20 14:47:30,009 [INFO] 
+Model clip completed in 31.0s
+2026-02-20 14:47:30,009 [INFO] 
+========================================
+2026-02-20 14:47:30,009 [INFO] Evaluating model: chinese_clip
+2026-02-20 14:47:30,009 [INFO] ========================================
+2026-02-20 14:47:30,009 [INFO] Using device: cuda
+2026-02-20 14:47:30,030 [INFO] Loading Chinese-CLIP model: OFA-Sys/chinese-clip-vit-base-patch16
+2026-02-20 14:47:36,602 [INFO] Chinese-CLIP model loaded.
+2026-02-20 14:47:36,604 [INFO] Encoding images...
+2026-02-20 14:47:59,563 [INFO] Image embeddings shape: (55, 512)
+2026-02-20 14:47:59,570 [INFO] Encoding texts [CC]...
+2026-02-20 14:47:59,884 [INFO] Text embeddings [CC] shape: (18, 512)
+2026-02-20 14:47:59,884 [INFO] Encoding texts [MC]...
+2026-02-20 14:48:00,074 [INFO] Text embeddings [MC] shape: (18, 512)
+2026-02-20 14:48:00,074 [INFO] Encoding texts [EN]...
+2026-02-20 14:48:00,380 [INFO] Text embeddings [EN] shape: (18, 512)
+2026-02-20 14:48:00,380 [INFO] 
+--- Task A: Monolingual Retrieval ---
+2026-02-20 14:48:00,381 [INFO]   [CC] I2T R@1/5/10: 13.6 / 43.2 / 63.6
+2026-02-20 14:48:00,381 [INFO]   [CC] T2I R@1/5/10: 11.1 / 22.2 / 33.3
+2026-02-20 14:48:00,381 [INFO]   [MC] I2T R@1/5/10: 13.6 / 43.2 / 65.9
+2026-02-20 14:48:00,381 [INFO]   [MC] T2I R@1/5/10: 11.1 / 22.2 / 33.3
+2026-02-20 14:48:00,382 [INFO]   [EN] I2T R@1/5/10: 18.2 / 36.4 / 65.9
+2026-02-20 14:48:00,382 [INFO]   [EN] T2I R@1/5/10: 5.6 / 38.9 / 44.4
+2026-02-20 14:48:00,382 [INFO] 
+--- Task B: Cross-lingual Retrieval ---
+2026-02-20 14:48:00,382 [INFO]   [CC→MC] R@1/5/10: 38.9 / 88.9 / 94.4
+2026-02-20 14:48:00,382 [INFO]   [MC→CC] R@1/5/10: 55.6 / 77.8 / 94.4
+2026-02-20 14:48:00,382 [INFO]   [CC→EN] R@1/5/10: 16.7 / 38.9 / 72.2
+2026-02-20 14:48:00,382 [INFO]   [EN→CC] R@1/5/10: 16.7 / 55.6 / 83.3
+2026-02-20 14:48:00,383 [INFO]   [MC→EN] R@1/5/10: 22.2 / 44.4 / 72.2
+2026-02-20 14:48:00,383 [INFO]   [EN→MC] R@1/5/10: 11.1 / 38.9 / 66.7
+2026-02-20 14:48:00,383 [INFO] 
+--- CLC Analysis ---
+2026-02-20 14:48:00,410 [INFO]   CLC [CC--MC]: 0.600
+2026-02-20 14:48:00,437 [INFO]   CLC [CC--EN]: 0.243
+2026-02-20 14:48:00,482 [INFO]   CLC [MC--EN]: 0.497
+2026-02-20 14:48:00,482 [INFO] 
+--- Tier-Stratified Evaluation ---
+2026-02-20 14:48:00,482 [INFO]   [L1-Easy] Mean R@10: 6.7%
+2026-02-20 14:48:00,482 [INFO]   [L2-Medium] Mean R@10: 37.5%
+2026-02-20 14:48:00,483 [INFO]   [L3-Hard] Mean R@10: 66.7%
+2026-02-20 14:48:00,483 [INFO] 
+Model chinese_clip completed in 30.5s
+2026-02-20 14:48:00,483 [INFO] 
+========================================
+2026-02-20 14:48:00,483 [INFO] Evaluating model: siglip2
+2026-02-20 14:48:00,483 [INFO] ========================================
+2026-02-20 14:48:00,483 [INFO] Using device: cuda
+2026-02-20 14:48:00,505 [INFO] Loading SigLIP 2 model: google/siglip2-base-patch16-224
+2026-02-20 14:48:16,508 [INFO] SigLIP 2 model loaded.
+2026-02-20 14:48:16,512 [INFO] Encoding images...
+2026-02-20 14:48:31,519 [INFO] Image embeddings shape: (55, 768)
+2026-02-20 14:48:31,520 [INFO] Encoding texts [CC]...
+2026-02-20 14:48:32,254 [INFO] Text embeddings [CC] shape: (18, 768)
+2026-02-20 14:48:32,255 [INFO] Encoding texts [MC]...
+2026-02-20 14:48:32,517 [INFO] Text embeddings [MC] shape: (18, 768)
+2026-02-20 14:48:32,517 [INFO] Encoding texts [EN]...
+2026-02-20 14:48:32,734 [INFO] Text embeddings [EN] shape: (18, 768)
+2026-02-20 14:48:32,734 [INFO] 
+--- Task A: Monolingual Retrieval ---
+2026-02-20 14:48:32,742 [INFO]   [CC] I2T R@1/5/10: 4.5 / 27.3 / 52.3
+2026-02-20 14:48:32,742 [INFO]   [CC] T2I R@1/5/10: 5.6 / 16.7 / 27.8
+2026-02-20 14:48:32,744 [INFO]   [MC] I2T R@1/5/10: 6.8 / 22.7 / 59.1
+2026-02-20 14:48:32,744 [INFO]   [MC] T2I R@1/5/10: 5.6 / 11.1 / 27.8
+2026-02-20 14:48:32,745 [INFO]   [EN] I2T R@1/5/10: 6.8 / 29.5 / 56.8
+2026-02-20 14:48:32,745 [INFO]   [EN] T2I R@1/5/10: 5.6 / 16.7 / 33.3
+2026-02-20 14:48:32,745 [INFO] 
+--- Task B: Cross-lingual Retrieval ---
+2026-02-20 14:48:32,746 [INFO]   [CC→MC] R@1/5/10: 16.7 / 44.4 / 55.6
+2026-02-20 14:48:32,746 [INFO]   [MC→CC] R@1/5/10: 16.7 / 38.9 / 66.7
+2026-02-20 14:48:32,747 [INFO]   [CC→EN] R@1/5/10: 5.6 / 33.3 / 61.1
+2026-02-20 14:48:32,747 [INFO]   [EN→CC] R@1/5/10: 5.6 / 38.9 / 66.7
+2026-02-20 14:48:32,747 [INFO]   [MC→EN] R@1/5/10: 0.0 / 44.4 / 72.2
+2026-02-20 14:48:32,748 [INFO]   [EN→MC] R@1/5/10: 0.0 / 33.3 / 66.7
+2026-02-20 14:48:32,748 [INFO] 
+--- CLC Analysis ---
+2026-02-20 14:48:32,788 [INFO]   CLC [CC--MC]: 0.293
+2026-02-20 14:48:32,837 [INFO]   CLC [CC--EN]: 0.200
+2026-02-20 14:48:32,894 [INFO]   CLC [MC--EN]: 0.328
+2026-02-20 14:48:32,894 [INFO] 
+--- Tier-Stratified Evaluation ---
+2026-02-20 14:48:32,894 [INFO]   [L1-Easy] Mean R@10: 20.0%
+2026-02-20 14:48:32,895 [INFO]   [L2-Medium] Mean R@10: 29.2%
+2026-02-20 14:48:32,895 [INFO]   [L3-Hard] Mean R@10: 40.0%
+2026-02-20 14:48:32,895 [INFO] 
+Model siglip2 completed in 32.4s
+2026-02-20 14:48:32,895 [INFO] 
+========================================
+2026-02-20 14:48:32,895 [INFO] Evaluating model: jina_clip
+2026-02-20 14:48:32,895 [INFO] ========================================
+2026-02-20 14:48:32,895 [INFO] Using device: cuda
+2026-02-20 14:48:32,895 [INFO] Loading Jina-CLIP v2 model: jinaai/jina-clip-v2
+2026-02-20 14:48:33,638 [INFO] `text_config` is `None`. Initializing the `JinaCLIPTextConfig` with default values.
+2026-02-20 14:48:33,638 [INFO] `vision_config` is `None`. initializing the `JinaCLIPVisionConfig` with default values.
+2026-02-20 14:49:01,838 [INFO] Jina-CLIP v2 model loaded.
+2026-02-20 14:49:02,009 [INFO] Encoding images...
+2026-02-20 14:49:42,375 [INFO] Image embeddings shape: (55, 512)
+2026-02-20 14:49:42,375 [INFO] Encoding texts [CC]...
+2026-02-20 14:49:51,949 [INFO] Text embeddings [CC] shape: (18, 512)
+2026-02-20 14:49:51,949 [INFO] Encoding texts [MC]...
+2026-02-20 14:49:58,067 [INFO] Text embeddings [MC] shape: (18, 512)
+2026-02-20 14:49:58,068 [INFO] Encoding texts [EN]...
+2026-02-20 14:50:07,021 [INFO] Text embeddings [EN] shape: (18, 512)
+2026-02-20 14:50:07,022 [INFO] 
+--- Task A: Monolingual Retrieval ---
+2026-02-20 14:50:07,025 [INFO]   [CC] I2T R@1/5/10: 11.4 / 29.5 / 54.5
+2026-02-20 14:50:07,025 [INFO]   [CC] T2I R@1/5/10: 11.1 / 27.8 / 72.2
+2026-02-20 14:50:07,026 [INFO]   [MC] I2T R@1/5/10: 9.1 / 34.1 / 68.2
+2026-02-20 14:50:07,026 [INFO]   [MC] T2I R@1/5/10: 5.6 / 33.3 / 66.7
+2026-02-20 14:50:07,027 [INFO]   [EN] I2T R@1/5/10: 9.1 / 34.1 / 61.4
+2026-02-20 14:50:07,027 [INFO]   [EN] T2I R@1/5/10: 0.0 / 16.7 / 44.4
+2026-02-20 14:50:07,027 [INFO] 
+--- Task B: Cross-lingual Retrieval ---
+2026-02-20 14:50:07,028 [INFO]   [CC→MC] R@1/5/10: 88.9 / 100.0 / 100.0
+2026-02-20 14:50:07,028 [INFO]   [MC→CC] R@1/5/10: 88.9 / 100.0 / 100.0
+2026-02-20 14:50:07,028 [INFO]   [CC→EN] R@1/5/10: 33.3 / 72.2 / 100.0
+2026-02-20 14:50:07,029 [INFO]   [EN→CC] R@1/5/10: 50.0 / 61.1 / 88.9
+2026-02-20 14:50:07,029 [INFO]   [MC→EN] R@1/5/10: 44.4 / 83.3 / 94.4
+2026-02-20 14:50:07,030 [INFO]   [EN→MC] R@1/5/10: 50.0 / 88.9 / 94.4
+2026-02-20 14:50:07,030 [INFO] 
+--- CLC Analysis ---
+2026-02-20 14:50:07,077 [INFO]   CLC [CC--MC]: 0.556
+2026-02-20 14:50:07,111 [INFO]   CLC [CC--EN]: 0.228
+2026-02-20 14:50:07,143 [INFO]   CLC [MC--EN]: 0.388
+2026-02-20 14:50:07,143 [INFO] 
+--- Tier-Stratified Evaluation ---
+2026-02-20 14:50:07,143 [INFO]   [L1-Easy] Mean R@10: 60.0%
+2026-02-20 14:50:07,144 [INFO]   [L2-Medium] Mean R@10: 62.5%
+2026-02-20 14:50:07,144 [INFO]   [L3-Hard] Mean R@10: 60.0%
+2026-02-20 14:50:07,144 [INFO] 
+Model jina_clip completed in 94.2s
+2026-02-20 14:50:07,144 [INFO] 
+========================================
+2026-02-20 14:50:07,144 [INFO] Evaluating model: mbert_resnet
+2026-02-20 14:50:07,144 [INFO] ========================================
+2026-02-20 14:50:07,144 [INFO] Using device: cuda
+2026-02-20 14:50:07,144 [INFO] Loading mBERT: google-bert/bert-base-multilingual-cased
+2026-02-20 14:50:09,968 [INFO] Loading ResNet-50: microsoft/resnet-50
+2026-02-20 14:50:11,120 [INFO] mBERT + ResNet-50 baseline loaded.
+2026-02-20 14:50:12,285 [INFO] Encoding images...
+2026-02-20 14:50:27,603 [INFO] Image embeddings shape: (55, 512)
+2026-02-20 14:50:27,604 [INFO] Encoding texts [CC]...
+2026-02-20 14:50:28,012 [INFO] Text embeddings [CC] shape: (18, 512)
+2026-02-20 14:50:28,012 [INFO] Encoding texts [MC]...
+2026-02-20 14:50:28,471 [INFO] Text embeddings [MC] shape: (18, 512)
+2026-02-20 14:50:28,471 [INFO] Encoding texts [EN]...
+2026-02-20 14:50:28,974 [INFO] Text embeddings [EN] shape: (18, 512)
+2026-02-20 14:50:28,975 [INFO] 
+--- Task A: Monolingual Retrieval ---
+2026-02-20 14:50:28,976 [INFO]   [CC] I2T R@1/5/10: 4.5 / 31.8 / 56.8
+2026-02-20 14:50:28,976 [INFO]   [CC] T2I R@1/5/10: 0.0 / 16.7 / 44.4
+2026-02-20 14:50:28,977 [INFO]   [MC] I2T R@1/5/10: 4.5 / 31.8 / 65.9
+2026-02-20 14:50:28,977 [INFO]   [MC] T2I R@1/5/10: 5.6 / 27.8 / 38.9
+2026-02-20 14:50:28,978 [INFO]   [EN] I2T R@1/5/10: 15.9 / 36.4 / 59.1
+2026-02-20 14:50:28,978 [INFO]   [EN] T2I R@1/5/10: 5.6 / 27.8 / 33.3
+2026-02-20 14:50:28,978 [INFO] 
+--- Task B: Cross-lingual Retrieval ---
+2026-02-20 14:50:28,979 [INFO]   [CC→MC] R@1/5/10: 11.1 / 55.6 / 61.1
+2026-02-20 14:50:28,979 [INFO]   [MC→CC] R@1/5/10: 22.2 / 50.0 / 77.8
+2026-02-20 14:50:28,979 [INFO]   [CC→EN] R@1/5/10: 5.6 / 33.3 / 55.6
+2026-02-20 14:50:28,980 [INFO]   [EN→CC] R@1/5/10: 5.6 / 50.0 / 72.2
+2026-02-20 14:50:28,980 [INFO]   [MC→EN] R@1/5/10: 11.1 / 33.3 / 66.7
+2026-02-20 14:50:28,980 [INFO]   [EN→MC] R@1/5/10: 11.1 / 44.4 / 55.6
+2026-02-20 14:50:28,981 [INFO] 
+--- CLC Analysis ---
+2026-02-20 14:50:29,024 [INFO]   CLC [CC--MC]: 0.258
+2026-02-20 14:50:29,060 [INFO]   CLC [CC--EN]: 0.215
+2026-02-20 14:50:29,094 [INFO]   CLC [MC--EN]: -0.100
+2026-02-20 14:50:29,094 [INFO] 
+--- Tier-Stratified Evaluation ---
+2026-02-20 14:50:29,095 [INFO]   [L1-Easy] Mean R@10: 6.7%
+2026-02-20 14:50:29,095 [INFO]   [L2-Medium] Mean R@10: 45.8%
+2026-02-20 14:50:29,095 [INFO]   [L3-Hard] Mean R@10: 60.0%
+2026-02-20 14:50:29,095 [INFO] 
+Model mbert_resnet completed in 22.0s
+2026-02-20 14:50:29,095 [INFO] 
+--- Exporting Results ---
+2026-02-20 14:50:29,099 [INFO] Results JSON saved to experiments/outputs/all_results.json
+2026-02-20 14:50:29,100 [INFO] Task A LaTeX table written to experiments/outputs/latex/task_a_results.tex
+2026-02-20 14:50:29,100 [INFO] Task B LaTeX table written to experiments/outputs/latex/task_b_results.tex
+2026-02-20 14:50:29,100 [INFO] Tier results LaTeX table written to experiments/outputs/latex/tier_results.tex
+2026-02-20 14:50:29,101 [INFO] CLC LaTeX table written to experiments/outputs/latex/clc_results.tex
+2026-02-20 14:50:29,101 [INFO] 
+All results saved to experiments/outputs/
+2026-02-20 14:50:29,101 [INFO] LaTeX tables saved to experiments/outputs/latex/
+2026-02-20 14:50:29,101 [INFO] Full results JSON: experiments/outputs/all_results.json
+2026-02-20 14:50:29,101 [INFO] Log file: experiments/outputs/experiment_log.txt

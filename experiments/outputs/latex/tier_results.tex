@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Retrieval performance stratified by difficulty tier (mean Recall@K across languages and directions, \%).}
+\label{tab:tier_results}
+\small
+\begin{tabular}{l ccc ccc ccc c}
+\toprule
+\textbf{Model} & \multicolumn{3}{c}{\textbf{L1-Easy}} & \multicolumn{3}{c}{\textbf{L2-Medium}} & \multicolumn{3}{c}{\textbf{L3-Hard}} & $\Delta_{\text{L1--L3}}$ \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7} \cmidrule(lr){8-10}
+ & @1 & @5 & @10 & @1 & @5 & @10 & @1 & @5 & @10 & @10 \\
+\midrule
+CLIP ViT-B/32 & 0.0 & 26.7 & 53.3 & 4.2 & 29.2 & 50.0 & 20.0 & 26.7 & 40.0 & 13.3 \\
+Chinese-CLIP ViT-B/16 & 0.0 & 0.0 & 6.7 & 8.3 & 29.2 & 37.5 & 20.0 & 53.3 & 66.7 & -60.0 \\
+SigLIP 2 ViT-B/16 & 0.0 & 6.7 & 20.0 & 8.3 & 20.8 & 29.2 & 6.7 & 13.3 & 40.0 & -20.0 \\
+Jina-CLIP v2 & 6.7 & 20.0 & 60.0 & 8.3 & 25.0 & 62.5 & 0.0 & 33.3 & 60.0 & 0.0 \\
+mBERT + ResNet-50 & 0.0 & 6.7 & 6.7 & 4.2 & 25.0 & 45.8 & 6.7 & 40.0 & 60.0 & -53.3 \\
+\bottomrule
+\end{tabular}
+\end{table}
