@@ -42,6 +42,7 @@ from utils import (
     get_image_path,
     group_by_tier,
     load_gold_samples,
+    load_pool_index,
     results_to_latex_clc,
     results_to_latex_task_a,
     results_to_latex_task_b,
@@ -118,17 +119,55 @@ def main() -> None:
     # Set seed
     np.random.seed(config["evaluation"]["seed"])
 
-    # ── Resolve image paths ──
-    image_paths = []
+    # ── Resolve original 18 image paths (for legacy I2T) ──
+    original_image_paths = []
     for s in samples:
         try:
             img_path = get_image_path(s, image_dir)
-            image_paths.append(img_path)
+            original_image_paths.append(img_path)
         except FileNotFoundError as e:
             logger.error(f"Missing image for {s['sample_id']}: {e}")
             sys.exit(1)
+    logger.info(f"Original images: {len(original_image_paths)} found.")
 
-    logger.info(f"All {len(image_paths)} images found.")
+    # ── Load expanded retrieval pool (if configured) ──
+    pool_index_path = config["data"].get("pool_index")
+    pool_dir = config["data"].get("retrieval_pool_dir")
+    use_expanded_pool = pool_index_path and pool_dir and os.path.exists(pool_index_path)
+
+    if use_expanded_pool:
+        pool_files, technique_indices, image_technique = load_pool_index(pool_index_path)
+        pool_image_paths = [os.path.join(pool_dir, f) for f in pool_files]
+        # Verify all exist
+        for p in pool_image_paths:
+            if not os.path.exists(p):
+                logger.error(f"Pool image not found: {p}")
+                sys.exit(1)
+        logger.info(f"Expanded pool: {len(pool_image_paths)} images ready.")
+
+        # Build T2I ground truth: query i (HX-{i+1:02d}) -> set of correct image indices
+        hx_ids = [f"HX-{i+1:02d}" for i in range(len(samples))]
+        t2i_gt = [technique_indices[hx] for hx in hx_ids]
+
+        # Build I2T ground truth: pool image j -> text index (technique index)
+        # Only technique images have GT; distractors are excluded from I2T eval
+        hx_to_text_idx = {f"HX-{i+1:02d}": i for i in range(len(samples))}
+        i2t_eval_indices = []  # pool image indices to evaluate
+        i2t_gt = []            # their GT text indices
+        for j, hx in enumerate(image_technique):
+            if hx is not None:
+                i2t_eval_indices.append(j)
+                i2t_gt.append(hx_to_text_idx[hx])
+
+        image_paths = pool_image_paths
+        logger.info(f"T2I: 18 queries → {len(pool_image_paths)} candidates")
+        logger.info(f"I2T: {len(i2t_eval_indices)} image queries → 18 text candidates")
+    else:
+        image_paths = original_image_paths
+        t2i_gt = None  # use diagonal
+        i2t_eval_indices = None
+        i2t_gt = None
+        logger.info("Using legacy 18-image mode (1:1 diagonal GT).")
 
     # ── Extract texts per language ──
     texts_by_lang: dict[str, list[str]] = {}
@@ -143,6 +182,8 @@ def main() -> None:
             "models": args.models,
             "device": args.device,
             "num_samples": len(samples),
+            "pool_size": len(image_paths),
+            "expanded_pool": use_expanded_pool,
         },
         "task_a": {},
         "task_b": {},
@@ -180,13 +221,23 @@ def main() -> None:
 
         for lang in languages:
             label = lang_labels[lang]
-            # I2T: image query -> text candidates
-            sim_i2t = model.cosine_similarity_matrix(image_embeddings, text_embeddings[lang])
-            # T2I: text query -> image candidates
-            sim_t2i = model.cosine_similarity_matrix(text_embeddings[lang], image_embeddings)
 
-            recall_i2t = compute_recall_at_k(sim_i2t, k_values)
-            recall_t2i = compute_recall_at_k(sim_t2i, k_values)
+            # T2I: text query -> image candidates
+            # shape: (18, N_pool) where N_pool = 55 (expanded) or 18 (legacy)
+            sim_t2i = model.cosine_similarity_matrix(text_embeddings[lang], image_embeddings)
+            recall_t2i = compute_recall_at_k(sim_t2i, k_values, gt_indices=t2i_gt)
+
+            # I2T: image query -> text candidates
+            if use_expanded_pool:
+                # Full sim: (N_pool, 18) — but only evaluate technique images
+                sim_i2t_full = model.cosine_similarity_matrix(image_embeddings, text_embeddings[lang])
+                sim_i2t_eval = sim_i2t_full[i2t_eval_indices, :]  # (44, 18)
+                recall_i2t = compute_recall_at_k(sim_i2t_eval, k_values, gt_indices=i2t_gt)
+                # Cache full matrix for CLC
+                sim_i2t = sim_i2t_full
+            else:
+                sim_i2t = model.cosine_similarity_matrix(image_embeddings, text_embeddings[lang])
+                recall_i2t = compute_recall_at_k(sim_i2t, k_values)
 
             all_results["task_a"][model_key][lang] = {
                 "i2t": recall_i2t,
@@ -257,19 +308,27 @@ def main() -> None:
 
             tier_samples = tier_groups[tier]
             tier_indices = [samples.index(s) for s in tier_samples]
-            n_tier = len(tier_indices)
 
-            # Compute mean recall across all languages and directions for this tier
-            # Use tier queries against FULL candidate pool (all 18 items)
             tier_recalls = {k: [] for k in k_values}
             for lang in languages:
-                for direction in ["i2t", "t2i"]:
-                    sim = sim_cache[model_key][lang][direction]
-                    # Take tier rows, keep all columns as candidates
-                    sub_sim = sim[tier_indices, :]
-                    tier_recall = compute_recall_at_k(sub_sim, k_values, gt_indices=tier_indices)
+                # T2I tier subset: take tier query rows from sim_t2i
+                sim_t2i = sim_cache[model_key][lang]["t2i"]
+                sub_sim_t2i = sim_t2i[tier_indices, :]
+                if use_expanded_pool:
+                    tier_t2i_gt = [t2i_gt[i] for i in tier_indices]
+                    tier_recall_t2i = compute_recall_at_k(sub_sim_t2i, k_values, gt_indices=tier_t2i_gt)
+                else:
+                    tier_recall_t2i = compute_recall_at_k(sub_sim_t2i, k_values, gt_indices=tier_indices)
+                for k in k_values:
+                    tier_recalls[k].append(tier_recall_t2i[k])
+
+                # I2T tier subset (legacy mode only; expanded mode I2T is complex)
+                if not use_expanded_pool:
+                    sim_i2t = sim_cache[model_key][lang]["i2t"]
+                    sub_sim_i2t = sim_i2t[tier_indices, :]
+                    tier_recall_i2t = compute_recall_at_k(sub_sim_i2t, k_values, gt_indices=tier_indices)
                     for k in k_values:
-                        tier_recalls[k].append(tier_recall[k])
+                        tier_recalls[k].append(tier_recall_i2t[k])
 
             all_results["tier"][model_key][tier] = {
                 k: float(np.mean(tier_recalls[k])) for k in k_values

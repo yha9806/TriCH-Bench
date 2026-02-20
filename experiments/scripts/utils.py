@@ -10,6 +10,7 @@ Date: 2026-02-14
 import json
 import logging
 import os
+from collections.abc import Sequence
 from pathlib import Path
 from typing import Any
 
@@ -44,6 +45,43 @@ def get_image_path(sample: dict, image_dir: str) -> str:
     return resolved
 
 
+def load_pool_index(pool_index_path: str) -> tuple[list[str], dict[str, set[int]], list[str | None]]:
+    """Load pool_index.json and build image list + ground truth mapping.
+
+    Returns:
+        image_files: ordered list of all image filenames
+        technique_indices: dict HX-XX -> set of image indices (correct targets)
+        image_technique: list mapping image index -> HX-XX or None (distractor)
+    """
+    with open(pool_index_path, "r", encoding="utf-8") as f:
+        pool = json.load(f)
+
+    image_files: list[str] = []
+    technique_indices: dict[str, set[int]] = {}
+    image_technique: list[str | None] = []
+
+    # Add technique images in HX-01..HX-18 order
+    for hx_id in sorted(pool["technique_map"].keys()):
+        technique_indices[hx_id] = set()
+        for img_file in pool["technique_map"][hx_id]["images"]:
+            idx = len(image_files)
+            image_files.append(img_file)
+            technique_indices[hx_id].add(idx)
+            image_technique.append(hx_id)
+
+    # Add distractors (never correct for any query)
+    for img_file in pool["distractors"]:
+        image_files.append(img_file)
+        image_technique.append(None)
+
+    logger.info(
+        f"Loaded pool index: {len(image_files)} images "
+        f"({sum(len(v) for v in technique_indices.values())} technique + "
+        f"{sum(1 for t in image_technique if t is None)} distractors)"
+    )
+    return image_files, technique_indices, image_technique
+
+
 def group_by_tier(samples: list[dict]) -> dict[str, list[dict]]:
     """Group samples by difficulty tier."""
     groups: dict[str, list[dict]] = {}
@@ -60,7 +98,7 @@ def group_by_tier(samples: list[dict]) -> dict[str, list[dict]]:
 def compute_recall_at_k(
     similarity_matrix: np.ndarray,
     k_values: list[int],
-    gt_indices: list[int] | None = None,
+    gt_indices: Sequence[int | set[int]] | None = None,
 ) -> dict[int, float]:
     """
     Compute Recall@K from a similarity matrix.
@@ -69,8 +107,11 @@ def compute_recall_at_k(
         similarity_matrix: (N, M) matrix where [i, j] = similarity
                            between query i and candidate j.
         k_values: list of K values, e.g. [1, 5, 10].
-        gt_indices: ground truth column index for each query row.
-                    If None, uses diagonal (i.e., gt for query i is col i).
+        gt_indices: ground truth target(s) for each query row.
+            - If None: uses diagonal (gt for query i is column i).
+            - If list of int: gt for query i is the single column gt_indices[i].
+            - If list of set[int]: gt for query i is ANY column in gt_indices[i]
+              (multi-image ground truth for expanded retrieval pool).
 
     Returns:
         Dict mapping K -> Recall@K as percentage.
@@ -83,8 +124,14 @@ def compute_recall_at_k(
     for k in k_values:
         hits = 0
         for i in range(n):
-            gt = gt_indices[i] if gt_indices is not None else i
-            if gt in ranks[i, :k]:
+            if gt_indices is None:
+                gt = {i}
+            elif isinstance(gt_indices[i], set):
+                gt = gt_indices[i]
+            else:
+                gt = {gt_indices[i]}
+            top_k = set(ranks[i, :k].tolist())
+            if top_k & gt:  # non-empty intersection
                 hits += 1
         results[k] = (hits / n) * 100.0
     return results

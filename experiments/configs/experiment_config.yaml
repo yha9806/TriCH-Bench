@@ -7,6 +7,9 @@ data:
   gold_samples: "data/samples/hai_xian_18_migrated.json"
   bronze_drafts: "data/samples/text_type_expansion_drafts.json"
   image_dir: "images/hai_xian_18"
+  # Expanded retrieval pool (55 images: 44 technique + 11 distractors)
+  retrieval_pool_dir: "images/retrieval_pool"
+  pool_index: "images/retrieval_pool/pool_index.json"
 
 # === Models ===
 models:

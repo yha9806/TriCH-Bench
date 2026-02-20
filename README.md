@@ -35,11 +35,16 @@ TriCH-Bench/
 │   │   └── text_type_expansion_template.json
 │   └── interop_examples_README.md
 ├── images/
-│   └── hai_xian_18/                        # Original manual scans (49 images)
-│       ├── c01.高古游丝描.jpg ~ c18.枣核描.jpg  # 18 technique illustrations
-│       ├── a01.封面.jpg                    # Cover page
-│       ├── b01.自序.jpg ~ b10.jpg          # Preface pages
-│       └── d01.画人物论.jpg ~ e01.封底.jpg  # Supplementary texts
+│   ├── hai_xian_18/                        # Original manual scans (49 images)
+│   │   ├── c01.高古游丝描.jpg ~ c18.枣核描.jpg  # 18 technique illustrations
+│   │   ├── a01.封面.jpg                    # Cover page
+│   │   ├── b01.自序.jpg ~ b10.jpg          # Preface pages
+│   │   └── d01.画人物论.jpg ~ e01.封底.jpg  # Supplementary texts
+│   └── retrieval_pool/                     # Expanded retrieval pool (55 images)
+│       ├── pool_index.json                 # Technique→image mapping
+│       ├── c01~c18 (original 18)           # Technique illustrations
+│       ├── *_HX-XX.jpg (26 museum)         # CC0/PD exemplar paintings
+│       └── distractor_*.jpg (11)           # Unassigned Chinese paintings
 ├── LICENSE                                 # CC BY-NC-SA 4.0
 └── README.md
 ```
@@ -86,6 +91,20 @@ TriCH-Bench/
 - **Gold**: Reviewed by 2+ independent experts. All quality dimensions scored >= 3.0/4.0. Suitable for primary evaluation.
 - **Silver**: Single expert review with spot-checks. Suitable for extended experiments.
 - **Bronze**: LLM-generated with single expert quality check. Suitable for community distribution with caveats.
+
+## Expanded Retrieval Pool
+
+The retrieval pool contains 55 images: 44 technique-labeled images (1-5 per technique) and 11 distractor paintings. Sources include the Metropolitan Museum of Art, Cleveland Museum of Art, Smithsonian/Freer Gallery, and Wikimedia Commons (all CC0 or Public Domain).
+
+| Images per Technique | Techniques |
+|---------------------|------------|
+| 5 images | HX-14 (减笔描) |
+| 4 images | HX-01 (高古游丝描) |
+| 3 images | HX-03, 04, 05, 09, 11, 15, 18 |
+| 2 images | HX-02, 06, 07, 08, 10 |
+| 1 image  | HX-12, 13, 16, 17 |
+
+Random baseline Recall@10 drops from 55.6% (18 images) to ~18% (55 images), enabling meaningful model differentiation.
 
 ## Evaluation Protocol
 

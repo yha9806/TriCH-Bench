@@ -1,0 +1,160 @@
+{
+  "pool_info": {
+    "total_images": 55,
+    "technique_images": 44,
+    "distractor_images": 11,
+    "techniques": 18,
+    "expansion_from": 18,
+    "expansion_ratio": 3.06,
+    "created": "2026-02-20"
+  },
+  "technique_map": {
+    "HX-01": {
+      "name": "高古游丝描",
+      "images": [
+        "c01.高古游丝描.jpg",
+        "freer_F1914.53_HX-01.jpg",
+        "wiki_luoshenfu_HX-01.jpg",
+        "cma_1959.138_HX-01.jpg"
+      ]
+    },
+    "HX-02": {
+      "name": "琴弦描",
+      "images": [
+        "c02.琴弦描.jpg",
+        "wiki_court_ladies_HX-02.jpg"
+      ]
+    },
+    "HX-03": {
+      "name": "铁线描",
+      "images": [
+        "c03.铁线描.jpg",
+        "wiki_thirteen_emperors_HX-03.jpg",
+        "wiki_87_immortals_HX-03.jpg"
+      ]
+    },
+    "HX-04": {
+      "name": "行云流水描",
+      "images": [
+        "c04.行云流水描.jpg",
+        "freer_F1945.32_HX-04.jpg",
+        "met_39545_HX-04.jpg"
+      ]
+    },
+    "HX-05": {
+      "name": "蚂蝗描",
+      "images": [
+        "c05.蚂蝗描.jpg",
+        "met_40054_HX-05.jpg",
+        "met_40052_HX-05.jpg"
+      ]
+    },
+    "HX-06": {
+      "name": "钉头鼠尾描",
+      "images": [
+        "c06.钉头鼠尾描.jpg",
+        "cma_1963.582_HX-06.jpg"
+      ]
+    },
+    "HX-07": {
+      "name": "混描",
+      "images": [
+        "c07.混描.jpg",
+        "cma_1979.27_HX-07.jpg"
+      ]
+    },
+    "HX-08": {
+      "name": "撅头钉描",
+      "images": [
+        "c08.撅头钉描.jpg",
+        "met_40086_HX-08.jpg"
+      ]
+    },
+    "HX-09": {
+      "name": "曹衣描",
+      "images": [
+        "c09.曹衣描.jpg",
+        "freer_F1960.1_HX-09.jpg",
+        "cma_1962.161_HX-09.jpg"
+      ]
+    },
+    "HX-10": {
+      "name": "折芦描",
+      "images": [
+        "c10.折芦描.jpg",
+        "cma_1982.29.1_HX-10.jpg"
+      ]
+    },
+    "HX-11": {
+      "name": "柳叶描",
+      "images": [
+        "c11.柳叶描.jpg",
+        "cma_1961.206_HX-11.jpg",
+        "wiki_heavenly_king_HX-11.jpg"
+      ]
+    },
+    "HX-12": {
+      "name": "竹叶描",
+      "images": [
+        "c12.竹叶描.jpg"
+      ]
+    },
+    "HX-13": {
+      "name": "战笔水纹描",
+      "images": [
+        "c13.战笔水纹描.jpg"
+      ]
+    },
+    "HX-14": {
+      "name": "减笔描",
+      "images": [
+        "c14.减笔描.jpg",
+        "met_40090_HX-14.jpg",
+        "wiki_li_bai_HX-14.jpg",
+        "wiki_splashed_ink_HX-14.jpg",
+        "met_39553_HX-14.jpg"
+      ]
+    },
+    "HX-15": {
+      "name": "枯柴描",
+      "images": [
+        "c15.枯柴描.jpg",
+        "freer_F1938.4_HX-15.jpg",
+        "cma_1982.29.2_HX-15.jpg"
+      ]
+    },
+    "HX-16": {
+      "name": "蚯蚓描",
+      "images": [
+        "c16.蚯蚓描.jpg"
+      ]
+    },
+    "HX-17": {
+      "name": "橄榄描",
+      "images": [
+        "c17.橄榄描.jpg"
+      ]
+    },
+    "HX-18": {
+      "name": "枣核描",
+      "images": [
+        "c18.枣核描.jpg",
+        "cma_1972.160_HX-18.jpg",
+        "cma_1978.47.1_HX-18.jpg"
+      ]
+    }
+  },
+  "distractors": [
+    "distractor_met_40055.jpg",
+    "distractor_met_40081.jpg",
+    "distractor_met_39901.jpg",
+    "distractor_met_40094.jpg",
+    "distractor_met_39569.jpg",
+    "distractor_met_40446.jpg",
+    "distractor_met_40433.jpg",
+    "distractor_cma_1983.85.jpg",
+    "distractor_cma_1960.181.jpg",
+    "distractor_cma_1976.13.jpg",
+    "distractor_cma_1976.91.jpg"
+  ]
+}

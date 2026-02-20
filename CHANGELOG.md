@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.1.0] - 2026-02-20
+
+### Added
+- **Expanded retrieval pool**: 55 images (44 technique + 11 distractors), up from 18
+  - Sources: Met Museum, Cleveland Museum of Art, Smithsonian/Freer Gallery, Wikimedia Commons
+  - All CC0 or Public Domain
+  - `images/retrieval_pool/` with `pool_index.json` technique→image mapping
+- Multi-image ground truth: Recall@K now counts a hit if ANY correct-technique image is in top-K
+- I2T evaluation uses all 44 technique images as queries (up from 18)
+
+### Changed
+- `compute_recall_at_k` supports `set[int]` ground truth per query (multi-image)
+- `run_evaluation.py` loads expanded pool from `pool_index.json` when configured
+- Random baseline Recall@10 drops from 55.6% (18 images) to ~18% (55 images)
+
+### Fixed
+- Renamed `c08.橛头钉描.jpg` → `c08.撅头钉描.jpg` (correct character variant)
+
 ## [2.0.3] - 2026-02-14
 
 ### Added
