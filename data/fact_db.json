@@ -1,0 +1,1242 @@
+{
+  "metadata": {
+    "created": "2026-02-21",
+    "version": "1.0.0",
+    "purpose": "TriCH-Bench bronze-tier sample fact verification database",
+    "method": "Cross-referencing against Wikipedia, Britannica, Palace Museum, scholarly sources",
+    "sources_count": 109,
+    "source_files": [
+      "fact_db_painters.json",
+      "fact_db_techniques.json",
+      "fact_db_cultural_terms.json",
+      "wiki_verification_buddhist_art.json"
+    ],
+    "corrections_applied": "2026-02-21: 8 errors fixed (4x Liang Kai dates, 2x Cao Buqing→Zhongda, 2x Xia Gui fl. prefix)"
+  },
+  "painters": {
+    "gu_kaizhi": {
+      "name_cc": "顾恺之",
+      "name_mc": "顧愛之",
+      "name_en": "Gu Kaizhi",
+      "courtesy_name": "长康 (Changkang)",
+      "birth_death": "c. 344–c. 406 CE",
+      "birth_death_alt": "c. 345–409 (SpringerLink); c. 348–409 (Berkshire)",
+      "dynasty": "东晋 (Eastern Jin, 317–420)",
+      "origin": "无锡 (Wuxi), 江苏省 (Jiangsu province)",
+      "representative_works": [
+        "洛神赋图 (Nymph of the Luo River) — 宋/明副本存世",
+        "女史箴图 (Admonitions of the Instructress to the Court Ladies) — 唐副本存于大英博物馆",
+        "列女仁智图 (Wise and Benevolent Women) — 宋副本存于故宫博物院"
+      ],
+      "technique_associations": [
+        "高古游丝描 (High Ancient Gossamer Stroke) — 十八描第一种，顾恺之为代表人物",
+        "春蚕吐丝描 (Spring Silkworm Spinning Thread) — 高古游丝描的别名",
+        "密体 (Dense Style) — 与吴道子的“疏体”相对"
+      ],
+      "titles_epithets": [
+        "三绝: 才绝、画绝、痴绝",
+        "中国传统绘画先驱/创始人 (founder of traditional Chinese painting)",
+        "“以形写神”、“传神写照”理论的先驱",
+        "“凡画，人最难，次山水” — 绘画理论家"
+      ],
+      "notes": "Britannica gives c. 344–c. 406; Wikipedia Chinese gives 348–409. The c. 344–406 range is most widely cited in English scholarship.",
+      "sources": [
+        "https://www.britannica.com/biography/Gu-Kaizhi",
+        "https://en.wikipedia.org/wiki/Gu_Kaizhi",
+        "https://link.springer.com/rwe/10.1007/978-981-99-5009-6_10965",
+        "https://www.berkshirepublishing.com/ecph-china/2018/01/04/gu-kaizhi-c-348-409-ce/",
+        "https://baike.baidu.com/item/%E9%AB%98%E5%8F%A4%E6%B8%B8%E4%B8%9D%E6%8F%8F/8118402"
+      ],
+      "bronze_sample_claim": "c. 344-406 CE, 东晋, 代表作《洛神赋图》",
+      "bronze_sample_verdict": "PASS",
+      "corrections_needed": "无。c. 344–406 与 Britannica 一致，东晋正确，《洛神赋图》确为代表作。注意：部分来源给出 345–409 或 348–409，但差异在可接受范围内。"
+    },
+    "cao_zhongda": {
+      "name_cc": "曹仲达",
+      "name_mc": "曹仲達",
+      "name_en": "Cao Zhongda",
+      "courtesy_name": "不详",
+      "birth_death": "生卒年不详, fl. 6th century (Northern Qi period, 550–577)",
+      "birth_death_alt": "学者考证卒年上限约581年，活动下限可能到隋开皇年间",
+      "dynasty": "北齐 (Northern Qi, 550–577)，后事周、隋",
+      "origin": "中亚曹国 (Cao Kingdom, near Samarkand, modern Uzbekistan) — 粟特人 (Sogdian)",
+      "representative_works": [
+        "无原作存世",
+        "以佛教人物画著称，擅长人物、肖像、佛像",
+        "《齐武临轩对武骑图》(已佚) — 文献记载"
+      ],
+      "technique_associations": [
+        "曹衣出水 (Cao's Clothes Emerging from Water) — 人物衣纹紧贴身体，如出水状",
+        "曹家样 (Cao Family Style) — 中国绘画史上最著名的风格之一",
+        "曹衣描 — 十八描之一，以曹仲达命名"
+      ],
+      "titles_epithets": [
+        "北齐朝散大夫 (Northern Qi Chaosan Dafu)",
+        "与吴道子并称“曹衣出水，吴带当风”"
+      ],
+      "important_disambiguation": {
+        "issue": "曹不兴 (Cao Buxing) vs 曹仲达 (Cao Zhongda) — 这是两个不同的人！",
+        "cao_buxing": {
+          "name": "曹不兴 (Cao Buxing)",
+          "dynasty": "三国·吴 (Three Kingdoms–Wu, 3rd century)",
+          "origin": "吴兴 (今浙江湖州)",
+          "significance": "被称为“佛画之祖”，师从天窾僧人康僧会"
+        },
+        "relationship_to_caoyichushui": "“曹衣出水”的归属存在争议。主流观点认为指曹仲达 (Northern Qi)，但有学者认为曹不兴是第一代“曹衣出水”风格的创始者，曹仲达是第二代代表。十八描中的“曹衣描”一般以曹仲达命名。",
+        "conclusion_for_bronze": "在十八描语境下，“曹衣描”/“曹衣出水”一般指曹仲达 (Cao Zhongda)，这是主流学术共识。"
+      },
+      "sources": [
+        "https://www.britannica.com/biography/Cao-Zhongda",
+        "https://zh.wikipedia.org/zh-hans/%E6%9B%B9%E4%BB%B2%E8%BE%BE",
+        "https://link.springer.com/rwe/10.1007/978-981-99-5009-6_10953",
+        "https://voicesoncentralasia.org/lost-sogdian-art-in-china/",
+        "https://baike.baidu.com/item/%E6%9B%B9%E8%A1%A3%E5%87%BA%E6%B0%B4/8061060",
+        "https://m.thepaper.cn/newsDetail_forward_18826868"
+      ],
+      "bronze_sample_claim": "北齐, 中亚粟特人, fl. 6th century, 创立“曹衣出水”",
+      "bronze_sample_verdict": "PASS",
+      "corrections_needed": "无重大错误。北齐、粟特人、fl. 6th century 均正确。“创立”曹衣出水的说法基本正确（主流观点），但严格来说曹不兴可能是更早的先驱。建议保留现有表述，注意不要将曹仲达与曹不兴混淆即可。"
+    },
+    "wu_daozi": {
+      "name_cc": "吴道子",
+      "name_mc": "吳道子",
+      "name_en": "Wu Daozi",
+      "courtesy_name": "道玄 (Daoxuan)",
+      "birth_death": "c. 680–c. 759 CE (Shanghai Daily); c. 686–c. 760 CE (Oxford Art History, Berkshire)",
+      "birth_death_alt": "学术界对生年存在 680 vs 685–686 的争议",
+      "dynasty": "唐代 (Tang Dynasty, 618–907)",
+      "origin": "阳翟 (今河南禹州) (Yangdi, modern Yuzhou, Henan Province)",
+      "representative_works": [
+        "《送子天王图》 (Delivering the Son to the Heavenly King) — 大阪市立美术馆藏",
+        "《八十七神仙卷》 (The Eighty-Seven Immortals) — 徐悲鸿纪念馆藏",
+        "大量寺观壁画 (均已佚) — 文献记载300余堵壁画"
+      ],
+      "technique_associations": [
+        "吴带当风 (Wu's Sash Catching the Wind) — 衣纹飘举如风吹动",
+        "兰叶描 (Orchid Leaf Stroke) / 菼菜描 (Water Shield Stroke) — 十八描之一，吴道子为代表人物",
+        "疏体 (Sparse Style) — 与顾恺之的“密体”相对",
+        "白描 (White-line ink brush) — 强调线条表现力"
+      ],
+      "titles_epithets": [
+        "画圣 (Sage of Painting / Saint of Painting)",
+        "唐玄宗宫廷画师 (Court painter under Emperor Xuanzong)",
+        "宁王友 (Advisor to the Prince of Ning)"
+      ],
+      "notes": "生年存在争议：Shanghai Daily 与部分中文源给 c. 680，Oxford Art History (2022) 与 Berkshire 给 c. 686。卖年类似：759 vs 760。无原作存世，仅存后世副本。",
+      "sources": [
+        "https://www.britannica.com/biography/Wu-Daoxuan",
+        "https://en.wikipedia.org/wiki/Wu_Daozi",
+        "https://academic.oup.com/arthistory/article/45/2/228/7275130",
+        "https://www.berkshirepublishing.com/ecph-china/2018/01/14/wu-daozi-c-686-c-760-ce/",
+        "https://archive.shine.cn/sunday/now-and-then/Wu-Daozi-AD-680759-Painters-death-a-tall-tale/shdaily.shtml",
+        "https://zhuanlan.zhihu.com/p/139458938"
+      ],
+      "bronze_sample_claim": "c. 680-759 CE, 唐代, “画圣”, “吴带当风”",
+      "bronze_sample_verdict": "PASS",
+      "corrections_needed": "生年 c. 680 与部分来源一致 (Shanghai Daily)，但近年学术研究倾向于 c. 686。两种说法均可接受。“画圣”、“吴带当风”均正确。建议将生年表述为“c. 680/686”以反映争议。"
+    },
+    "ma_yuan": {
+      "name_cc": "马远",
+      "name_mc": "馬遠",
+      "name_en": "Ma Yuan",
+      "courtesy_name": "遥父 (Yaofu)",
+      "birth_death": "c. 1160/65–c. 1225",
+      "birth_death_alt": "active c. 1190–1225 (Asian Brushpainter)",
+      "dynasty": "南宋 (Southern Song, 1127–1279)",
+      "origin": "钱塘 (今杭州, 浙江) (Qiantang, modern Hangzhou, Zhejiang)",
+      "family_background": "绘画世家: 曾祖父马贲、祖父马兴祖、父马世荣均为宫廷画师; 子马麟亦为画院待诏",
+      "representative_works": [
+        "《踏歌图》 (Walking on a Path in Spring)",
+        "《水图》十二开 (Water Album, 12 leaves) — 故宫博物院藏",
+        "《寒江独钓图》 (Angler on a Wintry Lake)",
+        "《山径春行图》 (Walking on a Mountain Path in Spring)"
+      ],
+      "technique_associations": [
+        "大斜线构图 / “马一角” (One-Corner Ma) — 偏角构图，留白大量空间",
+        "大斧劫皴 (Large Axe-Cut Texture Strokes) — 山石纹理技法",
+        "马夏派 (Ma-Xia School) — 与夏圭共同创立"
+      ],
+      "titles_epithets": [
+        "马一角 (One-Corner Ma)",
+        "南宋画院待诏 (Painter-in-Attendance at Southern Song court)",
+        "宁宗朝宫廷画师"
+      ],
+      "sources": [
+        "https://www.britannica.com/biography/Ma-Yuan-Chinese-painter",
+        "https://en.wikipedia.org/wiki/Ma_Yuan_(painter)",
+        "https://www.comuseum.com/painting/masters/ma-yuan/",
+        "https://www.asianbrushpainter.com/blogs/kb/ma-yuan-active-around-1190-1225"
+      ],
+      "bronze_sample_claim": "c. 1160-1225, 南宋",
+      "bronze_sample_verdict": "PASS",
+      "corrections_needed": "无。c. 1160–1225 与主流来源一致 (Britannica 给 c. 1160/65–1225)。南宋正确。"
+    },
+    "xia_gui": {
+      "name_cc": "夏圭",
+      "name_mc": "夏珪",
+      "name_en": "Xia Gui",
+      "courtesy_name": "禹玉 (Yuyu)",
+      "birth_death": "生卒年不详, fl. 1195–1224",
+      "birth_death_alt": "fl. 1180–1230 (部分来源给出更宽范围)",
+      "dynasty": "南宋 (Southern Song, 1127–1279)",
+      "origin": "钱塘 (今杭州, 浙江) (Qiantang, modern Hangzhou, Zhejiang) — 最可能的出生地",
+      "representative_works": [
+        "《溪山清远图》 (Pure and Remote View of Streams and Mountains) — 台北故宫博物院藏, 46.5×889.1cm",
+        "《山市晴岚图》 (Mountain Market, Clearing Mist) — 大都会博物馆藏"
+      ],
+      "technique_associations": [
+        "马夏派 (Ma-Xia School) — 与马远共同创立",
+        "斜角构图 / “夏半边” (Half-Side Xia) — 半边构图风格",
+        "斧劫皴 (Axe-Cut Texture Strokes) — 继承李唐传统",
+        "拖泥带水皴 (Dragging Mud and Water Strokes)"
+      ],
+      "titles_epithets": [
+        "夏半边 (Half-Side Xia)",
+        "南宋画院待诏 (Painter-in-Attendance)",
+        "宁宗朝赐金带 (Awarded Golden Belt under Emperor Ningzong)"
+      ],
+      "notes": "生卒年完全不详。fl. 1195–1224 是宁宗在位时间 (r. 1194/95–1224/25)，也即夏圭已知的活动时期。",
+      "sources": [
+        "https://www.britannica.com/biography/Xia-Gui",
+        "https://en.wikipedia.org/wiki/Xia_Gui",
+        "https://www.comuseum.com/painting/masters/xia-gui/",
+        "https://www.britannica.com/topic/Pure-and-Remote-View-of-Streams-and-Mountains"
+      ],
+      "bronze_sample_claim": "c. 1195-1224, 南宋",
+      "bronze_sample_verdict": "NEEDS_CORRECTION",
+      "corrections_needed": "“c. 1195-1224” 表述有误导性。夏圭生卒年不详，1195–1224 是其活动时期 (floruit)，不是生卒年。应改为“fl. 1195–1224”或“active c. 1195–1224”，而不是“c. 1195–1224”。“c.” 暗示这是生卒年估计，但实际上这是活动期。南宋正确。"
+    },
+    "liang_kai": {
+      "name_cc": "梁楷",
+      "name_mc": "梁楷",
+      "name_en": "Liang Kai",
+      "courtesy_name": "不详",
+      "birth_death": "c. 1140–c. 1210 (Wikipedia, Britannica); 百度百科给 1150–不详",
+      "birth_death_alt": "生年存在 1140 vs 1150 的争议，卒年不详",
+      "dynasty": "南宋 (Southern Song, 1127–1279)",
+      "origin": "东平 (今山东省) (Dongping, Shandong province)",
+      "representative_works": [
+        "《泼墨仙人图》 (Immortal in Splashed Ink) — 台北故宫博物院藏",
+        "《太白行吟图》 / 《李白行吟图》 (Li Bai Strolling / Li Bai Chanting a Poem) — 东京国立博物馆藏",
+        "《六祖截竹图》 (Sixth Patriarch Cutting Bamboo)",
+        "《释迦出山图》 (Shakyamuni Emerging from the Mountains)"
+      ],
+      "technique_associations": [
+        "泼墨 (Splashed Ink) — 大写意技法",
+        "减笔 (Abbreviated Brush / Reduced Brushstrokes) — 极简笔墨表现人物",
+        "禅画 (Chan/Zen Painting) — 以禅宗精神入画"
+      ],
+      "titles_epithets": [
+        "梁风子 / 梁疑子 (Madman Liang)",
+        "南宋画院待诏 (Painter-in-Attendance at Southern Song Academy)",
+        "嘉泰年间 (1201–1204) 获待诏衔",
+        "赐金带而不受，挂于院壁离去 (Refused the Golden Belt, hung it on the academy wall)"
+      ],
+      "notes": "生年存在争议: 英文源多给 c. 1140，百度百科给 1150。bronze 样本声称 c. 1200–1260 与所有来源严重不符。",
+      "sources": [
+        "https://www.britannica.com/biography/Liang-Kai",
+        "https://en.wikipedia.org/wiki/Liang_Kai",
+        "https://www.comuseum.com/painting/masters/liang-kai/",
+        "https://www.asianbrushpainter.com/blogs/kb/liang-kai-master-of-sketches",
+        "http://www.chinaonlinemuseum.com/painting-liang-kai.php"
+      ],
+      "bronze_sample_claim": "c. 1200-1260, 南宋, 画院待诏",
+      "bronze_sample_verdict": "FAIL",
+      "corrections_needed": "生卒年严重错误！bronze 声称 c. 1200–1260，但权威来源一致给出 c. 1140–1210 (Wikipedia/Britannica) 或 1150–不详 (百度百科)。梵楷在 1201–1204 年间就已获待诏衔，如果生于 1200 年则时年仅 1–4 岁，明显不可能。应改为 c. 1140–c. 1210。“画院待诏”正确。"
+    },
+    "xie_he": {
+      "name_cc": "谢赫",
+      "name_mc": "謝赫",
+      "name_en": "Xie He",
+      "courtesy_name": "不详",
+      "birth_death": "生卒年不详, fl. c. 479–502 CE (南齐时期)",
+      "birth_death_alt": "活动于6世纪 (flourished 6th century — 较宽泛的说法)",
+      "dynasty": "南朝·刘宋至南齐 (Liu Song to Southern Qi of Southern Dynasties)",
+      "origin": "不详 (unknown)",
+      "representative_works": [
+        "《古画品录》 (Gu Huapin Lu / Classified Record of Painters of Former Times) — 中国最早的绘画品评著作",
+        "无画作存世"
+      ],
+      "technique_associations": [
+        "六法 (Six Principles/Laws of Painting) — 中国绘画理论基石",
+        "“骨法用笔” (Bone Method of Brushwork) — 六法第二原则，与线描理论相关",
+        "谢赫本人与十八描无直接关联 — 十八描为明代邹德中《绘事指蒙》首次系统化，距谢赫约千年"
+      ],
+      "titles_epithets": [
+        "中国绘画理论先驱 (Pioneer of Chinese painting theory)",
+        "第一位系统品评画家的理论家"
+      ],
+      "six_laws_detail": {
+        "1": "气韵生动 (Spirit Resonance / Vitality)",
+        "2": "骨法用笔 (Bone Method / Brushwork)",
+        "3": "应物象形 (Correspondence to the Object / Depicting Form)",
+        "4": "随类赋彩 (Suitability to Type / Applying Color)",
+        "5": "经营位置 (Planning and Placement / Composition)",
+        "6": "传移模写 (Transmission by Copying / Learning from Tradition)"
+      },
+      "notes": "谢赫主要身份是绘画理论家/品评家，而非十八描技法的创始者。他的六法理论影响了后世线描理论，但十八描体系本身是明代才正式编纂的。在铁线描和行云流水描的文本中提到谢赫，可能是因为他的六法理论为线描理论提供了基础。",
+      "sources": [
+        "https://www.britannica.com/biography/Xie-He",
+        "https://en.wikipedia.org/wiki/Xie_He_(artist)",
+        "https://www.britannica.com/topic/Gu-Huapin-Lu",
+        "https://ink-and-brush.com/six-principles-of-chinese-painting/",
+        "https://www.dpm.org.cn/lemmas/241509.html"
+      ],
+      "bronze_sample_claim": "出现在铁线描和行云流水描相关文本中",
+      "bronze_sample_verdict": "NEEDS_CORRECTION",
+      "corrections_needed": "谢赫与十八描无直接关联。他是绘画品评家，不是铁线描或行云流水描的代表人物。铁线描的代表人物应为顾恺之、阎立本、李公麟等。如果 bronze 样本中将谢赫作为某种描法的代表画家，这是错误的。但如果仅是在文本中提及他的六法理论对线描的影响，则可接受。需检查具体 bronze 文本以确定。"
+    }
+  },
+  "painters_cross_references": {
+    "cao_confusion": {
+      "summary": "曹不兴 (Cao Buxing, 三国·吴, 3世纪) 和 曹仲达 (Cao Zhongda, 北齐, 6世纪) 是两个不同的人，相隔约300年。",
+      "caoyichushui_attribution": "主流观点将“曹衣出水”归于曹仲达。但有学者认为曹不兴是第一代创始者，曹仲达是第二代代表。",
+      "caoyimiao_in_18strokes": "十八描中的“曹衣描”一般以曹仲达命名。",
+      "risk_in_bronze": "确保 bronze 样本中不将曹不兴和曹仲达混淆。"
+    },
+    "wu_dai_dang_feng_vs_cao_yi_chu_shui": {
+      "summary": "“曹衣出水，吴带当风”是中国绘画史上的经典对比。",
+      "cao_style": "曹仲达风格: 衣纹紧贴身体，细笔密线，如出水状",
+      "wu_style": "吴道子风格: 衣纹飘举，蓝叶描粗细变化，如风吹动"
+    },
+    "eighteen_strokes_origin": {
+      "codified_by": "明代邹德中《绘事指蒙》(嘉靖年间)",
+      "note": "十八描是明代才正式系统化的，但各种描法本身历史悠久"
+    }
+  },
+  "techniques": {
+    "source_text": "《绘事指蒙》",
+    "source_author": "邹德中 (明代)",
+    "source_notes": "明代邹德中《绘事指蒙》载'描法古今一十八等'，为已知最早系统记载十八描的文献。全国仅存三部（两个版本：明洪楩刊本与明胡文焕刊本），王世襄于1959年依张珩藏天一阁旧藏洪楩刊本校点出版。另有周履靖《夷门广谈》和汪坷玉《珊瑚网画法》同时期归纳。清代王瀛加上图例。",
+    "other_compilations": [
+      "周履靖《夷门广谈》(明代)",
+      "汪坷玉《珊瑚网画法》(明代)",
+      "王瀛 加图例 (清代)"
+    ],
+    "canonical_order_palace_museum": [
+      "1. 高古游丝描",
+      "2. 琴弦描",
+      "3. 铁线描",
+      "4. 行云流水描",
+      "5. 蚂蝗描",
+      "6. 钉头鼠尾描",
+      "7. 混描",
+      "8. 橛头丁描 (撅头钉描)",
+      "9. 曹衣描",
+      "10. 折芦描",
+      "11. 橄榄描",
+      "12. 枣核描",
+      "13. 柳叶描",
+      "14. 竹叶描",
+      "15. 战笔水纹描",
+      "16. 减笔描",
+      "17. 枯柴描",
+      "18. 蚯蚓描"
+    ],
+    "classification_system": {
+      "claimed_three_categories": [
+        "游丝描类",
+        "柳叶描类 (兰叶描类)",
+        "减笔描类"
+      ],
+      "verified": "PARTIALLY_ACCURATE",
+      "actual_classification": {
+        "游丝描类": {
+          "description": "行笔慢、以中锋为主、用力均匀、线质变化不大。",
+          "includes": [
+            "高古游丝描",
+            "琴弦描",
+            "铁线描",
+            "曹衣描"
+          ],
+          "representative": "顾恺之"
+        },
+        "兰叶描类": {
+          "description": "压力不均匀，运笔中时提时顿，产生忽粗忽细、形如兰叶的线条。",
+          "includes": [
+            "柳叶描",
+            "枣核描",
+            "橄榄描",
+            "竹叶描"
+          ],
+          "representative": "吴道子",
+          "notes": "多数来源称此类为'兰叶描类'而非'柳叶描类'。柳叶描是此类的具体成员之一，而非类名。"
+        },
+        "减笔描类": {
+          "description": "把压力偏向一端、运笔加速、有时线面结合。随写意画发展而产生的变体。",
+          "includes": [
+            "减笔描",
+            "枯柴描",
+            "折芦描"
+          ],
+          "representative": "梁楷"
+        }
+      },
+      "verdict_notes": "三大类划分在中国画论中有据，但第二类的标准名称为'兰叶描类'而非'柳叶描类'。bronze 样本若称'柳叶描类'需纠正为'兰叶描类'。"
+    },
+    "techniques": {
+      "TCH-001": {
+        "name_cc": "高古游絲描",
+        "name_mc": "高古游丝描",
+        "canonical_order": 1,
+        "claimed_associations": [
+          "顾恺之 (东晋)"
+        ],
+        "verified_associations": [
+          "顾恺之 (东晋, 约345-406)"
+        ],
+        "verdict": "PASS",
+        "line_characteristics": "以极细的尖笔勾勒，中锋用笔，平稳移动，笔尖提按变化不大，均匀且细腻，圆转曲线居多，顿笔为小圆头状。别名'春蚕吐丝描'。",
+        "notes": "高古游丝描与顾恺之的关联是中国画史最确定的事实之一。顾恺之以此技法奠定了高古游丝描的形式基础。代表作《女史箴图》《洛神赋图》。"
+      },
+      "TCH-002": {
+        "name_cc": "琴弦描",
+        "name_mc": "琴弦描",
+        "canonical_order": 2,
+        "line_characteristics": "略比高古游丝描粗，多为直线，有写意味道，线用颤笔中锋。",
+        "notes": "属游丝描类。"
+      },
+      "TCH-003": {
+        "name_cc": "鐵線描",
+        "name_mc": "铁线描",
+        "canonical_order": 3,
+        "claimed_associations": {
+          "shuhua_tongyuan": "声称铁线描与'书画同源'有特殊关联",
+          "xie_he": "声称谢赫与此技法相关"
+        },
+        "verified_associations": {
+          "representative_painters": [
+            "顾恺之",
+            "阎立本 (唐)",
+            "李公麟 (宋)"
+          ],
+          "shuhua_tongyuan": "INDIRECT — '书画同源'是整体中国画理论，非铁线描独有。谢赫'六法'之'骨法用笔'强调线条力度，与铁线描的审美原则一致，但并非专门针对铁线描提出。",
+          "xie_he": "INDIRECT — 谢赫提出的'骨法用笔'（六法之二）与铁线描的刚劲特质一脉相承，但谢赫本人并非铁线描的代表画家或创立者。谢赫是画论家，不是以铁线描著称。"
+        },
+        "verdict": "NEEDS_CORRECTION",
+        "line_characteristics": "比琴弦描和游丝描粗，用笔方硬，转折方劲有力，直线硬折，形似铁丝弯曲。中锋圆劲之笔，起笔转折时稍微有回顿方折之意。",
+        "notes": "bronze 样本若将'书画同源'专门与铁线描挂钩是过度简化。书画同源是广义的美学理论，不是铁线描的专属特征。谢赫本人是画论家而非画家（以现存记载），他的六法论与所有线描技法都相关，不独与铁线描。铁线描的真正代表画家是顾恺之、阎立本、李公麟等人。"
+      },
+      "TCH-004": {
+        "name_cc": "行雲流水描",
+        "name_mc": "行云流水描",
+        "canonical_order": 4,
+        "line_characteristics": "线条长而不断，流畅顺滑，无滞涩。",
+        "notes": "如行云流水般连绵不绝。"
+      },
+      "TCH-005": {
+        "name_cc": "螞蝗描",
+        "name_mc": "蚂蝗描",
+        "canonical_order": 5,
+        "line_characteristics": "灵活有力，流畅圆转，有明显的起伏。",
+        "representative_painters": [
+          "马和之",
+          "吴道子"
+        ],
+        "notes": "亦写作蚂蟥描。"
+      },
+      "TCH-006": {
+        "name_cc": "釘頭鼠尾描",
+        "name_mc": "钉头鼠尾描",
+        "canonical_order": 6,
+        "line_characteristics": "头重尾轻，下笔先顿一下再撇出去，起笔如钉头，收笔如鼠尾。",
+        "notes": "梁楷的部分作品使用此法。"
+      },
+      "TCH-007": {
+        "name_cc": "混描",
+        "name_mc": "混描",
+        "canonical_order": 7,
+        "line_characteristics": "粗细线条混合使用，先用淡墨勾形，再用浓墨覆盖。",
+        "notes": "兼具工笔与写意特征。"
+      },
+      "TCH-008": {
+        "name_cc": "橛頭釘描",
+        "name_mc": "橛头钉描",
+        "canonical_order": 8,
+        "claimed_associations": [
+          "马远 (南宋)",
+          "夏圭 (南宋)"
+        ],
+        "verified_associations": [
+          "马远 (南宋)",
+          "夏圭 (南宋)"
+        ],
+        "verdict": "PASS",
+        "line_characteristics": "顿头大而方，侧锋入笔，有斧劈皴之笔意，线条粗而有力。下笔顿头特别大。",
+        "notes": "马远、夏圭多用此法，多源证实。二人同师李唐，合称'马夏'。亦写作'橛头丁描'。代表作有马远《孔子像》。"
+      },
+      "TCH-009": {
+        "name_cc": "曹衣描",
+        "name_mc": "曹衣描",
+        "canonical_order": 9,
+        "claimed_associations": {
+          "cao_who": "需确认'曹'指曹仲达还是曹不兴",
+          "idiom_source": "'曹衣出水'与'吴带当风'对比出处"
+        },
+        "verified_associations": {
+          "cao_identity": "曹仲达 (北齐, 南北朝时期)",
+          "cao_buxing_note": "曹不兴 (三国吴) 是另一位完全不同的画家，被称为'佛画之祖'，但'曹衣出水'指的是曹仲达而非曹不兴。两人相隔约300年。",
+          "idiom_source": "最早文字记载出自北宋郭若虚《图画见闻志·卷一·论曹吴体法》，原文：'吴之笔，其势圆转而衣服飘举。曹之笔，其体稠叠而衣服紧窄。故后辈称之曰：吴带当风，曹衣出水。'郭若虚引述称此说法基于唐张彦远《历代名画记》对曹仲达的记载。"
+        },
+        "verdict": "NEEDS_CORRECTION",
+        "line_characteristics": "用笔细而下垂，成圆弧状，线条细劲稠密，衣纹紧贴身体，如衣物浸水。讲求线之间的疏密排列变化。",
+        "notes": "关键纠正：'曹'指曹仲达（北齐，来自中亚曹国/今乌兹别克斯坦撒马尔罕），非曹不兴（三国吴）。bronze 样本中若有将二人混淆的情况必须纠正。曹仲达官至朝散大夫，擅画梵像。'曹家样'与张僧繇的'张家样'、吴道子的'吴家样'、周昉的'周家样'并列为四大佛画样式。"
+      },
+      "TCH-010": {
+        "name_cc": "折蘆描",
+        "name_mc": "折芦描",
+        "canonical_order": 10,
+        "claimed_associations": [
+          "梁楷 (南宋)"
+        ],
+        "verified_associations": [
+          "梁楷 (南宋)",
+          "李唐 (南宋)"
+        ],
+        "verdict": "PASS",
+        "line_characteristics": "线条起收两端细、中间转折处粗，形如折断的芦苇叶。从圆笔转为方笔，用隶书笔法。",
+        "notes": "梁楷以折芦描著称，代表作包括《六祖撕经图》。李唐《采薇图》亦为折芦描代表作。'大陆现梁楷惟一折芦描真迹'曾引发学术讨论。"
+      },
+      "TCH-011": {
+        "name_cc": "柳葉描",
+        "name_mc": "柳叶描",
+        "canonical_order": 13,
+        "claimed_associations": [
+          "吴道子 (唐)"
+        ],
+        "verified_associations": {
+          "direct": "吴道子创'兰叶描'（大类），柳叶描属于兰叶描类的具体技法",
+          "note": "吴道子的代表技法严格说是'兰叶描'或'莼菜条'，柳叶描是兰叶描类的一种变体。说吴道子与柳叶描相关是准确的但不够精确。"
+        },
+        "verdict": "PASS_WITH_NUANCE",
+        "line_characteristics": "两头细、中间粗，状如柳叶，略短于兰叶描。轻盈灵动，适宜表现质地轻软的衣服。",
+        "notes": "吴道子创造了'莼菜条'（兰叶描），柳叶描是这一大类下的具体描法。何良俊论述'兰叶描出于吴道子'。马和之、马远等出于吴道子的兰叶描传统。'吴带当风'主要指兰叶描/莼菜条的飘逸感。将柳叶描归入吴道子系统是正确的，但更准确的说法是吴道子开创了兰叶描（大类）。"
+      },
+      "TCH-012": {
+        "name_cc": "橄欖描",
+        "name_mc": "橄榄描",
+        "canonical_order": 11,
+        "line_characteristics": "两端尖细如橄榄，中间粗。",
+        "representative_painters": [
+          "颜辉"
+        ],
+        "notes": "枣核描与橄榄描外形相似，王瀛说'枣核描亦如橄榄描'。"
+      },
+      "TCH-013": {
+        "name_cc": "棗核描",
+        "name_mc": "枣核描",
+        "canonical_order": 12,
+        "claimed_associations": {
+          "guanyin_alias": "声称'观音描'是枣核描的别名"
+        },
+        "verified_associations": {
+          "guanyin_alias": "NOT_CONFIRMED — 传为吴道子《观音像》石刻衣纹使用了类似枣核描的技法（折中鼓起），但'观音描'不是枣核描的正式别名。在十八描的标准列表中不存在'观音描'这一名称。"
+        },
+        "verdict": "NEEDS_CORRECTION",
+        "line_characteristics": "大笔挥洒，中间转折顿挫圆浑，成枣核状。适合表现麻布质感衣纹。",
+        "notes": "'观音描'不是枣核描的正式别名。这一混淆可能源于吴道子《观音像》石刻中使用了类似手法的衣纹处理。bronze 样本中若称'观音描是枣核描的别名'需纠正。枣核描属兰叶描类。"
+      },
+      "TCH-014": {
+        "name_cc": "減筆描",
+        "name_mc": "减笔描",
+        "canonical_order": 16,
+        "claimed_associations": [
+          "马远 (南宋)",
+          "梁楷 (南宋)"
+        ],
+        "verified_associations": {
+          "liang_kai": "梁楷 — 确认，减笔描的主要代表画家",
+          "ma_yuan": "马远 — 部分确认，某些来源将马远列为减笔描代表，但梁楷是更公认的代表"
+        },
+        "verdict": "PASS",
+        "line_characteristics": "用笔粗壮、一气呵成，一笔中有墨色变化，大多只画外轮廓，用笔简洁大气。侧锋行笔，行笔速度快。",
+        "notes": "梁楷是减笔描的核心代表。代表作《太白行吟图》，衣裙仅用大笔四五笔淡墨画出。梁楷开创水墨写意画法新局面，影响徐渭、朱耷、金农、齐白石等。马远在部分来源中与减笔描相关，但不如梁楷紧密。"
+      },
+      "TCH-015": {
+        "name_cc": "竹葉描",
+        "name_mc": "竹叶描",
+        "canonical_order": 14,
+        "line_characteristics": "类似柳叶描但短促如竹叶。",
+        "notes": "属兰叶描类。"
+      },
+      "TCH-016": {
+        "name_cc": "戰筆水紋描",
+        "name_mc": "战笔水纹描",
+        "canonical_order": 15,
+        "line_characteristics": "笔触粗阔有颤动感，似流水波纹。",
+        "notes": "属减笔描类的过渡形态。"
+      },
+      "TCH-017": {
+        "name_cc": "枯柴描",
+        "name_mc": "枯柴描",
+        "canonical_order": 17,
+        "line_characteristics": "笔触粗壮、简练，如枯柴折断般刚硬有力。",
+        "notes": "属减笔描类。"
+      },
+      "TCH-018": {
+        "name_cc": "蚯蚓描",
+        "name_mc": "蚯蚓描",
+        "canonical_order": 18,
+        "claimed_associations": {
+          "guanyin_alias_for_zaoke": "枣核描的'观音描'别名验证"
+        },
+        "verdict": "NOT_APPLICABLE",
+        "line_characteristics": "线条柔软中含隐劲，圆润流畅如篆书笔法。",
+        "notes": "蚯蚓描是十八描最后一种。注意：TriCH-Bench 的 TCH-018 是枣核描，此处的 canonical_order 18 是蚯蚓描，需注意样本编号与故宫排序的差异。"
+      }
+    }
+  },
+  "techniques_hai_xian_source": {
+    "title": "《海仙画谱·海仙十八描法》",
+    "author": "小田海仙 (日本江户幕府末期文人画家)",
+    "publication_year": "1861 (日本文久元年)",
+    "original_publisher": "京都芸草堂 (1843年有木刻本)",
+    "content": "十八罗汉图，图中众罗汉衣纹各别，图旁附有描法解释，后有《描人物论》一文。",
+    "significance": "19世纪以后最早的图释描法文献。鲁迅兄弟（鲁迅、周作人、周建人）曾购藏此书。",
+    "is_original_source_of_18_miao": false,
+    "notes": "《海仙十八描法》不是十八描的原始文献。十八描的原始文献是明代邹德中的《绘事指蒙》。小田海仙是将中国十八描概念以图释方式呈现的日本画家。"
+  },
+  "techniques_cultural_terms_verified": {
+    "cao_yi_chu_shui": {
+      "term_cc": "曹衣出水",
+      "meaning": "形容衣纹紧贴身体，如从水中出来，衣服湿透的效果",
+      "attributed_to": "曹仲达 (北齐，南北朝时期)",
+      "NOT_attributed_to": "曹不兴 (三国吴) — 常见混淆",
+      "earliest_source": "北宋郭若虚《图画见闻志·卷一·论曹吴体法》",
+      "related_source": "唐张彦远《历代名画记》记载曹仲达事迹",
+      "paired_with": "'吴带当风' (吴道子，唐代)",
+      "verdict": "VERIFIED — '曹'指曹仲达，非曹不兴"
+    },
+    "wu_dai_dang_feng": {
+      "term_cc": "吴带当风",
+      "meaning": "形容衣纹飘逸灵动，如风吹拂",
+      "attributed_to": "吴道子 (唐代, 约686-760)",
+      "earliest_source": "北宋郭若虚《图画见闻志》",
+      "verdict": "VERIFIED"
+    },
+    "shuhua_tongyuan": {
+      "term_cc": "书画同源",
+      "meaning": "书法与绘画同出一源，共享用笔之道",
+      "earliest_source": "唐张彦远《历代名画记·叙画之源流》",
+      "relation_to_tiexian": "间接关系 — 书画同源是整体中国画理论，非铁线描独有。谢赫'骨法用笔'体现书画同源精神，但并非专为铁线描提出。",
+      "verdict": "VERIFIED as general principle, NOT specific to iron-wire technique"
+    },
+    "xian_kai_hou_cao": {
+      "term_cc": "先楷后草",
+      "meaning": "学书法先学楷书、再学草书的传统教学次序",
+      "attributed_source": "中国书法传统教育理论，明代丰坊有明确阐述",
+      "relation_to_tiexian": "NOT_DIRECTLY_RELATED — 这是书法学习理论，与铁线描并无直接特殊关联。若 bronze 样本将'先楷后草'与铁线描直接挂钩，属于不当类比。",
+      "verdict": "NEEDS_CORRECTION if linked specifically to iron-wire technique",
+      "notes": "多个搜索均未找到'先楷后草'与铁线描的直接文献关联。书画同源理论下，楷书的端正用笔与铁线描的刚劲特质有精神相通，但'先楷后草'本身是书法教学术语，非绘画术语。"
+    },
+    "gufa_yongbi": {
+      "term_cc": "骨法用笔",
+      "meaning": "谢赫六法之二，强调线条应有骨力和力度",
+      "attributed_to": "谢赫 (南朝齐梁间画家/画论家)",
+      "source": "《古画品录》(南朝齐)",
+      "relation_to_tiexian": "精神相通但非专属 — 骨法用笔是所有中国画线描的基本要求，铁线描是其典型体现之一，但游丝描、折芦描等同样需要骨法用笔。",
+      "verdict": "VERIFIED as general principle"
+    }
+  },
+  "techniques_correction_summary": {
+    "TCH-003_iron_wire": {
+      "issue": "将'书画同源'和谢赫专门与铁线描挂钩",
+      "correction": "书画同源是广义理论（张彦远提出），谢赫'骨法用笔'是六法通则，两者均非铁线描专属。铁线描的真正代表画家是顾恺之、阎立本、李公麟。",
+      "severity": "MEDIUM"
+    },
+    "TCH-003_xian_kai_hou_cao": {
+      "issue": "'先楷后草'与铁线描的关联",
+      "correction": "'先楷后草'是书法教学理论（丰坊等论述），与铁线描无直接文献关联。若bronze样本将二者直接挂钩需纠正。",
+      "severity": "MEDIUM"
+    },
+    "TCH-009_cao_identity": {
+      "issue": "曹衣描的'曹'可能被错误归为曹不兴",
+      "correction": "'曹'指曹仲达（北齐），非曹不兴（三国吴）。两人相隔约300年。曹不兴是'佛画之祖'，曹仲达才是'曹衣出水'的创立者。",
+      "severity": "HIGH"
+    },
+    "TCH-011_classification": {
+      "issue": "三大类中第二类名称",
+      "correction": "标准名称为'兰叶描类'而非'柳叶描类'。柳叶描是兰叶描类的成员之一。吴道子创'兰叶描'大类。",
+      "severity": "LOW"
+    },
+    "TCH-018_guanyin_alias": {
+      "issue": "'观音描'被声称为枣核描的别名",
+      "correction": "'观音描'不是枣核描的正式别名。吴道子《观音像》石刻衣纹采用类似手法，但这不构成正式别名关系。十八描标准列表中无'观音描'。",
+      "severity": "HIGH"
+    }
+  },
+  "cultural_terms": {
+    "cao_yi_chu_shui": {
+      "term_cc": "曹衣出水",
+      "term_en": "Cao's clothes emerging from water",
+      "definition": "中国绘画与雕塑术语，形容衣纹紧贴身体、线条稠密细劲的表现风格，如同刚从水中出来衣服贴身的效果。与'吴带当风'相对，强调形体美。",
+      "source_text": "宋·郭若虚《图画见闻志》卷一'论曹吴体法'：'吴之笔，其势圆转，而衣服飘举；曹之笔，其体稠叠，而衣服紧窄。故后辈称之曰：吴带当风，曹衣出水。'",
+      "source_book": "《图画见闻志》（宋·郭若虚）",
+      "associated_painter": "曹仲达（北齐，约6世纪中叶，非曹不兴）",
+      "verified": true,
+      "notes": "历史上存在两种说法：(1) 主流说法：'曹'指北齐曹仲达，'吴'指唐代吴道子——此为郭若虚《图画见闻志》明确记载的版本；(2) 次要说法：'曹'指三国吴·曹不兴，'吴'指南朝宋·吴暕——这是较早期的一种解读。学术主流采用说法(1)。曹仲达家族来自中亚曹国（今乌兹别克斯坦撒马尔罕一带），可能为粟特人后裔，其画风带有异域佛像绘画特征，'曹衣出水'是外来佛像绘画技法中国化的产物。",
+      "common_error": "将'曹'误解为三国吴画家曹不兴。曹不兴虽被称为'佛画之祖'，但'曹衣出水'的'曹'在主流说法中指北齐曹仲达，两人相隔约300年。",
+      "sources": [
+        "郭若虚《图画见闻志》原文",
+        "https://baike.baidu.com/item/曹衣出水/8061060",
+        "https://zh.wikipedia.org/zh-hans/曹仲达",
+        "https://zhuanlan.zhihu.com/p/87517572",
+        "https://m.thepaper.cn/newsDetail_forward_18826868"
+      ]
+    },
+    "wu_dai_dang_feng": {
+      "term_cc": "吴带当风",
+      "term_en": "Wu's drapery caught in the wind",
+      "definition": "中国绘画术语，形容衣纹飘举飞动、线条圆转流畅的表现风格，如同衣带在风中飘动。与'曹衣出水'相对，注重神态美。",
+      "source_text": "宋·郭若虚《图画见闻志》卷一'论曹吴体法'：'吴之笔，其势圆转，而衣服飘举……故后辈称之曰：吴带当风，曹衣出水。'",
+      "source_book": "《图画见闻志》（宋·郭若虚）",
+      "associated_painter": "吴道子（唐代，约680-759）",
+      "verified": true,
+      "notes": "吴道子被尊为'画圣'，其衣纹线条被称为'莼菜条'（形似莼菜叶，有起伏变化的线条）。吴道子的风格倾向于凸显人物的风度和神韵。",
+      "sources": [
+        "郭若虚《图画见闻志》原文",
+        "https://baike.baidu.com/item/吴带当风，曹衣出水/53664516",
+        "https://www.sohu.com/a/444470806_120006290"
+      ]
+    },
+    "shu_hua_tong_yuan": {
+      "term_cc": "书画同源",
+      "term_en": "Calligraphy and painting share the same origin",
+      "definition": "中国艺术理论核心概念，含义有三：(1) 文字与绘画的起源相同，都缘于'象形'；(2) 书（六籍）与画的功用相同，都旨在教化；(3) 书法与绘画的用笔相同。",
+      "source_text": "唐·张彦远《历代名画记·叙画之源流》：'是时也，书画同体而未分，象制肇创而犹略。' 元·赵孟頫题画诗：'石如飞白木如籀，写竹还应八法通。若也有人能会此，须知书画本来同。'",
+      "source_book_primary": "《历代名画记》（唐·张彦远）——注意：张彦远原文用'书画同体'而非'书画同源'",
+      "source_book_secondary": "赵孟頫题画诗——进一步阐发'书画本来同'",
+      "associated_painter": "张彦远（理论家）、赵孟頫（实践者）",
+      "verified": true,
+      "relation_to_tieXianMiao": "铁线描是'书画同源'理论在人物画中的具体体现。十八描的线条首先具有书写性，铁线描的线条特征（粗细均匀、如铁丝般挺劲）直接来源于书法用笔。明·何良俊《四友斋画论》指出铁线描传承：赵孟頫→李龙眠→顾恺之。",
+      "notes": "严格来说，张彦远原文是'书画同体'而非'书画同源'，一字之差含义略有不同：'同体'强调书画本为一体、尚未分化；'同源'强调二者起源相同。后世通常使用'书画同源'来概括这一思想。",
+      "sources": [
+        "张彦远《历代名画记》原文",
+        "https://baike.baidu.com/item/书画同源/6647775",
+        "http://www.chinawriter.com.cn/n1/2021/0317/c419391-32053808.html",
+        "https://shufa.pku.edu.cn/btwf/1372728.htm",
+        "https://m.fx361.com/news/2021/0303/10107323.html"
+      ]
+    },
+    "xin_shou_xiang_ying": {
+      "term_cc": "心手相应",
+      "term_en": "Heart and hand in harmony",
+      "definition": "形容技艺纯熟，心里怎么想手就能怎么做，心意与手的动作完全一致。在书画语境中指创作者达到了心意与技法完美统一的境界。",
+      "source_text": "《南史·萧子云传》记梁武帝评萧子云书法：'笔力劲骏，心手相应，巧逾杜度，美过崔寔，当与元常并驱争先。'",
+      "source_book": "《南史》（唐·李延寿）",
+      "verified": true,
+      "notes": "近义词为'得心应手'（出自《庄子·天道》）。在中国画论中，'心手相应'是对艺术家技艺炉火纯青的最高赞誉之一。萧子云为南朝梁书法家，善草隶书。杜度为东汉草书家，崔寔为东汉书法家，元常即钟繇（三国魏书法家）。",
+      "sources": [
+        "《南史·萧子云传》",
+        "https://wapbaike.baidu.com/item/心手相应",
+        "https://cy.hwxnet.com/view/dljfjobjjhcfbefe.html"
+      ]
+    },
+    "da_dao_zhi_jian": {
+      "term_cc": "大道至简",
+      "term_en": "The great Dao is supremely simple",
+      "definition": "意为最根本的道理、方法和规律是极其简单的。强调化繁为简的智慧。",
+      "source_text": "并非出自《道德经》原文。最早可见于五代·陶坛撰《还金述》：'妙言至径，大道至简。' 常被误引为老子《道德经》所言'万物之始，大道至简，衍化至繁'，但此句不见于《道德经》原文。",
+      "source_book": "《还金述》（五代·陶坛）为已知最早出处；思想渊源可追溯至《道德经》'大音希声，大象无形'等表述",
+      "is_from_daodejing": false,
+      "verified": true,
+      "notes": "这是一个常见误区：很多人以为'大道至简'直接出自《道德经》，但经学术审证，《道德经》中并无'大道至简'四字。该表述是后人根据老子哲学思想总结而来。《道德经》第四十一章有'大方无隅，大器免成，大音希声，大象无形'等类似思想，但用语不同。在绘画语境中，'大道至简'常用于形容大写意画的以简驭繁、少即是多的美学理念。",
+      "sources": [
+        "https://www.zhihu.com/question/23226548",
+        "https://m.ximalaya.com/ask/q9359769",
+        "https://html.rhhz.net/KXYSH/html/03022854-e072-41a3-bb72-70f68ec622a9.htm"
+      ]
+    },
+    "fan_pu_gui_zhen": {
+      "term_cc": "返璞归真",
+      "term_en": "Return to simplicity and truth",
+      "definition": "去掉外饰，还其本质，比喻回复原来的自然状态。'璞'指含玉的石头或未经琢磨的玉。",
+      "source_text": "西汉·刘向编《战国策·齐策四》：'斶知足矣，归真反璞，则终身不辱也。'",
+      "source_book": "《战国策·齐策四》（西汉·刘向编）",
+      "related_daodejing": "《道德经》第二十八章：'常德乃足，复归于朴。' 第十九章：'见素抱朴，少私寡欲。'",
+      "verified": true,
+      "notes": "成语本身出自《战国策》，但思想与《道德经》一脉相承。'返璞归真'也写作'返朴归真'。在道教修炼思想中，返璞归真指通过修炼性命，摒弃情欲和伪性，返归淳朴天真的本性。在绘画语境中，常用于形容从精工细致转向质朴天真的艺术境界。",
+      "sources": [
+        "https://baike.baidu.com/item/返璞归真/5105",
+        "https://www.zhihu.com/question/578322582",
+        "https://m.ximalaya.com/ask/q13106332"
+      ]
+    },
+    "cang_feng_zhong_feng_ce_feng": {
+      "term_cc": "藏锋 / 中锋 / 侧锋",
+      "term_en": "Hidden tip / Center-tip / Side-tip",
+      "definitions": {
+        "zhong_feng": {
+          "term_cc": "中锋（正锋）",
+          "definition": "运笔时笔锋（笔尖）处于笔画的正中间，笔杆垂直于纸面。中锋行笔是传统书法与绘画的基本法则，写出的笔画圆润饱满、有立体感。古人云'正锋取劲'。",
+          "key_principle": "笔尖在笔画中线运行"
+        },
+        "ce_feng": {
+          "term_cc": "侧锋",
+          "definition": "运笔时笔锋偏离笔画中线，笔毫方向与运行方向呈约45度夹角。侧锋写出的笔画有方折感，古人云'侧笔取妍'。注意：侧锋不同于'偏锋'（偏锋为笔锋完全偏在一边，属于病笔）。",
+          "key_principle": "笔尖偏离中线约45度"
+        },
+        "cang_feng": {
+          "term_cc": "藏锋",
+          "definition": "将笔锋收纳在笔画内部，使起笔和收笔处不露锋芒。起笔时'欲左先右，欲上先下'（逆锋入纸），收笔时回锋收笔。藏锋笔画圆劲、厚重。与'露锋'相对（露锋则锋芒外露，笔画精神锐利）。",
+          "key_principle": "逆向入纸，笔锋不露于笔画两端"
+        }
+      },
+      "verified": true,
+      "notes": "这三个术语属于书法用笔的基本范畴：中锋/侧锋描述的是运笔过程中笔锋的位置（中线 vs 偏离中线）；藏锋/露锋描述的是起收笔时笔锋是否外露。它们在中国画线描中同样适用，是十八描技法的基础。",
+      "sources": [
+        "http://www.dengdingsheng.com/?id=6591",
+        "https://m.ximalaya.com/ask/q3536119",
+        "https://zhuanlan.zhihu.com/p/113287098",
+        "https://zhidao.baidu.com/question/360541458.html"
+      ]
+    },
+    "liu_fa_lun": {
+      "term_cc": "六法论（谢赫六法）",
+      "term_en": "Six Principles of Chinese Painting",
+      "definition": "南朝齐·谢赫在《古画品录》中提出的中国绘画六项基本准则，是中国绘画理论史上最具影响力的评价体系。",
+      "source_text": "南朝齐·谢赫《古画品录》：'六法者何？一，气韵生动是也；二，骨法用笔是也；三，应物象形是也；四，随类赋彩是也；五，经营位置是也；六，传移模写是也。'",
+      "source_book": "《古画品录》（南朝齐·谢赫）",
+      "six_principles": [
+        {
+          "number": 1,
+          "chinese": "气韵生动",
+          "english": "Spirit Resonance / Vitality",
+          "meaning": "作品及其描绘的形象应有生动的气韵和生命力"
+        },
+        {
+          "number": 2,
+          "chinese": "骨法用笔",
+          "english": "Bone Method / Structural Brushwork",
+          "meaning": "用笔应有骨力，线条应有力度和结构感"
+        },
+        {
+          "number": 3,
+          "chinese": "应物象形",
+          "english": "Correspondence to the Object / Fidelity to Form",
+          "meaning": "描绘形象应符合对象的实际形态"
+        },
+        {
+          "number": 4,
+          "chinese": "随类赋彩",
+          "english": "Suitability to Type / Application of Color",
+          "meaning": "根据不同对象施以合适的色彩"
+        },
+        {
+          "number": 5,
+          "chinese": "经营位置",
+          "english": "Division and Planning / Composition",
+          "meaning": "画面构图的安排与布局"
+        },
+        {
+          "number": 6,
+          "chinese": "传移模写",
+          "english": "Transmission by Copying / Learning through Copying",
+          "meaning": "通过临摹传承前人技法与精神"
+        }
+      ],
+      "verified": true,
+      "notes": "六法以'气韵生动'为首，被视为绘画的最高标准。'气韵'一词原是魏晋人物品藻用语，指人物从姿态、表情中显示出的精神气质。谢赫将其引入绘画评论，成为中国画'重神轻形'传统的理论基础。《古画品录》全书1卷，品评了从三国吴至南朝齐的27位画家，分为六品。",
+      "sources": [
+        "https://zh.wikipedia.org/zh-hans/古画品录",
+        "https://baike.baidu.com/item/谢赫六法/1883789",
+        "https://www.chinesethought.cn/shuyu_show.aspx?shuyu_id=3712",
+        "https://en.wikipedia.org/wiki/Six_principles_of_Chinese_painting"
+      ]
+    },
+    "hua_sheng": {
+      "term_cc": "画圣",
+      "term_en": "Saint of Painting",
+      "definition": "中国古代对唐代画家吴道子的尊称，将其与'书圣'王羲之、'诗圣'杜甫并列。",
+      "associated_painter": "吴道子（唐代，约680-759，一说约685-758）",
+      "source_text": "苏轼《书吴道子画后》：'诗至于杜子美，文之于韩退之，书至于颜鲁公，画至于吴道子，而古今之变，天下能事毕矣！' 朱景玄《唐朝名画录》：'道子凡画人物、佛像、神鬼、禽兽、山水、宫殿、草木皆冠绝于世，国朝第一。'",
+      "verified": true,
+      "notes": "吴道子是唐代最杰出的画家，与王羲之（书圣）、杜甫（诗圣）并称三圣。苏轼的评价'画至于吴道子，而古今之变，天下能事毕矣'是对其最高赞誉。吴道子擅长人物、佛像、山水等各种题材，尤以人物画和壁画著称。",
+      "sources": [
+        "苏轼《书吴道子画后》",
+        "朱景玄《唐朝名画录》",
+        "https://zhuanlan.zhihu.com/p/371283509",
+        "https://zh.wikipedia.org/zh-hans/吴道子"
+      ]
+    },
+    "si_jun_zi": {
+      "term_cc": "四君子（梅兰竹菊）",
+      "term_en": "Four Gentlemen (Plum, Orchid, Bamboo, Chrysanthemum)",
+      "definition": "中国画传统题材，以梅兰竹菊四种植物比拟君子品格：梅花傲雪（高洁坚韧）、兰花幽香（淡雅高洁）、竹子虚心有节（正直谦虚）、菊花傲霜（孤傲清高）。",
+      "history": "梅花入画始于六朝，竹和兰入画始于唐代，菊花入画始于五代。'四君子'合称始于明代万历年间黄凤池编《梅竹兰菊四谱》。",
+      "relation_to_zhuyemiao": "竹叶描因线条状如竹叶而得名，与四君子中'竹'的绘画传统有关联但不完全等同。竹叶描是十八描之一，用于人物画衣纹；四君子中的竹画则是独立的花鸟画题材。二者的联系在于：(1) 竹叶描的技法由宋代墨竹画技法演变而来；(2) 都体现了书画同源的用笔理念。在竹叶描的语境中提及四君子是合理的，但应注意区分'竹叶描（十八描衣纹技法）'与'画竹（花鸟画题材）'。",
+      "verified": true,
+      "notes": "在bronze样本的竹叶描条目中使用四君子的概念需注意语境准确性：(1) 如果是说竹叶描的线条形态源自墨竹画——合适；(2) 如果是说竹叶描体现了文人画的审美精神——合适；(3) 如果直接说竹叶描'属于'四君子——不准确，四君子是画题而非技法。",
+      "sources": [
+        "https://baike.baidu.com/item/国画四君子/5964095",
+        "https://zh.wikipedia.org/zh-hans/花中四君子",
+        "https://baike.baidu.com/item/梅兰竹菊/78148"
+      ]
+    },
+    "ma_xia_hua_pai": {
+      "term_cc": "马夏（马一角、夏半边）",
+      "term_en": "Ma-Xia School (Ma's corner, Xia's half)",
+      "definition": "南宋画家马远和夏圭的并称，因二人在山水画构图上打破全景传统，创造边角之景而得名。马远取一角构图（'马一角'），夏圭取半边构图（'夏半边'）。",
+      "associated_painters": {
+        "ma_yuan": "马远（南宋，约1160-1225），字遥父，号钦山。世家画师，祖籍河中（今山西永济）。",
+        "xia_gui": "夏圭（南宋，约1195-1224年间活跃），字禹玉。"
+      },
+      "teacher": "李唐（南宋初年画家，二人均师从李唐画风）",
+      "group": "马远与李唐、刘松年、夏圭合称'南宋四家'",
+      "verified": true,
+      "notes": "'马一角'和'夏半边'的具体最早出处在古代画论中未有统一定论，但这些称呼广泛见于明清画论。二人的构图创新打破了北宋全景山水的传统，以局部特写、留白取势，对后世（尤其是日本水墨画）影响深远。有学者认为'残山剩水'的说法带有政治批评色彩（暗示南宋偏安），但也有观点认为纯粹是艺术风格描述。",
+      "sources": [
+        "https://zh.wikipedia.org/zh-hans/马远",
+        "https://zhuanlan.zhihu.com/p/131587271",
+        "https://www.18art.com/shuhuayishu/ma-yuan-xia-gui-dui-nan-song-hua-tan-ying-xiang.shtml"
+      ]
+    }
+  },
+  "artworks": {
+    "luoshen_fu_tu": {
+      "title_cc": "洛神赋图",
+      "title_en": "Nymph of the Luo River",
+      "attributed_artist": "顾恺之（东晋，约345-409）",
+      "original_status": "原作已佚，现存均为后世摹本",
+      "based_on": "曹植《洛神赋》",
+      "existing_versions": {
+        "total": "约9个古本",
+        "details": [
+          {
+            "name": "北京甲本（第一卷）",
+            "location": "北京故宫博物院",
+            "period": "宋摹本",
+            "dimensions": "纵27.1cm × 横572.8cm",
+            "material": "绢本设色",
+            "notes": "乾隆定为第一卷，最广为人知的版本"
+          },
+          {
+            "name": "北京乙本",
+            "location": "北京故宫博物院",
+            "period": "摹本",
+            "notes": "故宫三本之一"
+          },
+          {
+            "name": "北京丙本",
+            "location": "北京故宫博物院",
+            "period": "摹本",
+            "dimensions": "纵26cm × 横253cm",
+            "notes": "绢本设色，仅有曹植初见洛神的一段画面"
+          },
+          {
+            "name": "辽宁本（第二卷）",
+            "location": "辽宁省博物馆",
+            "period": "宋摹本",
+            "dimensions": "纵26cm × 横646cm",
+            "notes": "乾隆定为第二卷。清末溥仪携出清宫，后辗转入藏辽宁省博物馆"
+          },
+          {
+            "name": "台北甲本",
+            "location": "台北故宫博物院",
+            "period": "摹本"
+          },
+          {
+            "name": "台北乙本",
+            "location": "台北故宫博物院",
+            "period": "摹本"
+          },
+          {
+            "name": "弗利尔甲本",
+            "location": "美国弗利尔美术馆（Freer Gallery of Art）",
+            "period": "宋摹本（设色本）"
+          },
+          {
+            "name": "弗利尔乙本",
+            "location": "美国弗利尔美术馆",
+            "period": "白描本"
+          },
+          {
+            "name": "大英本",
+            "location": "大英博物馆",
+            "period": "摹本"
+          }
+        ]
+      },
+      "verified": true,
+      "key_facts": [
+        "原作传为东晋顾恺之所作，但原作已佚",
+        "现存版本均为后世（主要是宋代）摹本",
+        "北京故宫博物院藏3本，辽宁省博物馆藏1本，台北故宫博物院藏2本，弗利尔美术馆藏2本，大英博物馆藏1本",
+        "最著名的是北京故宫甲本（宋摹本），画风仍存六朝遗韵",
+        "全卷描绘曹植与洛神相遇的故事，分为三个部分"
+      ],
+      "common_error": "不应说'故宫博物院收藏洛神赋图原作'，应明确指出是'宋摹本'。如说'收藏于故宫博物院'应注意北京故宫有三本，台北故宫有两本。",
+      "sources": [
+        "https://www.dpm.org.cn/collection/paint/234597.html",
+        "https://baike.baidu.com/item/洛神赋图/817364",
+        "https://lgbc.seu.edu.cn/2010/0505/c3477a34592/page.htm",
+        "https://www.meipian.cn/3gloxffy"
+      ]
+    },
+    "po_mo_xian_ren_tu": {
+      "title_cc": "泼墨仙人图",
+      "title_en": "Immortal in Splashed Ink",
+      "attributed_artist": "梁楷（南宋，生卒年不详，嘉泰年间即1201-1204年任画院待诏）",
+      "period": "南宋（13世纪初）",
+      "location": "台北故宫博物院",
+      "material": "纸本水墨",
+      "format": "册页",
+      "dimensions": "纵48.7cm × 横27.7cm",
+      "verified": true,
+      "key_facts": [
+        "确认为南宋画家梁楷的作品",
+        "现藏于台北故宫博物院（非北京故宫）",
+        "是现存最早的一幅泼墨写意人物画",
+        "梁楷为南宋画院待诏，东平（今山东）人",
+        "以大笔泼墨，寥寥数十笔挥就仙人形象",
+        "对日本水墨画影响深远"
+      ],
+      "common_error": "不应将收藏地误写为'北京故宫博物院'，正确收藏地是'台北故宫博物院'。",
+      "sources": [
+        "https://baike.baidu.com/item/泼墨仙人图/2150468",
+        "https://zh.wikipedia.org/zh-hans/潑墨仙人",
+        "https://m.thepaper.cn/wifiKey_detail.jsp?contid=9812921"
+      ]
+    }
+  },
+  "buddhist_art": {
+    "verification_date": "2026-02-21",
+    "purpose": "Verify bronze sample claims about Chinese Buddhist painting techniques against Wikipedia/authoritative sources",
+    "methodology": "WebSearch (Wikipedia 403, used web search + Britannica + scholarly sources instead)",
+    "gandhara": {
+      "influence_on_chinese_art": "犍陀罗（Gandhara）是希腊-佛教艺术（Greco-Buddhist art）的发源地，位于今阿富汗/巴基斯坦地区。其艺术特征包括：受希腊罗马雕塑影响的佛像造型、衣纹处理呈现贴体层叠效果（cascading folds with tactile weight and flow, robes cling to body）。犍陀罗艺术通过丝绸之路东传，先影响新疆（克孜尔石窟），再传至敦煌和中原。最早的中国佛像实物（四川出土，约2世纪末）即穿犍陀罗式袈裟。曹仲达作为粟特裔画家，将犍陀罗式贴体衣纹融入中国佛画，创立'曹家样'。",
+      "source_urls": [
+        "https://www.britannica.com/art/Gandhara-art",
+        "https://bcpublication.org/index.php/SSH/article/view/189",
+        "https://smarthistory.org/reframing-art-history/buddhism-chinese-art/",
+        "https://en.wikipedia.org/wiki/Greco-Buddhist_art"
+      ],
+      "source_notes": "Wikipedia 直接访问 403，信息综合自 Britannica、学术论文和 Smarthistory。犍陀罗→中国传播路径：Gandhara→Kushan→Kizil/Dunhuang→Central China，有充分文献支持。",
+      "bronze_sample_verdict": "PASS — TCH-009 中提到的'犍陀罗艺术影响'描述准确。曹衣描确实源自犍陀罗佛教造像的贴体衣纹传统。"
+    },
+    "cao_zhongda_origin": {
+      "origin": "中亚曹国（Cao Guo），位于粟特地区（Sogdiana），今乌兹别克斯坦撒马尔罕（Samarkand）附近，在泽拉夫尚河（Zeravshan/Nami River）以南约100公里处",
+      "ethnicity": "粟特人（Sogdian）——中国画史上明确记载的唯一一位粟特族画家",
+      "evidence": [
+        "Britannica: 'Cao Zhongda painted after the manner of foreign countries'",
+        "Voices on Central Asia: 'Cao Zhongda was Sogdian by origin who immigrated and settled in the Han-culture region'",
+        "百度百科/澎湃新闻: '出自中亚昭武九姓粟特地区的曹国'",
+        "故宫博物院文献: '中国画史上明确记载的唯一一位出身粟特民族的画家'",
+        "七世纪僧人彦琮赞其为'外国佛像'最佳诠释者（wondrous painted Buddhas, foreign Buddha images）"
+      ],
+      "dynasty": "北齐（Northern Qi, 550-577），官至朝散大夫。生于南梁，后入东魏、北齐",
+      "artistic_legacy": "'曹衣出水'（Cao Yi Chu Shui）——密集线条贴体衣纹，如出水湿衣。与吴道子'吴带当风'构成中国美术史上最经典对比",
+      "source_urls": [
+        "https://www.britannica.com/biography/Cao-Zhongda",
+        "https://voicesoncentralasia.org/lost-sogdian-art-in-china/",
+        "https://m.thepaper.cn/kuaibao_detail.jsp?contid=18826868",
+        "https://baike.baidu.com/item/%E6%9B%B9%E8%A1%A3%E5%87%BA%E6%B0%B4/8061060"
+      ],
+      "bronze_sample_verdict": "PASS — TCH-009 中'曹仲达本为中亚人'的描述完全正确。更精确的说法是'粟特人，来自曹国（今撒马尔罕附近）'。样本中的英文 'Central Asian origin' 准确。"
+    },
+    "guanyin": {
+      "sanskrit_name": "Avalokitesvara",
+      "sanskrit_with_diacritics": "Avalokitesvara",
+      "devanagari": "अवलोकितेश्वर",
+      "etymology": {
+        "components": "ava (down) + lokita (past participle of lok, 'to notice/behold/observe', active sense) + isvara (lord/ruler/sovereign)",
+        "meaning": "The Lord who looks down [upon the world]",
+        "alternate_form": "Avalokitasvara (earlier form containing svara='sound'), meaning 'sound perceiver' = 'he who looks down upon sound/cries of sentient beings' — this is the exact equivalent of Chinese 观音 (Guanyin, 'perceiver of sounds')",
+        "chinese_translations": [
+          "观世音 (Guanshiyin) — 鸠摩罗什等译者所用，literally 'One who perceives the world's lamentations'",
+          "观音 (Guanyin) — 简称，最常用",
+          "观自在 (Guanzizai) — 玄奘译本所用"
+        ]
+      },
+      "description": "大乘佛教中慈悲的化身（Bodhisattva of Great Compassion）。在中国佛教艺术中，观音形象经历了从印度男性菩萨到中国女性化形象的转变（feminization），出现了水月观音、白衣观音、鱼篮观音等多种中国本土化形态。",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Avalokite%C5%9Bvara",
+        "https://en.wikipedia.org/wiki/Guanyin",
+        "https://www.encyclopediaofbuddhism.org/wiki/Avalokitesvara",
+        "https://mythopedia.com/topics/guanyin/"
+      ],
+      "bronze_sample_verdict": "PASS — TCH-018 中使用的 'Avalokitesvara' 拼写正确（简化拉丁转写，学术标准带变音符号版为 Avalokitesvara）。'Bodhisattva of Compassion in Mahayana Buddhism' 描述准确。注意：样本中 TCH-018-edu 称观音为 'Buddhist goddess of compassion' 略有不精确——观音是菩萨（Bodhisattva）而非女神（goddess），虽然在民间信仰中确实常被作为女性神祇崇拜。"
+    },
+    "gongbi": {
+      "definition": "工笔（Gongbi, 'meticulous brush'）是中国画中以精细写实为特征的绑画风格，与写意（xieyi, 'sketching thoughts'）相对。其核心是以精确控制的笔触精细描绘对象，不追求表现性变化。",
+      "relation_to_line_drawing": {
+        "baimiao_as_foundation": "白描（Baimiao, 'plain drawing'）是工笔画的基础技法阶段。工笔画的创作流程为：先起铅笔稿→白描线描（纯墨线勾勒）→着色（淡彩/重彩，通常3-9遍）。白描本身也可以作为独立的艺术形式。",
+        "gongbi_subtypes": "工笔画包含：白描（纯线条）、工笔淡彩（gongbi dancai, 淡色）、工笔重彩（gongbi zhongcai, 重色）",
+        "eighteen_descriptions": "十八描（Eighteen Descriptions/Strokes）是白描/线描技法的系统分类，出自明代邹德中《绘事指蒙》。十八种描法分为三大类：(1) 游丝描类——行笔慢、中锋、压力均匀（高古游丝描、琴弦描、铁线描）；(2) 柳叶描类——行笔快、变化多、压力集中在中段（枣核描、橄榄描、行云流水描、柳叶描等）；(3) 减笔描类——行笔快、多用侧锋"
+      },
+      "eighteen_descriptions_full_list": [
+        "1. 高古游丝描",
+        "2. 琴弦描",
+        "3. 铁线描",
+        "4. 行云流水描",
+        "5. 蚂蝗描",
+        "6. 钉头鼠尾描",
+        "7. 混描",
+        "8. 橛头丁描",
+        "9. 曹衣描",
+        "10. 折芦描",
+        "11. 橄榄描",
+        "12. 枣核描",
+        "13. 柳叶描",
+        "14. 竹叶描",
+        "15. 战笔水纹描",
+        "16. 减笔描",
+        "17. 枯柴描",
+        "18. 蚯蚓描"
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Gongbi",
+        "https://www.britannica.com/art/gongbi",
+        "https://www.britannica.com/art/baimiao",
+        "https://www.dpm.org.cn/lemmas/241509.html",
+        "https://chine-culture.com/en/chinese-painting/chinese-painting-baimiao.php"
+      ],
+      "bronze_sample_verdict": "PASS — 样本中将曹衣描和枣核描归类为'工笔人物画/佛教绘画'的线描技法完全正确。两者均在故宫博物院确认的十八描正式列表中（#9曹衣描、#12枣核描）。"
+    },
+    "additional_findings": {
+      "guanyin_miao_not_in_eighteen": {
+        "finding": "'观音描'（Guanyin miao）并非十八描的正式名称之一。它是枣核描的民间别名/俗称。",
+        "evidence": "故宫博物院十八描列表中第12项为'枣核描'而非'观音描'。搜索'观音描'未找到作为独立十八描条目的任何权威来源。",
+        "impact_on_bronze": "TCH-018-cat 中写'枣核描（zaohemiao）/ 观音描'作为别名是合理的，但需注意观音描是俗称而非正式名。样本中的处理方式（用斜杠标注）是恰当的。"
+      },
+      "zaohemiao_characteristics": {
+        "finding": "枣核描的线条特征：中间转折顿挫圆浑呈枣核状，运用大笔挥洒，线条短促，适宜表现麻布质感。",
+        "note": "样本中描述枣核描'尖笔藏锋，笔触润泽如玉'来自《海仙十八妙法》原文，与一般美术史文献中'大笔挥洒、表现麻布'的说法有微妙差异。这可能是因为原始古文文献《海仙十八妙法》的描述与后世概括性描述之间存在差异，而非样本错误。"
+      },
+      "avalokitesvara_spelling_note": {
+        "finding": "bronze 样本中统一使用 'Avalokitesvara'（无变音符号）——这是英文学术写作中可接受的简化拉丁转写。带变音符号的标准形式为 'Avalokitesvara'。两种写法在学术文献中均普遍使用。",
+        "recommendation": "无需修改，当前用法符合英文学术惯例。"
+      },
+      "educational_text_caution": {
+        "finding": "TCH-018-edu 英文版称观音为 'Buddhist goddess of compassion and mercy'。严格来说观音是菩萨（Bodhisattva）而非女神（goddess）。虽然在中国民间信仰中观音确实常以女性形象出现并被崇拜，但在学术语境中 'Bodhisattva' 更精确。",
+        "recommendation": "考虑到 edu 文本面向入门读者，'goddess' 的通俗化表述可以接受，但建议在括号中注明 '(technically a Bodhisattva)'。"
+      }
+    },
+    "overall_verdict": {
+      "summary": "所有 4 个核心验证点均 PASS",
+      "details": {
+        "gandhara_influence": "PASS — 犍陀罗对中国佛教绘画的影响有充分文献支持",
+        "cao_zhongda_origin": "PASS — 确为中亚粟特人（曹国，今撒马尔罕附近），多个权威来源一致",
+        "avalokitesvara_name": "PASS — Sanskrit 名称拼写正确，词源解释准确",
+        "gongbi_line_drawing": "PASS — 工笔与白描/十八描的关系描述正确"
+      },
+      "minor_issues": [
+        "TCH-018-edu EN: 'goddess' → 建议改为 'Bodhisattva' 或加注",
+        "枣核描'笔头为玉'的详细解释来自原文而非通行美术史概括，需确认原始古文出处"
+      ]
+    }
+  },
+  "correction_log": [
+    {
+      "date": "2026-02-21",
+      "file": "text_type_expansion_drafts.json",
+      "sample_id": "TCH-010-interp",
+      "field": "en",
+      "old": "Liang Kai (active c. 1200-1260)",
+      "new": "Liang Kai (c. 1140-1210)",
+      "severity": "CRITICAL",
+      "reason": "Liang Kai生卒年严重错误。Britannica/Wikipedia 一致给出 c. 1140-1210。1201-1204年获待诏衔，若生于1200年则时年仅1-4岁。"
+    },
+    {
+      "date": "2026-02-21",
+      "file": "text_type_expansion_drafts.json",
+      "sample_id": "TCH-010-interp",
+      "field": "mc",
+      "old": "梁楷（约1200-1260年活跃）",
+      "new": "梁楷（约1140-1210）",
+      "severity": "CRITICAL",
+      "reason": "同上。MC版本同样包含错误的生卒年。"
+    },
+    {
+      "date": "2026-02-21",
+      "file": "text_type_expansion_drafts.json",
+      "sample_id": "TCH-010-cat",
+      "field": "en",
+      "old": "Liang Kai (active c. 1200-1260)",
+      "new": "Liang Kai (c. 1140-1210)",
+      "severity": "CRITICAL",
+      "reason": "catalogue版本同样包含错误的Liang Kai生卒年。"
+    },
+    {
+      "date": "2026-02-21",
+      "file": "text_type_expansion_drafts.json",
+      "sample_id": "TCH-010-cat",
+      "field": "mc",
+      "old": "梁楷（约1200-1260年活跃）",
+      "new": "梁楷（约1140-1210）",
+      "severity": "CRITICAL",
+      "reason": "catalogue MC版本同样包含错误的生卒年。"
+    },
+    {
+      "date": "2026-02-21",
+      "file": "text_type_expansion_drafts.json",
+      "sample_id": "TCH-009-interp",
+      "field": "en",
+      "old": "Cao Buqing",
+      "new": "Cao Zhongda",
+      "severity": "HIGH",
+      "reason": "曹衣描的'曹'指曹仲达（北齐），非曹不兴（三国吴）。两人相隔约300年。'Cao Buqing'是曹不兴的误拼（应为Cao Buxing），且在此语境中应为Cao Zhongda。"
+    },
+    {
+      "date": "2026-02-21",
+      "file": "text_type_expansion_drafts.json",
+      "sample_id": "TCH-009-cat",
+      "field": "en",
+      "old": "Cao Buqing",
+      "new": "Cao Zhongda",
+      "severity": "HIGH",
+      "reason": "catalogue版本同样将曹仲达误写为Cao Buqing。"
+    },
+    {
+      "date": "2026-02-21",
+      "file": "text_type_expansion_drafts.json",
+      "sample_id": "TCH-008-interp",
+      "field": "en",
+      "old": "Xia Gui (c. 1195-1224)",
+      "new": "Xia Gui (fl. 1195-1224)",
+      "severity": "MODERATE",
+      "reason": "夏圭生卒年不详，1195-1224是其活动期（floruit），非生卒年。'c.'暗示为生卒年估计，应改为'fl.'以正确标注为活动期。"
+    },
+    {
+      "date": "2026-02-21",
+      "file": "text_type_expansion_drafts.json",
+      "sample_id": "TCH-008-cat",
+      "field": "en",
+      "old": "Xia Gui (c. 1195-1224)",
+      "new": "Xia Gui (fl. 1195-1224)",
+      "severity": "MODERATE",
+      "reason": "catalogue版本同样缺少fl.前缀。"
+    }
+  ],
+  "verification_summary": {
+    "painters": {
+      "total": 7,
+      "PASS": 4,
+      "NEEDS_CORRECTION": 2,
+      "FAIL": 1
+    },
+    "techniques": {
+      "total": 18,
+      "PASS": 4,
+      "PASS_WITH_NUANCE": 1,
+      "NEEDS_CORRECTION": 3,
+      "NOT_APPLICABLE": 1,
+      "NOT_REVIEWED": 9
+    },
+    "cultural_terms": {
+      "total": 12,
+      "all_verified": true
+    },
+    "buddhist_art": {
+      "total": 4,
+      "all_pass": true
+    },
+    "total_corrections_applied": 8,
+    "remaining_review_items": [
+      "TCH-018 枣核描/观音描别名关系 — 边界案例，原文支持但非正式别名",
+      "TCH-003 谢赫与铁线描 — 合格但需注意六法是通则非专属",
+      "TCH-018-edu EN 'goddess' → 建议改为 'Bodhisattva'",
+      "吴道子生年存在 c.680 vs c.686 学术争议，两种均可接受"
+    ]
+  }
+}

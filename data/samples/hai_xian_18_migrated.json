@@ -827,12 +827,12 @@
       "text": {
         "classical_zh": "用尖筆，其體重疊衣褶，緊窄如蚯蚓描",
         "modern_zh": "用尖笔描绘，以密集重叠的衣褶为特征，线条紧密窄小，形态类似蚯蚓描。此法源自北齐曹仲达“曹衣出水”的画风。",
-        "en": "Pointed brush creates densely overlapping tight narrow folds similar to earthworm technique. Named after Cao Buqing, emphasizing body-hugging drapery and fine fabric."
+        "en": "Pointed brush creates densely overlapping tight narrow folds similar to earthworm technique. Named after Cao Zhongda (Northern Qi), emphasizing body-hugging drapery and fine fabric."
       },
       "cultural_concepts": [
         {
           "term_zh": "曹衣",
-          "term_en": "Cao-style drapery (after Cao Buqing / Cao Zhongda)",
+          "term_en": "Cao-style drapery (after Cao Zhongda)",
           "has_direct_translation": false,
           "concept_type": "allusion",
           "explanation_needed": true
