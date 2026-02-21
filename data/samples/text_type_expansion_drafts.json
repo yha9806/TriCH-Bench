@@ -1,8 +1,8 @@
 {
   "dataset_info": {
     "name": "TriCH-Bench v2 - Text Type Expansion Drafts",
-    "version": "2.0.0-draft",
-    "description": "LLM-generated trilingual drafts for interpretation, catalogue, and educational text types. Bronze tier, pending expert review.",
+    "version": "2.0.0-reviewed",
+    "description": "LLM-generated trilingual drafts for interpretation, catalogue, and educational text types. First-pass expert reviewed, pending second expert for gold promotion.",
     "creation_date": "2026-02-14",
     "total_samples": 54,
     "languages": [
@@ -37,7 +37,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -58,7 +66,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -79,7 +95,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -100,7 +124,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -121,7 +153,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -142,7 +182,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -163,7 +211,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -184,7 +240,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -205,7 +269,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -226,7 +298,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -247,7 +327,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -268,7 +356,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -289,7 +385,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -310,7 +414,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -331,7 +443,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -352,7 +472,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -373,7 +501,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -394,7 +530,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -415,7 +559,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -436,7 +588,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -457,7 +617,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -478,7 +646,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -499,7 +675,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -520,7 +704,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -537,11 +729,19 @@
       "text": {
         "classical_zh": "曹衣描者，以尖筆為之，其線條密集重疊，衣褶緊窄貼身，如蚯蚓蜿蜒附體。此法源自北齊曹仲達，其畫佛像衣紋如出水之衣，貼體而透肌理，世稱「曹衣出水」，與吳道子「吳帶當風」之飄逸風格形成中國人物畫史上最經典之對照。曹法之精妙，在於以密集之線條表現衣物下人體之起伏，既見衣紋又見肉身，虛實相彰。",
         "modern_zh": "曹衣描以北齐画家曹仲达为名，是中国绘画史上最具标志性的衣纹表现技法之一。其最突出的特点是衣褶线条极为密集，紧紧贴附于人体，几乎透出身体的轮廓和肌理，如同人物刚从水中走出、湿衣贴身的效果——这就是著名的\"曹衣出水\"典故的由来。技法上使用尖笔，绘制密集的平行或略带弧度的线条，线条之间间距很小，如蚯蚓般紧密排列。原文将其与\"蚯蚓描\"相比拟，说明两者在线条的柔软蜿蜒方面有相似之处，但曹衣描更强调线条的密集重叠和贴体效果。在中国美术史上，\"曹衣出水\"与\"吴带当风\"构成了最经典的艺术对比：曹仲达的衣纹紧窄贴身、体态毕现，吴道子的衣纹飘逸灵动、御风而舞。一个如出水、一个如当风，一静一动、一紧一松，代表了中国人物画衣纹表现的两个极端方向。曹衣描受到了中亚和印度佛教艺术的影响——曹仲达本为中亚人，其画风融合了犍陀罗佛教造像中衣纹贴体的表现手法，是中国艺术史上中外文化交流的重要见证。",
-        "en": "The Cao Yi Drawing (caoyimiao) is named after the Northern Qi dynasty painter Cao Zhongda (), and represents one of the most iconically distinctive drapery techniques in the history of Chinese painting. Its hallmark feature is densely packed, closely overlapping garment folds that cling tightly to the body, revealing the underlying contours and musculature as though the figure has just emerged from water with wet garments adhering to the skin. This visual phenomenon gave rise to the celebrated phrase 'Cao Yi Chu Shui' (Cao's drapery emerging from water). The technique employs a pointed brush to create closely spaced parallel or subtly curved lines, with minimal intervals between strokes — resembling, as the classical text notes, the coiling motion of earthworms (qiuyin). While sharing a sinuous quality with the Earthworm Drawing technique, the Cao Yi method places greater emphasis on density, overlap, and body-revealing transparency. In Chinese art history, 'Cao Yi Chu Shui' forms the most celebrated aesthetic dialectic when paired with 'Wu Dai Dang Feng' (Wu's ribbons catching the wind) — referring to the flowing, wind-blown drapery of Tang dynasty master Wu Daozi. Where Cao's lines are tight, clinging, and body-revealing, Wu's are loose, billowing, and movement-suggesting; one evokes emergence from water, the other exposure to wind. Together they define the two polar approaches to rendering garments in Chinese figure painting. The Cao Yi Drawing also bears significant art-historical importance as evidence of cross-cultural exchange: Cao Zhongda was of Central Asian origin, and his style incorporated the body-revealing drapery conventions of Gandharan Buddhist sculpture, making this technique a tangible artifact of Silk Road cultural transmission."
+        "en": "The Cao Yi Drawing (caoyimiao) is named after the Northern Qi dynasty painter Cao Zhongda (Northern Qi dynasty, fl. 6th century), and represents one of the most iconically distinctive drapery techniques in the history of Chinese painting. Its hallmark feature is densely packed, closely overlapping garment folds that cling tightly to the body, revealing the underlying contours and musculature as though the figure has just emerged from water with wet garments adhering to the skin. This visual phenomenon gave rise to the celebrated phrase 'Cao Yi Chu Shui' (Cao's drapery emerging from water). The technique employs a pointed brush to create closely spaced parallel or subtly curved lines, with minimal intervals between strokes — resembling, as the classical text notes, the coiling motion of earthworms (qiuyin). While sharing a sinuous quality with the Earthworm Drawing technique, the Cao Yi method places greater emphasis on density, overlap, and body-revealing transparency. In Chinese art history, 'Cao Yi Chu Shui' forms the most celebrated aesthetic dialectic when paired with 'Wu Dai Dang Feng' (Wu's ribbons catching the wind) — referring to the flowing, wind-blown drapery of Tang dynasty master Wu Daozi. Where Cao's lines are tight, clinging, and body-revealing, Wu's are loose, billowing, and movement-suggesting; one evokes emergence from water, the other exposure to wind. Together they define the two polar approaches to rendering garments in Chinese figure painting. The Cao Yi Drawing also bears significant art-historical importance as evidence of cross-cultural exchange: Cao Zhongda was of Central Asian origin, and his style incorporated the body-revealing drapery conventions of Gandharan Buddhist sculpture, making this technique a tangible artifact of Silk Road cultural transmission."
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -562,7 +762,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -583,7 +791,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -598,13 +814,21 @@
       "text_type": "interpretation",
       "difficulty_tier": "L2-Medium",
       "text": {
-        "classical_zh": "折蘆描者，以尖大筆行之，筆頭擎納之間形成細長之線，如蘆葦折斷後之筋脈——斷而不離、轉折方硬。南宋梁楷善用此法，其人物画作中常以方折刚劲的笔法写出简括苍劲之趣。「擎納」二字至為關鍵：擎者，提筆向上；納者，按筆向下，一提一按間線條自然形成折角。",
+        "classical_zh": "折蘆描者，以尖大筆行之，筆頭擎納之間形成細長之線，如蘆葦折斷後之筋脈——斷而不離、轉折方硬。南宋梁楷善用此法，其人物畫作中常以方折剛勁之筆法寫出簡括蒼勁之趣。「擎納」二字至為關鍵：擎者，提筆向上；納者，按筆向下，一提一按間線條自然形成折角。",
         "modern_zh": "折芦描的名称来源于芦苇折断后的形态——芦苇茎秆折而不断，在折断处形成明显的角度和棱线，这正是折芦描线条的核心特征：线条在转折处形成明确的方角，如折断的芦苇般刚硬而有几何感。技法上使用较大的尖头毛笔，运笔过程中反复进行\"擎纳\"动作——\"擎\"是提笔上抬，\"纳\"是按笔下压——这种一提一按的节奏自然在线条中形成棱角分明的转折点，使线条呈现出细长而带有方折感的独特形态。南宋画家梁楷是折芦描的代表人物。梁楷在画院供职，后\"挂金带而去\"，以大胆简括的画风闻名。他的人物画以极简的笔触传达出丰富的精神内涵，折芦描中那种方硬利落的线条正与他删繁就简的艺术理念相契合。折芦描在十八描法中属于\"方折型\"线条的代表，与游丝描、柳叶描等\"圆转型\"线条形成鲜明对比。这种方折感赋予了画面以建筑般的结构美感和金石般的硬朗气质。",
         "en": "The Broken Reed Drawing (zhelumiao) takes its name from the visual character of a reed stalk after it has been snapped: the reed bends sharply at the break point but does not sever completely, creating a distinct angular inflection in the stalk's line — this angularity defines the technique's signature aesthetic. Executed with a large pointed brush, the method relies fundamentally on the rhythmic alternation of qingna (lifting and pressing): 'qing' denotes an upward lifting of the brush, while 'na' means a downward pressing motion. This rhythmic alternation naturally produces crisp angular turning points within each stroke, yielding lines that are elongated yet punctuated by geometric breaks. The Southern Song painter Liang Kai (active c. 1200-1260) is the preeminent master associated with this technique. Originally a court painter at the imperial painting academy, Liang Kai famously 'hung up his golden belt and left,' renouncing official honors to pursue an increasingly abbreviated and expressive painting style. His figure paintings convey profound spiritual depth through radically economical brushwork, and the angular, decisive quality of Broken Reed lines harmonizes perfectly with his artistic philosophy of eliminating the superfluous to reveal the essential. Within the eighteen techniques, the Broken Reed Drawing represents the 'angular' (fangzhe) lineage, standing in sharp contrast to the 'rounded' (yuanzhuan) lineage exemplified by Gossamer and Willow Leaf techniques. This angularity endows the painted image with an architectural structural beauty and the austere vigor associated with jinshi (epigraphy — the art of bronze and stone inscriptions)."
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -625,7 +849,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -646,7 +878,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -667,7 +907,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -688,7 +936,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -709,7 +965,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -730,7 +994,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -751,7 +1023,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -772,7 +1052,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -793,7 +1081,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -814,7 +1110,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -835,7 +1139,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -856,7 +1168,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -877,7 +1197,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -898,7 +1226,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -919,7 +1255,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -940,7 +1284,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -961,7 +1313,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -982,7 +1342,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -1003,7 +1371,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -1024,7 +1400,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -1045,7 +1429,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -1066,7 +1458,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -1087,7 +1487,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -1108,7 +1516,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -1129,7 +1545,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     },
     {
@@ -1150,7 +1574,15 @@
       },
       "quality_tier": "bronze",
       "expert_review": {
-        "reviewed": false
+        "reviewed": true,
+        "reviewer_count": 1,
+        "review_date": "2026-02-21",
+        "review_scope": {
+          "classical_zh": "reviewed",
+          "modern_zh": "reviewed",
+          "english": "reviewed"
+        },
+        "revision_note": "First-pass expert review by project lead (Yu, Haorui). Overall quality: A/A-. Fixes applied: (1) TCH-009-interp EN empty dates filled, (2) TCH-010-interp CC simplified chars → traditional. Pending second expert review for final gold-tier promotion."
       }
     }
   ]
