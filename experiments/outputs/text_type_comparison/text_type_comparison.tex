@@ -1,0 +1,37 @@
+\begin{table}[t]
+\centering
+\caption{Text-to-image Recall@$10$ (\%) by text type. Same 55-image retrieval pool, seed=42. Orig.\ = original expert texts (18 samples); Interp./Cat./Edu.\ = generated text variants.}
+\label{tab:text_type_comparison}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{l l ccc}
+\toprule
+\textbf{Model} & \textbf{Type} & \textbf{CC} & \textbf{MC} & \textbf{EN} \\
+\midrule
+CLIP & Orig. & 55.6 & 44.4 & 44.4 \\
+ & Interp. & 55.6 & 55.6 & 61.1 \\
+ & Cat. & 50.0 & 55.6 & 50.0 \\
+ & Edu. & 55.6 & 50.0 & 50.0 \\
+\addlinespace[3pt]
+CN-CLIP & Orig. & 33.3 & 33.3 & 44.4 \\
+ & Interp. & 61.1 & 55.6 & 38.9 \\
+ & Cat. & 33.3 & 61.1 & 55.6 \\
+ & Edu. & 22.2 & 33.3 & 61.1 \\
+\addlinespace[3pt]
+SigLIP2 & Orig. & 27.8 & 27.8 & 27.8 \\
+ & Interp. & 55.6 & 66.7 & 38.9 \\
+ & Cat. & 27.8 & 44.4 & 50.0 \\
+ & Edu. & 27.8 & 38.9 & 22.2 \\
+\addlinespace[3pt]
+Jina-CLIP & Orig. & 72.2 & 66.7 & 44.4 \\
+ & Interp. & 66.7 & 55.6 & 44.4 \\
+ & Cat. & 66.7 & 72.2 & 61.1 \\
+ & Edu. & 55.6 & 55.6 & 61.1 \\
+\addlinespace[3pt]
+mBERT+RN & Orig. & 44.4 & 38.9 & 33.3 \\
+ & Interp. & 50.0 & 50.0 & 44.4 \\
+ & Cat. & 44.4 & 44.4 & 50.0 \\
+ & Edu. & 38.9 & 50.0 & 33.3 \\
+\bottomrule
+\end{tabular}
+\end{table}
