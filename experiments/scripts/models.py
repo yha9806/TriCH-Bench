@@ -176,6 +176,21 @@ class JinaCLIPModel(BaseModel):
         emb = emb / (np.linalg.norm(emb, axis=-1, keepdims=True) + 1e-8)
         return emb.squeeze()
 
+    @torch.no_grad()
+    def encode_images(self, image_paths: list[str]) -> np.ndarray:
+        """Batch encode all images in a single model call."""
+        images = [Image.open(p).convert("RGB") for p in image_paths]
+        emb = self.model.encode_image(images, truncate_dim=512)
+        emb = emb / (np.linalg.norm(emb, axis=-1, keepdims=True) + 1e-8)
+        return emb
+
+    @torch.no_grad()
+    def encode_texts(self, texts: list[str]) -> np.ndarray:
+        """Batch encode all texts in a single model call."""
+        emb = self.model.encode_text(texts, truncate_dim=512)
+        emb = emb / (np.linalg.norm(emb, axis=-1, keepdims=True) + 1e-8)
+        return emb
+
 
 # ============================================================
 # mBERT + ResNet-50 (Projection Baseline)
