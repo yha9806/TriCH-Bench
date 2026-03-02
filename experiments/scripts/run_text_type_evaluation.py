@@ -9,8 +9,6 @@ Usage:
     cd TriCH-Bench/
     python experiments/scripts/run_text_type_evaluation.py --device cuda
 
-Author: Yu, Haorui
-Date: 2026-02-21
 """
 
 import argparse

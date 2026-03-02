@@ -129,7 +129,7 @@ The benchmark supports three evaluation tasks:
 ```bibtex
 @article{yu2026trichbench,
   title={TriCH-Bench: An Expert-Validated Trilingual Benchmark and Heritage-Driven Evaluation Protocol for Cross-Lingual Access to Chinese Classical Painting Archives},
-  author={Yu, Haorui and others},
+  author={Anonymous},
   journal={ACM Journal on Computing and Cultural Heritage},
   year={2026},
   note={Under review}

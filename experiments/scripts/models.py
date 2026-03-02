@@ -4,8 +4,6 @@ TriCH-Bench Model Wrappers
 Unified interface for vision-language retrieval models:
   CLIP, Chinese-CLIP, SigLIP 2, Jina-CLIP v2, mBERT+ResNet-50.
 
-Author: Yu, Haorui
-Date: 2026-02-14
 """
 
 import logging

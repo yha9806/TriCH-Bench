@@ -15,8 +15,6 @@ Usage:
     # CPU-only mode:
     python experiments/scripts/run_evaluation.py --device cpu
 
-Author: Yu, Haorui
-Date: 2026-02-14
 """
 
 import argparse

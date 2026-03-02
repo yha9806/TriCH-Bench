@@ -3,8 +3,6 @@ TriCH-Bench Evaluation Utilities
 ================================
 Helper functions for data loading, metric computation, and result export.
 
-Author: Yu, Haorui
-Date: 2026-02-14
 """
 
 import json
